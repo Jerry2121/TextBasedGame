@@ -78,7 +78,15 @@ public class InteractableItems : MonoBehaviour {
 
             for (int i = 0; i < nounsInInventory.Count; i++)
             {
-                controller.LogStringWithReturn(nounsInInventory[i]);
+                if (i < nounsInInventory.Count - 2)
+                {
+                    controller.LogStringWithReturn(nounsInInventory[i] + ", " + nounsInInventory[i + 1]);
+                    i++;
+                }
+                else
+                {
+                    controller.LogStringWithReturn(nounsInInventory[i]);
+                }
             }
         }
         else
@@ -101,8 +109,8 @@ public class InteractableItems : MonoBehaviour {
         if (nounsInRoom.Contains(noun))
         {
             nounsInInventory.Add(noun);
-            AddActionResponsesToUseDictionary();
             nounsInRoom.Remove(noun);
+            AddActionResponsesToUseDictionary();
             return takeDictionary;
         }
         else

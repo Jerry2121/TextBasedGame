@@ -8,7 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96e41f42db6595b429f1f2023eef2bed, type: 3}
-  m_Name: GoAW
+  m_Script: {fileID: 11500000, guid: 8fd5b065f415cc742acf4a9757ff08a2, type: 3}
+  m_Name: Look
   m_EditorClassIdentifier: 
-  keyword: go
+  keyWord: look

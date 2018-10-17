@@ -26,6 +26,7 @@ public class RoomNavigation : MonoBehaviour {
 
     public void AttemptToChangeRooms(string directionNoun)
     {
+        directionNoun.ToLower();
         if (exitDictionary.ContainsKey(directionNoun))
         {
             currentRoom = exitDictionary[directionNoun];

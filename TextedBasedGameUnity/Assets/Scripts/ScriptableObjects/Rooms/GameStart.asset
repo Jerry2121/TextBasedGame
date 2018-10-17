@@ -11,10 +11,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
   m_Name: GameStart
   m_EditorClassIdentifier: 
-  description: 
+  description: "       ,,.  .*,.                                 \r\n.,..,,,*. *   .
+    *. *   *,* . *                   \r\n          . .   ** ..( ..   ..                   \r\n
+    \        *.*. ,. *,. .   ., *  *                 \r\n       / * ,/ . , .,.*  *
+    \  .....                \r\n         /  * ,.  , * / . .   **  ./* ..         \r\n
+    \         *../   */  ,   ,*  .    ,    .* ,      \r\n         , , . , * *,    .
+    ,/    .     ./ ,.     \r\n              ,/  * * /*  **,*,...     .   *     \r\n
+    \       . .   . ,* . . .*   . (    *  ,     .    \r\n        *      .  .*..  .
+    \ ( * .        ,     *, \r\n      /     .. ,., ,, .      ,*,*         ,    ,.\r\n
+    \    ,      ,/* .     ,,                    .   .\r\n       ,. ,  .,,,.                             .
+    \r\n    .      /,                                   \n\n\n"
   roomName: game start
   exits:
-  - keyString: dungeon
-    exitDescription: Enter the dungeon
+  - keyString: hangar
+    exitDescription: Go to the Space station hangar
     valueRoom: {fileID: 11400000, guid: 5be09444995efef4fac3f5564108be1c, type: 2}
   InteractableObjectsInRoom: []

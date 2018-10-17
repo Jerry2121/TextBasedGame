@@ -78,15 +78,24 @@ public class InteractableItems : MonoBehaviour {
 
             for (int i = 0; i < nounsInInventory.Count; i++)
             {
-                if (i < nounsInInventory.Count - 2)
+                int nounsPerLine = 1;
+                if (nounsInInventory.Count > 5)
                 {
-                    controller.LogStringWithReturn(nounsInInventory[i] + ", " + nounsInInventory[i + 1]);
-                    i++;
+                    int value = nounsInInventory.Count % 5;
+                    nounsPerLine = value + 2;
+                }
+
+                if (nounsPerLine > 1)
+                {
+                    string foo = "";
+                    for (int j = 0; j < nounsPerLine; j++)
+                    {
+                        foo += nounsInInventory[i + j];
+                        //i++;
+                    }
                 }
                 else
-                {
                     controller.LogStringWithReturn(nounsInInventory[i]);
-                }
             }
         }
         else

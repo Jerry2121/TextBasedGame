@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour {
 
     [HideInInspector] public RoomNavigation roomNavigation;
     [HideInInspector] public List<string> interactionsDescriptionsInRoom = new List<string>();
+    [HideInInspector] public InteractableItems interactableItems;
 
     List<string> actionLog = new List<string>();
 
@@ -17,6 +18,7 @@ public class GameController : MonoBehaviour {
 	void Awake ()
     {
         roomNavigation = GetComponent<RoomNavigation>();
+        interactableItems = GetComponent<InteractableItems>();
 	}
 
     void Start()
@@ -48,10 +50,49 @@ public class GameController : MonoBehaviour {
     void UnpackRoom()
     {
         roomNavigation.UnpackExitsInRoom();
+        PrepareObjectsToTakeOrExamine(roomNavigation.currentRoom);
+    }
+
+    void PrepareObjectsToTakeOrExamine(Room currentRoom)
+    {
+        for (int i = 0; i < currentRoom.InteractableObjectsInRoom.Length; i++)
+        {
+            string descriptionNotInInventory = interactableItems.GetObjectsNotInInventory(currentRoom, i);
+            if(descriptionNotInInventory != null)
+            {
+                interactionsDescriptionsInRoom.Add(descriptionNotInInventory);
+            }
+
+            InteractableObject interactableInRoom = currentRoom.InteractableObjectsInRoom[i];
+
+            for (int j = 0; j < interactableInRoom.interactions.Length; j++)
+            {
+                Interaction interaction = interactableInRoom.interactions[j];
+                if(interaction.inputAction.keyWord == "examine")
+                {
+                    interactableItems.examineDictionary.Add(interactableInRoom.noun, interaction.textResponse);
+                }
+                if (interaction.inputAction.keyWord == "take")
+                {
+                    interactableItems.takeDictionary.Add(interactableInRoom.noun, interaction.textResponse);
+                }
+            }
+        }
+    }
+
+    public string TestVerbDictionaryWithNoun(Dictionary<string,string> verbDictionary, string verb, string noun)
+    {
+        if (verbDictionary.ContainsKey(noun))
+        {
+            return verbDictionary[noun];
+        }
+
+        return "You can't " + verb + " " + noun;
     }
 
     void ClearCollectionsForNewRoom()
     {
+        interactableItems.ClearCollections();
         interactionsDescriptionsInRoom.Clear();
         roomNavigation.ClearExits();
     }

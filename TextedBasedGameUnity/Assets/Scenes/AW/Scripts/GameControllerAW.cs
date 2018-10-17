@@ -7,6 +7,8 @@ public class GameControllerAW : MonoBehaviour {
 
     public Text displayText;
 
+    public InputActionAW[] inputActions;
+
     [HideInInspector]
     public RoomNavagationAW roomNavagationAW;
     [HideInInspector]

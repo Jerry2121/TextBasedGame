@@ -19,6 +19,20 @@ public class TextInputAW : MonoBehaviour {
     {
         _userInput = _userInput.ToLower();
         controller.LogStringWithReturn(_userInput);
+
+        char[] delimiterCharacters = { ' ' };
+        string[] separatedInputWords = _userInput.Split(delimiterCharacters);
+
+        //go through each input the controller knows of and see if they match what the user types
+        for (int i = 0; i < controller.inputActions.Length; i++)
+        {
+            InputActionAW inputAction = controller.inputActions[i];
+            if (inputAction.keyword == separatedInputWords[0])
+            {
+                inputAction.RespondToInput(controller, separatedInputWords);
+            }
+        }
+
         InputComplete();
     }
 

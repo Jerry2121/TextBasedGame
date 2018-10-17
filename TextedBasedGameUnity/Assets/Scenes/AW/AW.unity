@@ -513,6 +513,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayText: {fileID: 1038565764}
+  inputActions:
+  - {fileID: 11400000, guid: 96fb7d306ca02ad4187fe1d1241548c0, type: 2}
   roomNavagationAW: {fileID: 0}
   interactionDescriptionsInRoom: []
 --- !u!4 &1225457522
@@ -818,7 +820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.5}
+  m_Color: {r: 0.4716981, g: 0.4716981, b: 0.4716981, a: 0.5}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

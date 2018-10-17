@@ -15,5 +15,7 @@ MonoBehaviour:
   roomName: orb room
   exits:
   - keyString: south
-    exitDescription: there is a door in the south with light coming through it
+    exitDescription: There is a door in the south with light coming through it.
     valueRoom: {fileID: 11400000, guid: 5be09444995efef4fac3f5564108be1c, type: 2}
+  InteractableObjectsInRoom:
+  - {fileID: 11400000, guid: 27d05747b827d4e4a88478356442bb59, type: 2}

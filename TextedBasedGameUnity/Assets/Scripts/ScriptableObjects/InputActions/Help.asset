@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0f62f8efd60b64395fa040ced83d05, type: 3}
   m_Name: Help
   m_EditorClassIdentifier: 
-  keyWord: 
+  keyWord: help

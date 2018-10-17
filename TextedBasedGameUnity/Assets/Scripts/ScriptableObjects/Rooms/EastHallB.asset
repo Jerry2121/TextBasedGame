@@ -9,13 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
-  m_Name: OrbRoom
+  m_Name: EastHallB
   m_EditorClassIdentifier: 
-  description: You are in a vast, dark hall.
-  roomName: orb room
+  description: You are in the B section of the East Hall. DEAD END FOR NOW
+  roomName: east hall b
   exits:
   - keyString: south
-    exitDescription: There is a door in the south with light coming through it.
-    valueRoom: {fileID: 11400000, guid: 5be09444995efef4fac3f5564108be1c, type: 2}
-  InteractableObjectsInRoom:
-  - {fileID: 11400000, guid: 27d05747b827d4e4a88478356442bb59, type: 2}
+    exitDescription: To the south, East Hallway stops and there is a door on the west-side
+      wall.
+    valueRoom: {fileID: 11400000, guid: ba97db2eff93f4f46baec32b01a4ca98, type: 2}
+  InteractableObjectsInRoom: []

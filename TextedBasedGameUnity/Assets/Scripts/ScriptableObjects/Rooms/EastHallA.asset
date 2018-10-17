@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
+  m_Name: EastHallA
+  m_EditorClassIdentifier: 
+  description: You are in the A Section of the East Hall.
+  roomName: east hall a
+  exits:
+  - keyString: west
+    exitDescription: There is a door to the west leading into the cryochamber
+    valueRoom: {fileID: 11400000, guid: 111dbb16640d57a478da77c74e1c2191, type: 2}
+  - keyString: north
+    exitDescription: East Hallway extends to the north. You can't see an end to the
+      hallway in this direction.
+    valueRoom: {fileID: 0}
+  InteractableObjectsInRoom: []

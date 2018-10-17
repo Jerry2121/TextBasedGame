@@ -9,14 +9,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a94cc17591f050e4badcbf86daf732e2, type: 3}
-  m_Name: Orb
+  m_Name: SpaceSuit
   m_EditorClassIdentifier: 
-  noun: orb
-  description: There is a glowing yellow Orb in the corner.
+  noun: spacesuit
+  description: There seems to be a big space suit laying on the floor. It looks undamaged.
   interactions:
   - inputAction: {fileID: 11400000, guid: c398d039e762a814899c09278b0bc234, type: 2}
-    textResponse: It so bright, you can't look at it for too long.
+    textResponse: Good for not dying in space!
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 6bd6102636b5266429debda9b8560cad, type: 2}
-    textResponse: You take the Orb. You feel empowered!
+    textResponse: You take the space suit!
     actionResponse: {fileID: 0}

@@ -17,19 +17,31 @@ public class TextInput : MonoBehaviour
 
     void AcceptStringInput(string userInput)
     {
+        if (inputField.text == string.Empty)
+        {
+            inputField.ActivateInputField();
+            return;
+        }
+
         userInput = userInput.ToLower();
         controller.LogStringWithReturn(userInput);
 
         char[] delimiterCharacters = { ' ' };
         string[] separatedInputWords = userInput.Split(delimiterCharacters);
+        bool matchingInputAction = false;
 
         for (int i = 0; i < controller.inputActions.Length; i++)
         {
             InputAction inputAction = controller.inputActions[i];
             if (inputAction.keyWord == separatedInputWords[0])
             {
+                matchingInputAction = true;
                 inputAction.RepsondToInput(controller, separatedInputWords);
             }
+        }
+        if(matchingInputAction == false)
+        {
+            controller.LogStringWithReturn(separatedInputWords[0] + " is not a valid command");
         }
 
         InputComplete();

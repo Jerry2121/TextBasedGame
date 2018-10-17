@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
+  m_Name: EastHallB
+  m_EditorClassIdentifier: 
+  description: You are in the B section of the East Hall. DEAD END FOR NOW
+  roomName: east hall b
+  exits:
+  - keyString: south
+    exitDescription: To the south, East Hallway stops and there is a door on the west-side
+      wall.
+    valueRoom: {fileID: 11400000, guid: ba97db2eff93f4f46baec32b01a4ca98, type: 2}
+  InteractableObjectsInRoom: []

@@ -9,14 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
-  m_Name: Cryochamber
+  m_Name: WestHall1B
   m_EditorClassIdentifier: 
-  description: 'You find yourself in the cryochamber. Cryopods line the north and
-    south walls, all of them empty. '
-  roomName: cryochamber
+  description: You are in the 1A Section of the West Hall.
+  roomName: 
   exits:
-  - keyString: east
-    exitDescription: There is a door to the east, with the words "East Hall A" above
-      it.
+  - keyString: south
+    exitDescription: The hallway extends to the south.
     valueRoom: {fileID: 11400000, guid: 85dc00037a00b0841b3cd0b6ba27e720, type: 2}
+  - keyString: west
+    exitDescription: THIS IS TEMPORARY. BUT GO WEST TO ENTER THE LIVING QUARTERS.
+    valueRoom: {fileID: 11400000, guid: 52cc5296ca5862346b1334a8305d88e5, type: 2}
   InteractableObjectsInRoom: []

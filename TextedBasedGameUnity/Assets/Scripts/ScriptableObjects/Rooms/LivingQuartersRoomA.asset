@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
+  m_Name: LivingQuartersRoomA
+  m_EditorClassIdentifier: 
+  description: You find yourself in a neatly organized room. There are a couple of
+    small bookcases against the wall opposite the door. There is a keycard on the
+    nightstand.
+  roomName: living quarters room a
+  exits:
+  - keyString: east
+    exitDescription: To the east there is a door leading back to the hallway.
+    valueRoom: {fileID: 11400000, guid: 30eda47e351f4e24db829592823f4d78, type: 2}
+  InteractableObjectsInRoom:
+  - {fileID: 11400000, guid: 709b38a8a7968cc47aa0e1719e5981e7, type: 2}

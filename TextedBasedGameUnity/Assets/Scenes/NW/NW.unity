@@ -465,6 +465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   usableItemList:
   - {fileID: 11400000, guid: 7e77e06ae5c288d4cb6da996fccae0cb, type: 2}
+  - {fileID: 11400000, guid: 709b38a8a7968cc47aa0e1719e5981e7, type: 2}
   nounsInRoom: []
 --- !u!114 &1129099185
 MonoBehaviour:

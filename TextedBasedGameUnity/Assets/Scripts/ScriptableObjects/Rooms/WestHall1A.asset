@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
+  m_Name: WestHall1A
+  m_EditorClassIdentifier: 
+  description: You are in the 1A Section of the West Hall.
+  roomName: west hall 1a
+  exits:
+  - keyString: west
+    exitDescription: To the west there is a door leading into the medbay.
+    valueRoom: {fileID: 11400000, guid: ad724add48453064cad0ff53f7b4eed7, type: 2}
+  - keyString: east
+    exitDescription: To the east, the hall extends into the central hallway.
+    valueRoom: {fileID: 11400000, guid: ba97db2eff93f4f46baec32b01a4ca98, type: 2}
+  - keyString: north
+    exitDescription: To the north, the West Hall continues.
+    valueRoom: {fileID: 11400000, guid: 30eda47e351f4e24db829592823f4d78, type: 2}
+  InteractableObjectsInRoom: []

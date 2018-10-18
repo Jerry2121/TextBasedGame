@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
+  m_Name: MedbayV2
+  m_EditorClassIdentifier: 
+  description: You find yourself in the Medical Bay of the station.
+  roomName: medbay v2
+  exits:
+  - keyString: east
+    exitDescription: To the east is an exit back into the West Hall
+    valueRoom: {fileID: 0}
+  - keyString: south
+    exitDescription: To the south there's a curtain in the corner of the room that
+      appears to lead to a changing area.
+    valueRoom: {fileID: 11400000, guid: 0667750903158724dae647c9dae9c04a, type: 2}
+  - keyString: west
+    exitDescription: To the west is a door, now unlocked.
+    valueRoom: {fileID: 11400000, guid: 415040ce573b2d74b9e75631714e9bc6, type: 2}
+  InteractableObjectsInRoom: []

@@ -125,6 +125,18 @@ public class InteractableItems : MonoBehaviour {
             nounsInInventory.Add(noun);
             nounsInRoom.Remove(noun);
             AddActionResponsesToUseDictionary();
+
+            Interaction[] itemInteractions = GetInteractableObjectFromUsableList(noun).interactions;
+            for (int i = 0; i < itemInteractions.Length; i++)
+            {
+
+                if (itemInteractions[i].inputAction.keyWord == "take")
+                {
+                    controller.IncreaseScore(itemInteractions[i].scoreGiven);
+                }
+            }
+            controller.IncreaseMoves();
+
             return takeDictionary;
         }
         else
@@ -150,6 +162,8 @@ public class InteractableItems : MonoBehaviour {
                 }
                 else
                 {
+                    controller.IncreaseMoves();
+
                     Interaction[] itemInteractions = GetInteractableObjectFromUsableList(nounToUse).interactions;
                     for (int i = 0; i < itemInteractions.Length; i++)
                     {

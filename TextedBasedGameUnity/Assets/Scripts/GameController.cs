@@ -96,6 +96,7 @@ public class GameController : MonoBehaviour {
             return verbDictionary[noun];
         }
 
+        IncreaseMoves();
         return "You can't " + verb + " " + noun;
     }
 
@@ -134,9 +135,9 @@ public class GameController : MonoBehaviour {
         score += num;
         scoreText.text = "Score: " + score.ToString();
     }
-    public void IncreaseMoves(int num)
+    public void IncreaseMoves()
     {
-        moves += num;
+        moves ++;
         moveText.text = "Moves: " + moves.ToString();
     }
 }

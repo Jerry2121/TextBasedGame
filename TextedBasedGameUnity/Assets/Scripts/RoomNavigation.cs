@@ -32,6 +32,7 @@ public class RoomNavigation : MonoBehaviour {
             currentRoom = exitDictionary[directionNoun];
             controller.LogStringWithReturn("You head off to the " + directionNoun);
             controller.DisplayRoomText();
+            controller.IncreaseMoves();
         }
         else
         {

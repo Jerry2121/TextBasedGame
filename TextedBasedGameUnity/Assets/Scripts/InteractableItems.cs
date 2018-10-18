@@ -25,7 +25,7 @@ public class InteractableItems : MonoBehaviour {
     {
         InteractableObject interactableInRoom = currentRoom.InteractableObjectsInRoom[i];
 
-        if(nounsInInventory.Contains(interactableInRoom.noun) == false)
+        if (nounsInInventory.Contains(interactableInRoom.noun) == false)
         {
             nounsInRoom.Add(interactableInRoom.noun);
             return interactableInRoom.description;
@@ -52,7 +52,7 @@ public class InteractableItems : MonoBehaviour {
                 if (interaction.actionResponse == null)
                     continue;
 
-                if(useDictionary.ContainsKey(noun) == false)
+                if (useDictionary.ContainsKey(noun) == false)
                 {
                     useDictionary.Add(noun, interaction.actionResponse);
                 }
@@ -76,26 +76,31 @@ public class InteractableItems : MonoBehaviour {
         {
             controller.LogStringWithReturn("You look in your backpack, inside you have: ");
 
-            for (int i = 0; i < nounsInInventory.Count; i++)
-            {
-                int nounsPerLine = 1;
-                if (nounsInInventory.Count > 5)
-                {
-                    int value = nounsInInventory.Count % 5;
-                    nounsPerLine = value + 2;
-                }
+            int nounsPerLine = 1;
 
-                if (nounsPerLine > 1)
+            if (nounsInInventory.Count > 5)
+            {
+                int value = nounsInInventory.Count / 5;
+                nounsPerLine = value + 1;
+
+
+                for (int i = 0; i < nounsInInventory.Count; i++)
                 {
                     string foo = "";
                     for (int j = 0; j < nounsPerLine; j++)
                     {
-                        foo += nounsInInventory[i + j];
-                        //i++;
+                        foo += nounsInInventory[i + j] + ", ";
                     }
+                    i++;
+                    controller.LogStringWithReturn(foo += "\n");
                 }
-                else
+            }
+            else
+            {
+                for (int i = 0; i < nounsInInventory.Count; i++)
+                {
                     controller.LogStringWithReturn(nounsInInventory[i]);
+                }
             }
         }
         else

@@ -16,7 +16,7 @@ MonoBehaviour:
   exits:
   - keyString: east
     exitDescription: To the east is an exit back into the West Hall
-    valueRoom: {fileID: 0}
+    valueRoom: {fileID: 11400000, guid: 85dc00037a00b0841b3cd0b6ba27e720, type: 2}
   - keyString: south
     exitDescription: To the south there's a curtain in the corner of the room that
       appears to lead to a changing area.

@@ -9,13 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
-  m_Name: OperatingRoom
+  m_Name: WestHall1D
   m_EditorClassIdentifier: 
-  description: It appears to be an operating room, with complicated looking devices
-    surrounding a bed in the middle of the room.
-  roomName: operating room
-  exits:
-  - keyString: west
-    exitDescription: The door leads back into the general area.
-    valueRoom: {fileID: 11400000, guid: 85dc00037a00b0841b3cd0b6ba27e720, type: 2}
+  description: 
+  roomName: 
+  exits: []
   InteractableObjectsInRoom: []

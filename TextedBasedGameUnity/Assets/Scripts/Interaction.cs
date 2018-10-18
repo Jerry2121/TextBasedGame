@@ -8,6 +8,7 @@ public class Interaction {
     public InputAction inputAction;
     [TextArea]
     public string textResponse;
+    public int scoreGiven = 0;
     public ActionResponse actionResponse;
 
 }

@@ -148,6 +148,19 @@ public class InteractableItems : MonoBehaviour {
                 {
                     controller.LogStringWithReturn("Hmm. Nothing happens.");
                 }
+                else
+                {
+                    Interaction[] itemInteractions = GetInteractableObjectFromUsableList(nounToUse).interactions;
+                    for (int i = 0; i < itemInteractions.Length; i++)
+                    {
+
+                        if (itemInteractions[i].inputAction.keyWord == "use")
+                        {
+
+                            controller.IncreaseScore(itemInteractions[i].scoreGiven);
+                        }
+                    }
+                }
             }
             else
             {

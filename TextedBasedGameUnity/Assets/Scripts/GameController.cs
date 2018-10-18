@@ -8,6 +8,9 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour {
 
     public Text displayText;
+    public Text scoreText;
+    public Text moveText;
+
     public InputAction[] inputActions;
 
     [HideInInspector] public RoomNavigation roomNavigation;
@@ -15,6 +18,9 @@ public class GameController : MonoBehaviour {
     [HideInInspector] public InteractableItems interactableItems;
 
     List<string> actionLog = new List<string>();
+
+    int score = 0;
+    int moves = 0;
 
 	// Use this for initialization
 	void Awake ()
@@ -115,28 +121,22 @@ public class GameController : MonoBehaviour {
     {
         string path = separatedInputWords[1]+ ".txt";
 
-        // This text is added only once to the file.
-        //if (!File.Exists(path))
-        //{
-        // Create a file to write to.
-        //     string createText = displayText.text;
-        //     File.WriteAllText(path, createText);
         string[] actionLogArray = actionLog.ToArray();
 
         string[] createText = (actionLogArray);
         File.WriteAllLines(path, createText);
-        //}
-
-        // This text is always added, making the file longer over time
-        // if it is not deleted.
-        /*string appendText = "This is extra text" + Environment.NewLine;
-        File.AppendAllText(path, appendText);
-
-        // Open the file to read from.
-        string readText = File.ReadAllText(path);
-        Debug.Log(readText);*/
 
         LogStringWithReturn("Game history logged to " + path);
     }
 
+    public void IncreaseScore(int num)
+    {
+        score += num;
+        scoreText.text = "Score: " + score.ToString();
+    }
+    public void IncreaseMoves(int num)
+    {
+        moves += num;
+        moveText.text = "Moves: " + moves.ToString();
+    }
 }

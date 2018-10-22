@@ -118,73 +118,85 @@ public class InteractableItems : MonoBehaviour {
 
     public Dictionary<string, string> Take (string[] separatedInputWords)
     {
-        string noun = separatedInputWords[1];
-
-        if (nounsInRoom.Contains(noun))
+        if (separatedInputWords.Length > 1)
         {
-            nounsInInventory.Add(noun);
-            nounsInRoom.Remove(noun);
-            AddActionResponsesToUseDictionary();
+            string noun = separatedInputWords[1];
 
-            Interaction[] itemInteractions = GetInteractableObjectFromUsableList(noun).interactions;
-            for (int i = 0; i < itemInteractions.Length; i++)
+            if (nounsInRoom.Contains(noun))
             {
+                nounsInInventory.Add(noun);
+                nounsInRoom.Remove(noun);
+                AddActionResponsesToUseDictionary();
 
-                if (itemInteractions[i].inputAction.keyWord == "take")
+                Interaction[] itemInteractions = GetInteractableObjectFromUsableList(noun).interactions;
+                for (int i = 0; i < itemInteractions.Length; i++)
                 {
-                    controller.IncreaseScore(itemInteractions[i].scoreGiven);
-                }
-            }
-            controller.IncreaseMoves();
 
-            return takeDictionary;
+                    if (itemInteractions[i].inputAction.keyWord == "take")
+                    {
+                        controller.IncreaseScore(itemInteractions[i].scoreGiven);
+                    }
+                }
+                controller.IncreaseMoves();
+
+                return takeDictionary;
+            }
+            else
+            {
+                controller.LogStringWithReturn("There is no " + noun + " here to take.");
+                return null;
+            }
         }
         else
         {
-            controller.LogStringWithReturn("There is no " + noun + " here to take.");
+            controller.LogStringWithReturn("take what?");
             return null;
         }
     }
 
     public void UseItem(string[] separatedInputWords)
     {
-        string nounToUse = separatedInputWords[1];
-
-        if (nounsInInventory.Contains(nounToUse) )
+        if (separatedInputWords.Length > 1)
         {
-            if (useDictionary.ContainsKey(nounToUse))
-            {
-                bool actionResult = useDictionary[nounToUse].DoActionResponse(controller);
+            string nounToUse = separatedInputWords[1];
 
-                if(actionResult == false)
+            if (nounsInInventory.Contains(nounToUse))
+            {
+                if (useDictionary.ContainsKey(nounToUse))
                 {
-                    controller.LogStringWithReturn("Hmm. Nothing happens.");
+                    bool actionResult = useDictionary[nounToUse].DoActionResponse(controller);
+
+                    if (actionResult == false)
+                    {
+                        controller.LogStringWithReturn("Hmm. Nothing happens.");
+                    }
+                    else
+                    {
+                        controller.IncreaseMoves();
+
+                        Interaction[] itemInteractions = GetInteractableObjectFromUsableList(nounToUse).interactions;
+                        for (int i = 0; i < itemInteractions.Length; i++)
+                        {
+
+                            if (itemInteractions[i].inputAction.keyWord == "use")
+                            {
+
+                                controller.IncreaseScore(itemInteractions[i].scoreGiven);
+                            }
+                        }
+                    }
                 }
                 else
                 {
-                    controller.IncreaseMoves();
-
-                    Interaction[] itemInteractions = GetInteractableObjectFromUsableList(nounToUse).interactions;
-                    for (int i = 0; i < itemInteractions.Length; i++)
-                    {
-
-                        if (itemInteractions[i].inputAction.keyWord == "use")
-                        {
-
-                            controller.IncreaseScore(itemInteractions[i].scoreGiven);
-                        }
-                    }
+                    controller.LogStringWithReturn("You can't use the " + nounToUse);
                 }
             }
             else
             {
-                controller.LogStringWithReturn("You can't use the " + nounToUse);
+                controller.LogStringWithReturn("There is no " + nounToUse + " in your inventory");
             }
         }
         else
-        {
-            controller.LogStringWithReturn("There is no " + nounToUse + " in your inventory");
-        }
+            controller.LogStringWithReturn("use what?");
     }
-
 }

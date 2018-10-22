@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
+  m_Name: Space
+  m_EditorClassIdentifier: 
+  description: You decided not to land on the station. You ran out of fuel and oxegen
+    and asphyxiated in cold darkess of outer space
+  roomName: outer space
+  exits:
+  - keyString: start
+    exitDescription: To play again, go start
+    valueRoom: {fileID: 11400000, guid: 7586ed9f39e0e6d48b0fe970c895fbed, type: 2}
+  InteractableObjectsInRoom: []

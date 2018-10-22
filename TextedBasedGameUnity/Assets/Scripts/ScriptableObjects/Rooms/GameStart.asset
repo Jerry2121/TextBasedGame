@@ -20,10 +20,15 @@ MonoBehaviour:
     \       . .   . ,* . . .*   . (    *  ,     .    \r\n        *      .  .*..  .
     \ ( * .        ,     *, \r\n      /     .. ,., ,, .      ,*,*         ,    ,.\r\n
     \    ,      ,/* .     ,,                    .   .\r\n       ,. ,  .,,,.                             .
-    \r\n    .      /,                                   \n\n\n"
+    \r\n    .      /,                                   \n\nYour ship is almost out
+    of fuel and oxygen, but you've found and old space station you may be able to
+    find supplies in\n"
   roomName: game start
   exits:
   - keyString: hangar
     exitDescription: Go to the Space station hangar
     valueRoom: {fileID: 11400000, guid: 5be09444995efef4fac3f5564108be1c, type: 2}
+  - keyString: space
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: e3aa64b92c087f8498da4ef761284f30, type: 2}
   InteractableObjectsInRoom: []

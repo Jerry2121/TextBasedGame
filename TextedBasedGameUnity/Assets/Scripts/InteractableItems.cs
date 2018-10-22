@@ -140,9 +140,9 @@ public class InteractableItems : MonoBehaviour {
 
             if (nounsInRoom.Contains(noun))
             {
-                nounsInInventory.Add(noun);
+                /*nounsInInventory.Add(noun);
                 nounsInRoom.Remove(noun);
-                AddActionResponsesToUseDictionary();
+                AddActionResponsesToUseDictionary();*/
 
                 Interaction[] itemInteractions = GetInteractableObjectFromUsableList(noun).interactions;
                 for (int i = 0; i < itemInteractions.Length; i++)
@@ -150,6 +150,10 @@ public class InteractableItems : MonoBehaviour {
 
                     if (itemInteractions[i].inputAction.keyWord == "take")
                     {
+                        nounsInInventory.Add(noun);
+                        nounsInRoom.Remove(noun);
+                        AddActionResponsesToUseDictionary();
+
                         controller.IncreaseScore(itemInteractions[i].scoreGiven);
                     }
                 }

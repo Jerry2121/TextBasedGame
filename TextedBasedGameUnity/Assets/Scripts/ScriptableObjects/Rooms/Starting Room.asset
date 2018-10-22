@@ -19,5 +19,6 @@ MonoBehaviour:
   - keyString: north
     exitDescription: You see a dark doorway to the north
     valueRoom: {fileID: 11400000, guid: 9aad41e1720cdef48b80052b3a0d2de3, type: 2}
+    requiredObjects: []
   InteractableObjectsInRoom:
   - {fileID: 11400000, guid: 7e77e06ae5c288d4cb6da996fccae0cb, type: 2}

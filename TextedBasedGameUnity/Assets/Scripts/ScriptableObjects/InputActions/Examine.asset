@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Name: Examine
   m_EditorClassIdentifier: 
   keyWord: examine
+  description: (item) - examines the item

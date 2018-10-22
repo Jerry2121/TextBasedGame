@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Name: Use
   m_EditorClassIdentifier: 
   keyWord: use
+  description: (item) - attempt to use the item

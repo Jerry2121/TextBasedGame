@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Name: Equipment
   m_EditorClassIdentifier: 
   keyWord: equipment
+  description: '- look at equipment'

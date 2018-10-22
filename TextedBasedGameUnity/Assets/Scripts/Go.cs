@@ -7,6 +7,9 @@ public class Go : InputAction
 {
     public override void RepsondToInput(GameController controller, string[] separatedInputWords)
     {
-        controller.roomNavigation.AttemptToChangeRooms(separatedInputWords[1]);
+        if (separatedInputWords.Length > 1)
+            controller.roomNavigation.AttemptToChangeRooms(separatedInputWords[1]);
+        else
+            controller.LogStringWithReturn("go where?");
     }
 }

@@ -9,17 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
-  m_Name: WestHall1B
+  m_Name: Kitchen
   m_EditorClassIdentifier: 
-  description: 'West Hall 1B.
-
-    (Description)'
-  roomName: west hall 1b
+  description: 
+  roomName: kitchen
   exits:
-  - keyString: south
-    exitDescription: The hallway extends to the south.
-    valueRoom: {fileID: 11400000, guid: 85dc00037a00b0841b3cd0b6ba27e720, type: 2}
+  - keyString: west
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: 13b14ba273adb544289958c884922422, type: 2}
   - keyString: north
-    exitDescription: The hallway extends to the north.
-    valueRoom: {fileID: 11400000, guid: b17e25544ad5f3c43a14004ab30c0c95, type: 2}
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: 0d5f0bd194034274d82ff848f67dbf79, type: 2}
   InteractableObjectsInRoom: []

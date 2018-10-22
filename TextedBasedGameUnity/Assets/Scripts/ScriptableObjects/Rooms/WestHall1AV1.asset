@@ -11,16 +11,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
   m_Name: WestHall1A
   m_EditorClassIdentifier: 
-  description: You are in the 1A Section of the West Hall.
+  description: 'West Hall 1A.
+
+    (Description)'
   roomName: west hall 1a
   exits:
-  - keyString: west
-    exitDescription: To the west there is a door leading into the medbay.
-    valueRoom: {fileID: 11400000, guid: ad724add48453064cad0ff53f7b4eed7, type: 2}
-  - keyString: east
-    exitDescription: To the east, the hall extends into the central hallway.
-    valueRoom: {fileID: 11400000, guid: 58fb1959576210f4aa10065e22a5da97, type: 2}
-  - keyString: north
-    exitDescription: To the north, the West Hall continues.
+  - keyString: south
+    exitDescription: The hallway extends to the south.
     valueRoom: {fileID: 11400000, guid: 30eda47e351f4e24db829592823f4d78, type: 2}
+  - keyString: west
+    exitDescription: There's a door to the west.
+    valueRoom: {fileID: 11400000, guid: 52cc5296ca5862346b1334a8305d88e5, type: 2}
   InteractableObjectsInRoom: []

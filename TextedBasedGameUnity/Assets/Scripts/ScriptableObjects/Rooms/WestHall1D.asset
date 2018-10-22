@@ -11,7 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
   m_Name: WestHall1D
   m_EditorClassIdentifier: 
-  description: You are in the 1D Section of the West Hall.
+  description: 'West Hall 1D.
+
+    (Description)'
   roomName: west hall 1d
   exits:
   - keyString: south

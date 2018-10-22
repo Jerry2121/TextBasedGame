@@ -9,15 +9,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
-  m_Name: CentralHall1D
+  m_Name: SouthHall1E
   m_EditorClassIdentifier: 
-  description: You are in the 1D section of the Central Hall.
-  roomName: central hall 1d
+  description: 'South Hall 1E.
+
+    (Description)'
+  roomName: south hall 1e
   exits:
   - keyString: west
     exitDescription: The hallway extends to the west.
-    valueRoom: {fileID: 11400000, guid: 538b3692c91984041b133f2689e0dd19, type: 2}
+    valueRoom: {fileID: 11400000, guid: 9ceba0380be32f445817bcc9295b7ef6, type: 2}
   - keyString: east
     exitDescription: The hallway extends to the east.
-    valueRoom: {fileID: 11400000, guid: 4bf9086facb45ca41a1b43775dc628c7, type: 2}
+    valueRoom: {fileID: 11400000, guid: ba97db2eff93f4f46baec32b01a4ca98, type: 2}
   InteractableObjectsInRoom: []

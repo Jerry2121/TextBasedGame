@@ -9,16 +9,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
-  m_Name: Cryochamber
+  m_Name: NorthHall1E
   m_EditorClassIdentifier: 
-  description: 'Cryochamber
+  description: 'North Hall 1E.
 
-    Cryopods line the north and south walls, all of them empty. '
-  roomName: cryochamber
+    There is a blast door blocking the way to the west hall, separating the damaged
+    section of the next section of the hall from this one.'
+  roomName: north hall 1e
   exits:
   - keyString: east
-    exitDescription: There is a door to the east, with the words "East Hall A" above
-      it.
+    exitDescription: The hallway extends to the east
+    valueRoom: {fileID: 11400000, guid: e89845826d01d6c4c909a6724a420f1e, type: 2}
+    requiredObjects: []
+  - keyString: west
+    exitDescription: A spacesuit would allow you to continue west.
     valueRoom: {fileID: 11400000, guid: 85dc00037a00b0841b3cd0b6ba27e720, type: 2}
     requiredObjects: []
   InteractableObjectsInRoom: []

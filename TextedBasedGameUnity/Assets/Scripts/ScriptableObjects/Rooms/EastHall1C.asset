@@ -11,13 +11,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
   m_Name: EastHall1C
   m_EditorClassIdentifier: 
-  description: You are in the 1C section of the East Hall.
+  description: 'East Hall 1C.
+
+    (Description)'
   roomName: east hall 1c
   exits:
   - keyString: south
     exitDescription: The hallway extends to the south.
     valueRoom: {fileID: 11400000, guid: ff8b8845b4c10b343b7213c9d634c6ce, type: 2}
+    requiredObjects: []
   - keyString: north
     exitDescription: The hallway extends to the north.
     valueRoom: {fileID: 11400000, guid: dc78e6f7e65d332479fd0b1ec43e0ca0, type: 2}
+    requiredObjects: []
   InteractableObjectsInRoom: []

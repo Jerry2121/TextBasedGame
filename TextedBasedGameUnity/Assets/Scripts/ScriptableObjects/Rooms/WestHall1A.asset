@@ -9,17 +9,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
-  m_Name: WestHall1AV1
+  m_Name: WestHall1A
   m_EditorClassIdentifier: 
   description: 'West Hall 1A.
 
-    (Description)'
+    There is a blast door blocking the way to the east hall, separating the damaged
+    section of the next section of the hall from this one.'
   roomName: west hall 1a
   exits:
   - keyString: south
     exitDescription: The hallway extends to the south.
     valueRoom: {fileID: 11400000, guid: 30eda47e351f4e24db829592823f4d78, type: 2}
+    requiredObjects: []
   - keyString: west
     exitDescription: There's a door to the west.
     valueRoom: {fileID: 11400000, guid: 52cc5296ca5862346b1334a8305d88e5, type: 2}
+    requiredObjects: []
+  - keyString: east
+    exitDescription: A spacesuit would allow you to continue east.
+    valueRoom: {fileID: 11400000, guid: 17b81a85673fe4e4a8f009385aedc2f1, type: 2}
+    requiredObjects:
+    - {fileID: 11400000, guid: 8b04f00a44dac9a4c8787fe674613a57, type: 2}
   InteractableObjectsInRoom: []

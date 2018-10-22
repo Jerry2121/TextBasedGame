@@ -19,7 +19,13 @@ MonoBehaviour:
   - keyString: west
     exitDescription: The hallway extends to the west.
     valueRoom: {fileID: 11400000, guid: d9e63189acb46c64ba87f47d4c2cba90, type: 2}
+    requiredObjects: []
   - keyString: east
     exitDescription: The hallway extends to the east.
     valueRoom: {fileID: 11400000, guid: 9ceba0380be32f445817bcc9295b7ef6, type: 2}
+    requiredObjects: []
+  - keyString: south
+    exitDescription: There is a door to the south leading to the generator room.
+    valueRoom: {fileID: 11400000, guid: 2ed3329c022d89e4f9c50d7b5829b4ef, type: 2}
+    requiredObjects: []
   InteractableObjectsInRoom: []

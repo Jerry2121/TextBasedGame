@@ -9,18 +9,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
-  m_Name: MedbayV1
+  m_Name: Medbay
   m_EditorClassIdentifier: 
-  description: 'You find yourself in the Medical Bay of the station.
-
-    There is a door to the west, but it appears to be locked.'
+  description: You find yourself in the Medical Bay of the station.
   roomName: medbay
   exits:
   - keyString: east
     exitDescription: To the east is an exit back into the East Hall
-    valueRoom: {fileID: 11400000, guid: ff8b8845b4c10b343b7213c9d634c6ce, type: 2}
+    valueRoom: {fileID: 11400000, guid: 00b272b7e4146df4990800fbb2f6162a, type: 2}
+    requiredObjects: []
   - keyString: south
     exitDescription: To the south there's a curtain in the corner of the room that
       appears to lead to a changing area.
     valueRoom: {fileID: 11400000, guid: 0667750903158724dae647c9dae9c04a, type: 2}
+    requiredObjects: []
+  - keyString: west
+    exitDescription: There is a door to the west leading into the operating room,
+      however it requires a keycard.
+    valueRoom: {fileID: 11400000, guid: 415040ce573b2d74b9e75631714e9bc6, type: 2}
+    requiredObjects:
+    - {fileID: 11400000, guid: 709b38a8a7968cc47aa0e1719e5981e7, type: 2}
   InteractableObjectsInRoom: []

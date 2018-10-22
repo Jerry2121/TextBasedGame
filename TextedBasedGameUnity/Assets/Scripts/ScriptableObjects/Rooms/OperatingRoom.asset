@@ -15,7 +15,8 @@ MonoBehaviour:
     surrounding a bed in the middle of the room.
   roomName: operating room
   exits:
-  - keyString: west
-    exitDescription: The door leads back into the general area.
-    valueRoom: {fileID: 11400000, guid: 85dc00037a00b0841b3cd0b6ba27e720, type: 2}
+  - keyString: east
+    exitDescription: A door to the east leads back into the medbay's general area.
+    valueRoom: {fileID: 11400000, guid: ad724add48453064cad0ff53f7b4eed7, type: 2}
+    requiredObjects: []
   InteractableObjectsInRoom: []

@@ -20,4 +20,8 @@ MonoBehaviour:
     exitDescription: The hallway extends to the south.
     valueRoom: {fileID: 11400000, guid: dc78e6f7e65d332479fd0b1ec43e0ca0, type: 2}
     requiredObjects: []
+  - keyString: west
+    exitDescription: The hallway extends to the west.
+    valueRoom: {fileID: 11400000, guid: 098a7f818b1620d44a570e9cf933cd0b, type: 2}
+    requiredObjects: []
   InteractableObjectsInRoom: []

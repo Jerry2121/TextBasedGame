@@ -15,5 +15,13 @@ MonoBehaviour:
 
     (Description)'
   roomName: north hall 1a
-  exits: []
+  exits:
+  - keyString: south
+    exitDescription: The hallway extends to the south.
+    valueRoom: {fileID: 11400000, guid: 1f9a12555c07234408264f565c0277ac, type: 2}
+    requiredObjects: []
+  - keyString: west
+    exitDescription: The hallway extends to the west.
+    valueRoom: {fileID: 11400000, guid: 6843f0d6091b7fe44b38adc6f7b3cc47, type: 2}
+    requiredObjects: []
   InteractableObjectsInRoom: []

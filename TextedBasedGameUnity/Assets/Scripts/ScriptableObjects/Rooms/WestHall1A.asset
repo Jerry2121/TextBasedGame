@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: 'West Hall 1A.
 
-    There is a blast door blocking the way to the east hall, separating the damaged
-    section of the next section of the hall from this one.'
+    There is a blast door blocking the way to the east hall, separating the next damaged
+    section of the hall from this one.'
   roomName: west hall 1a
   exits:
   - keyString: south
@@ -22,13 +22,12 @@ MonoBehaviour:
     valueRoom: {fileID: 11400000, guid: 30eda47e351f4e24db829592823f4d78, type: 2}
     requiredObjects: []
   - keyString: west
-    exitDescription: There's a door to the west.
+    exitDescription: There's a door to the west leading into the living quarters.
     valueRoom: {fileID: 11400000, guid: 52cc5296ca5862346b1334a8305d88e5, type: 2}
     requiredObjects: []
   - keyString: east
-    exitDescription: A spacesuit would allow you to continue east.
+    exitDescription: A spacesuit would allow you to continue east into the North Hallway.
     valueRoom: {fileID: 11400000, guid: 17b81a85673fe4e4a8f009385aedc2f1, type: 2}
     requiredObjects:
     - {fileID: 11400000, guid: 8b04f00a44dac9a4c8787fe674613a57, type: 2}
-  InteractableObjectsInRoom:
-  - {fileID: 11400000, guid: 8b04f00a44dac9a4c8787fe674613a57, type: 2}
+  InteractableObjectsInRoom: []

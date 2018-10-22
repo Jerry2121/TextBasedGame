@@ -26,13 +26,37 @@ public class RoomNavigation : MonoBehaviour {
 
     public void AttemptToChangeRooms(string directionNoun)
     {
+        Exit attemptedExit = null;
         directionNoun.ToLower();
         if (exitDictionary.ContainsKey(directionNoun))
         {
-            currentRoom = exitDictionary[directionNoun];
-            controller.LogStringWithReturn("You head off to the " + directionNoun);
-            controller.DisplayRoomText();
-            controller.IncreaseMoves();
+            for (int i = 0; i < currentRoom.exits.Length; i++)
+            {
+                if (currentRoom.exits[i].keyString == directionNoun)
+                    attemptedExit = currentRoom.exits[i];
+            }
+
+            if (attemptedExit.requiredObjects.Length > 1){
+                for (int i = 0; i < attemptedExit.requiredObjects.Length; i++)
+                {
+
+                    if (!controller.interactableItems.CheckInventoryOrEquiptment(attemptedExit.requiredObjects[i].noun))
+                    {
+                        controller.LogStringWithReturn("You missing some items or equipment you need to use that exit");
+                        return;
+                    }
+                }
+                currentRoom = exitDictionary[directionNoun];
+                controller.LogStringWithReturn("You head off to the " + directionNoun);
+                controller.DisplayRoomText();
+                controller.IncreaseMoves();
+            }
+            else{
+                currentRoom = exitDictionary[directionNoun];
+                controller.LogStringWithReturn("You head off to the " + directionNoun);
+                controller.DisplayRoomText();
+                controller.IncreaseMoves();
+            }
         }
         else
         {

@@ -7,7 +7,7 @@ public class Equipment : InputAction {
 
     public override void RepsondToInput(GameController controller, string[] separatedInputWords)
     {
-        throw new System.NotImplementedException();
+        controller.interactableItems.DisplayEquipment();
     }
 
 }

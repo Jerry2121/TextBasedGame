@@ -7,6 +7,7 @@ public class InteractableItems : MonoBehaviour {
     public List<InteractableObject> usableItemList;
     public Dictionary<string, string> examineDictionary = new Dictionary<string, string>();
     public Dictionary<string, string> takeDictionary = new Dictionary<string, string>();
+    public Dictionary<string, string> equipDictionary = new Dictionary<string, string>();
 
 
     [HideInInspector]
@@ -15,6 +16,7 @@ public class InteractableItems : MonoBehaviour {
     private Dictionary<string, ActionResponse> useDictionary = new Dictionary<string, ActionResponse>();
     private GameController controller;
     private List<string> nounsInInventory = new List<string>();
+    private List<string> nounsInEquipment = new List<string>();
 
     private void Awake()
     {
@@ -26,6 +28,19 @@ public class InteractableItems : MonoBehaviour {
         InteractableObject interactableInRoom = currentRoom.InteractableObjectsInRoom[i];
 
         if (nounsInInventory.Contains(interactableInRoom.noun) == false)
+        {
+            nounsInRoom.Add(interactableInRoom.noun);
+            return interactableInRoom.description;
+        }
+
+        return null;
+    }
+
+    public string GetObjectsNotInEquipment(Room currentRoom, int i)
+    {
+        InteractableObject interactableInRoom = currentRoom.InteractableObjectsInRoom[i];
+
+        if (nounsInEquipment.Contains(interactableInRoom.noun) == false)
         {
             nounsInRoom.Add(interactableInRoom.noun);
             return interactableInRoom.description;
@@ -111,6 +126,7 @@ public class InteractableItems : MonoBehaviour {
 
     public void ClearCollections()
     {
+        equipDictionary.Clear();
         takeDictionary.Clear();
         examineDictionary.Clear();
         nounsInRoom.Clear();
@@ -150,6 +166,84 @@ public class InteractableItems : MonoBehaviour {
         else
         {
             controller.LogStringWithReturn("take what?");
+            return null;
+        }
+    }
+
+    public void DisplayEquipment()
+    {
+        if (nounsInEquipment.Count >= 1)
+        {
+            controller.LogStringWithReturn("You have: ");
+
+            int nounsPerLine = 1;
+
+            if (nounsInEquipment.Count > 5)
+            {
+                int value = nounsInEquipment.Count / 5;
+                nounsPerLine = value + 1;
+
+
+                for (int i = 0; i < nounsInEquipment.Count; i++)
+                {
+                    string foo = "";
+                    for (int j = 0; j < nounsPerLine; j++)
+                    {
+                        foo += nounsInEquipment[i + j] + ", ";
+                    }
+                    i++;
+                    controller.LogStringWithReturn(foo += "\n");
+                }
+            }
+            else
+            {
+                for (int i = 0; i < nounsInEquipment.Count; i++)
+                {
+                    controller.LogStringWithReturn(nounsInEquipment[i]);
+                }
+            }
+            controller.LogStringWithReturn("equipped");
+        }
+        else
+        {
+            controller.LogStringWithReturn("You have nothing equipped");
+        }
+    }
+
+    public Dictionary<string, string> Equip(string[] separatedInputWords)
+    {
+        if (separatedInputWords.Length > 1)
+        {
+            string noun = separatedInputWords[1];
+
+            if (nounsInRoom.Contains(noun))
+            {
+                nounsInEquipment.Add(noun);
+                nounsInRoom.Remove(noun);
+                //AddActionResponsesToUseDictionary();
+
+                Interaction[] itemInteractions = GetInteractableObjectFromUsableList(noun).interactions;
+                for (int i = 0; i < itemInteractions.Length; i++)
+                {
+
+                    if (itemInteractions[i].inputAction.keyWord == "equip")
+                    {
+                        controller.IncreaseScore(itemInteractions[i].scoreGiven);
+                    }
+                }
+                controller.IncreaseMoves();
+
+                return equipDictionary;
+            }
+            else
+            {
+                controller.LogStringWithReturn("There is no " + noun + " here to equip.");
+                return null;
+            }
+        }
+        else
+        {
+            controller.LogStringWithReturn("equip what?");
             return null;
         }
     }
@@ -199,4 +293,12 @@ public class InteractableItems : MonoBehaviour {
         else
             controller.LogStringWithReturn("use what?");
     }
+
+    public bool CheckInventoryOrEquiptment(string nounToCheck)
+    {
+        if (nounsInInventory.Contains(nounToCheck) || nounsInEquipment.Contains(nounToCheck))
+            return true;
+        else return false;
+    }
+
 }

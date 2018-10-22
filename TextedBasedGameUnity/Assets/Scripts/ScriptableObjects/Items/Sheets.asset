@@ -11,6 +11,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a94cc17591f050e4badcbf86daf732e2, type: 3}
   m_Name: Sheets
   m_EditorClassIdentifier: 
-  noun: name
-  description: description in room
-  interactions: []
+  noun: sheets
+  description: There are some bed sheets laying down on top of one of the beds.
+  interactions:
+  - inputAction: {fileID: 11400000, guid: c398d039e762a814899c09278b0bc234, type: 2}
+    textResponse: They look like they have just been washed. It smells nice.
+    scoreGiven: 0
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 6bd6102636b5266429debda9b8560cad, type: 2}
+    textResponse: You take the bed sheets.
+    scoreGiven: 0
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9b52a0409cda0f6438edffd6974d5db3, type: 2}
+    textResponse: You use the bed sheets.
+    scoreGiven: 0
+    actionResponse: {fileID: 0}

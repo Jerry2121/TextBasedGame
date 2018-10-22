@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Name: Take
   m_EditorClassIdentifier: 
   keyWord: take
+  description: (item) - attempt to put the item in your inventory

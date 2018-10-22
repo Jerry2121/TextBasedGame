@@ -12,8 +12,20 @@ public class Help : InputAction {
         for (int i = 0; i < controller.inputActions.Length; i++)
         {
             if(controller.inputActions[i].keyWord != "help")
-                controller.LogStringWithReturn("\n" + controller.inputActions[i].keyWord);
+                controller.LogStringWithReturn(controller.inputActions[i].keyWord + " " + controller.inputActions[i].description);
         }
+
+        /*for (int i = 0; i < controller.inputActions.Length; i++)
+        {
+            string fullLine = "";
+            for (int j = 0; j < 2; j++)
+            {
+                fullLine += controller.inputActions[i + j].keyWord + ", ";
+            }
+            i++;
+            controller.LogStringWithReturn(fullLine += "\n");
+        }*/
+
     }
 
 }

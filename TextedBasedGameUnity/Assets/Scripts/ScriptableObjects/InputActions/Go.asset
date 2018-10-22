@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Name: Go
   m_EditorClassIdentifier: 
   keyWord: go
+  description: (direction/place) - go to the given direction or place

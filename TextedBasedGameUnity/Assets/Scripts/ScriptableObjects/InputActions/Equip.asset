@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Name: Equip
   m_EditorClassIdentifier: 
   keyWord: equip
+  description: (item) - Attempt to equip the item

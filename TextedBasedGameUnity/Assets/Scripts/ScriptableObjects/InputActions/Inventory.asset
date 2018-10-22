@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Name: Inventory
   m_EditorClassIdentifier: 
   keyWord: inventory
+  description: '- look at inventory'

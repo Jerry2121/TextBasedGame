@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Name: Look
   m_EditorClassIdentifier: 
   keyWord: look
+  description: '- describes room'

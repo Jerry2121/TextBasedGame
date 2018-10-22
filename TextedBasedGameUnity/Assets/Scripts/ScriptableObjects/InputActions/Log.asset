@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Name: Log
   m_EditorClassIdentifier: 
   keyWord: log
+  description: (filepath) - writes this game's history to a file

@@ -140,4 +140,17 @@ public class GameController : MonoBehaviour {
         moves ++;
         moveText.text = "Moves: " + moves.ToString();
     }
+
+    public void SaveGame()
+    {
+        throw new NotImplementedException();
+    }
 }
+
+public class SaveStateClass
+{
+    public string gameText;
+    public Room room;
+    public List<string> inventory;
+}
+

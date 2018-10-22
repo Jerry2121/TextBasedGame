@@ -9,15 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
-  m_Name: WestHall1E
+  m_Name: EastHall1C
   m_EditorClassIdentifier: 
-  description: You are in the 1E Section of the West Hall.
-  roomName: west hall 1e
+  description: You are in the 1C section of the East Hall.
+  roomName: east hall 1c
   exits:
   - keyString: south
     exitDescription: The hallway extends to the south.
-    valueRoom: {fileID: 11400000, guid: 30268b0cdad5735479139f2487a22cf5, type: 2}
-  - keyString: west
-    exitDescription: There's a door to the west that leads into the living quarters.
-    valueRoom: {fileID: 11400000, guid: 52cc5296ca5862346b1334a8305d88e5, type: 2}
+    valueRoom: {fileID: 11400000, guid: ff8b8845b4c10b343b7213c9d634c6ce, type: 2}
+  - keyString: north
+    exitDescription: The hallway extends to the north.
+    valueRoom: {fileID: 11400000, guid: dc78e6f7e65d332479fd0b1ec43e0ca0, type: 2}
   InteractableObjectsInRoom: []

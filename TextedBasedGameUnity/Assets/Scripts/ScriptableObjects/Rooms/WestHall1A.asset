@@ -19,7 +19,7 @@ MonoBehaviour:
     valueRoom: {fileID: 11400000, guid: ad724add48453064cad0ff53f7b4eed7, type: 2}
   - keyString: east
     exitDescription: To the east, the hall extends into the central hallway.
-    valueRoom: {fileID: 11400000, guid: ba97db2eff93f4f46baec32b01a4ca98, type: 2}
+    valueRoom: {fileID: 11400000, guid: 58fb1959576210f4aa10065e22a5da97, type: 2}
   - keyString: north
     exitDescription: To the north, the West Hall continues.
     valueRoom: {fileID: 11400000, guid: 30eda47e351f4e24db829592823f4d78, type: 2}

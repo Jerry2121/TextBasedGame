@@ -11,13 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
   m_Name: WestHall1B
   m_EditorClassIdentifier: 
-  description: You are in the 1A Section of the West Hall.
-  roomName: 
+  description: You are in the 1B Section of the West Hall.
+  roomName: west hall 1b
   exits:
   - keyString: south
     exitDescription: The hallway extends to the south.
     valueRoom: {fileID: 11400000, guid: 85dc00037a00b0841b3cd0b6ba27e720, type: 2}
-  - keyString: west
-    exitDescription: THIS IS TEMPORARY. BUT GO WEST TO ENTER THE LIVING QUARTERS.
-    valueRoom: {fileID: 11400000, guid: 52cc5296ca5862346b1334a8305d88e5, type: 2}
+  - keyString: north
+    exitDescription: The hallway extends to the north.
+    valueRoom: {fileID: 11400000, guid: b17e25544ad5f3c43a14004ab30c0c95, type: 2}
   InteractableObjectsInRoom: []

@@ -11,8 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
   m_Name: Starting Room
   m_EditorClassIdentifier: 
-  description: The dungeon door slams shut behind you. You are in a maze of twisty
-    little passages, all alike.
+  description: The hangar door closes behind you.
   roomName: starting room
   exits:
   - keyString: north

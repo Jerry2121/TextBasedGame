@@ -26,7 +26,7 @@ MonoBehaviour:
   roomName: game start
   exits:
   - keyString: hangar
-    exitDescription: Go to the Space station hangar
+    exitDescription: type "go hangar" to head to the Space Station Hangar.
     valueRoom: {fileID: 11400000, guid: 5be09444995efef4fac3f5564108be1c, type: 2}
   - keyString: space
     exitDescription: 

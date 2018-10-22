@@ -11,8 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
   m_Name: Space
   m_EditorClassIdentifier: 
-  description: You decided not to land on the station. You ran out of fuel and oxegen
-    and asphyxiated in cold darkess of outer space
+  description: 'Game Over
+
+    You decided not to land on the station. You ran out of fuel and oxegen and asphyxiated
+    in cold darkess of outer space'
   roomName: outer space
   exits:
   - keyString: start

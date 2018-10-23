@@ -13,15 +13,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: 'South Hall 1D
 
-    A pane of glass allows you to see out into the endless void of space.'
+    A pane of glass allows you to see out into the endless void of space.
+
+    There are a set of bars blocking the way further east.'
   roomName: south hall 1d
   exits:
   - keyString: west
-    exitDescription: The South Hallway extends to the east and west.
+    exitDescription: The South Hallway extends to the west.
     valueRoom: {fileID: 11400000, guid: 538b3692c91984041b133f2689e0dd19, type: 2}
     requiredObjects: []
   - keyString: east
-    exitDescription: 
+    exitDescription: You could continue east if you had a saw or something you
     valueRoom: {fileID: 11400000, guid: 4bf9086facb45ca41a1b43775dc628c7, type: 2}
-    requiredObjects: []
+    requiredObjects:
+    - {fileID: 11400000, guid: 9b5b31c715b6c7840825103a9fa4fbc5, type: 2}
   InteractableObjectsInRoom: []

@@ -451,6 +451,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentRoom: {fileID: 11400000, guid: 7586ed9f39e0e6d48b0fe970c895fbed, type: 2}
+  allRooms:
+  - {fileID: 11400000, guid: 13b14ba273adb544289958c884922422, type: 2}
+  - {fileID: 11400000, guid: 8b582125cc216874c8a07912722dd3f5, type: 2}
+  - {fileID: 11400000, guid: 111dbb16640d57a478da77c74e1c2191, type: 2}
+  - {fileID: 11400000, guid: ba97db2eff93f4f46baec32b01a4ca98, type: 2}
+  - {fileID: 11400000, guid: ff8b8845b4c10b343b7213c9d634c6ce, type: 2}
+  - {fileID: 11400000, guid: 534d3cede56864041b6babf61f52377e, type: 2}
+  - {fileID: 11400000, guid: dc78e6f7e65d332479fd0b1ec43e0ca0, type: 2}
+  - {fileID: 11400000, guid: 1f9a12555c07234408264f565c0277ac, type: 2}
+  - {fileID: 11400000, guid: 7e5cb85931d0a8742bfb2e1aa8bb0b5d, type: 2}
+  - {fileID: 11400000, guid: 7586ed9f39e0e6d48b0fe970c895fbed, type: 2}
+  - {fileID: 11400000, guid: 2ed3329c022d89e4f9c50d7b5829b4ef, type: 2}
+  - {fileID: 11400000, guid: 8aa74523ec95f794d8abdc5df368f557, type: 2}
+  - {fileID: 11400000, guid: 52cc5296ca5862346b1334a8305d88e5, type: 2}
+  - {fileID: 11400000, guid: ad724add48453064cad0ff53f7b4eed7, type: 2}
+  - {fileID: 11400000, guid: 0667750903158724dae647c9dae9c04a, type: 2}
+  - {fileID: 11400000, guid: 098a7f818b1620d44a570e9cf933cd0b, type: 2}
+  - {fileID: 11400000, guid: 6843f0d6091b7fe44b38adc6f7b3cc47, type: 2}
+  - {fileID: 11400000, guid: 7c70f510b4266ea45bb39597b78102ff, type: 2}
+  - {fileID: 11400000, guid: e89845826d01d6c4c909a6724a420f1e, type: 2}
+  - {fileID: 11400000, guid: 17b81a85673fe4e4a8f009385aedc2f1, type: 2}
+  - {fileID: 11400000, guid: 415040ce573b2d74b9e75631714e9bc6, type: 2}
+  - {fileID: 11400000, guid: 9aad41e1720cdef48b80052b3a0d2de3, type: 2}
+  - {fileID: 11400000, guid: 1b6bbd76ac21a314498ba99a0e26562c, type: 2}
+  - {fileID: 11400000, guid: 0d5f0bd194034274d82ff848f67dbf79, type: 2}
+  - {fileID: 11400000, guid: 58fb1959576210f4aa10065e22a5da97, type: 2}
+  - {fileID: 11400000, guid: d9e63189acb46c64ba87f47d4c2cba90, type: 2}
+  - {fileID: 11400000, guid: 538b3692c91984041b133f2689e0dd19, type: 2}
+  - {fileID: 11400000, guid: 9ceba0380be32f445817bcc9295b7ef6, type: 2}
+  - {fileID: 11400000, guid: 4bf9086facb45ca41a1b43775dc628c7, type: 2}
+  - {fileID: 11400000, guid: e3aa64b92c087f8498da4ef761284f30, type: 2}
+  - {fileID: 11400000, guid: 5be09444995efef4fac3f5564108be1c, type: 2}
+  - {fileID: 11400000, guid: 85dc00037a00b0841b3cd0b6ba27e720, type: 2}
+  - {fileID: 11400000, guid: 30eda47e351f4e24db829592823f4d78, type: 2}
+  - {fileID: 11400000, guid: b17e25544ad5f3c43a14004ab30c0c95, type: 2}
+  - {fileID: 11400000, guid: 30268b0cdad5735479139f2487a22cf5, type: 2}
+  - {fileID: 11400000, guid: 00b272b7e4146df4990800fbb2f6162a, type: 2}
 --- !u!114 &668047748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -539,10 +576,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5b2ed2cf08ca2c47bfe5ed86bc65498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameText: 
-  room: {fileID: 0}
-  inventory: []
-  equipment: []
 --- !u!1 &971444941
 GameObject:
   m_ObjectHideFlags: 0

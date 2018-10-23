@@ -70,6 +70,7 @@ public class SaveLoadGame : MonoBehaviour {
 
 }
 
+[System.Serializable]
 public class GameStateInfo
 {
     public string gameText;

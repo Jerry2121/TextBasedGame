@@ -7,7 +7,7 @@ public class Equip : InputAction {
 
     public override void RepsondToInput(GameController controller, string[] separatedInputWords)
     {
-        Dictionary<string, string> equipDictionary = controller.interactableItems.Take(separatedInputWords);
+        Dictionary<string, string> equipDictionary = controller.interactableItems.Equip(separatedInputWords);
 
         if (equipDictionary != null)
         {

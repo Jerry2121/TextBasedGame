@@ -42,10 +42,8 @@ public class SaveLoadGame : MonoBehaviour {
 
     public void LoadGame(string fileName)
     {
-        Debug.Log("LoadGame");
         if (File.Exists(Application.persistentDataPath + "/" + fileName + ".tbg"))
         {
-            Debug.Log("LoadGame -- past if");
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Open(Application.persistentDataPath + "/" + fileName + ".tbg", FileMode.Open);
             GameStateInfo myLoadedInfo = (GameStateInfo)bf.Deserialize(file);
@@ -65,8 +63,7 @@ public class SaveLoadGame : MonoBehaviour {
     void SetUpGame()
     {
         controller.ClearScreen();
-
-        Debug.Log("SetUpGame");
+        
         controller.displayText.text = gameText;
         controller.interactableItems.nounsInInventory = inventory;
         controller.interactableItems.nounsInEquipment = equipment;

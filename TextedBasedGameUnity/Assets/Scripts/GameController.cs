@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour {
     public Text scoreText;
     public Text moveText;
 
+    public Room startingRoom;
     public InputAction[] inputActions;
 
     [HideInInspector] public RoomNavigation roomNavigation;
@@ -29,6 +30,7 @@ public class GameController : MonoBehaviour {
         roomNavigation = GetComponent<RoomNavigation>();
         interactableItems = GetComponent<InteractableItems>();
         saveLoadGame = GetComponent<SaveLoadGame>();
+        Cursor.lockState = CursorLockMode.Locked;
 	}
 
     void Start()
@@ -150,6 +152,15 @@ public class GameController : MonoBehaviour {
     public void ClearScreen()
     {
         displayText.text = " ";
+    }
+
+    public void Restart()
+    {
+        roomNavigation.currentRoom = startingRoom;
+        interactableItems.nounsInInventory.Clear();
+        interactableItems.nounsInEquipment.Clear();
+        ClearScreen();
+        DisplayRoomText();
     }
 
 }

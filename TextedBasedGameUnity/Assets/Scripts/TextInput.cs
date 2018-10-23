@@ -15,6 +15,14 @@ public class TextInput : MonoBehaviour
         inputField.onEndEdit.AddListener(AcceptStringInput);
     }
 
+    void Update()
+    {
+        if (inputField.IsActive() == false){
+            inputField.ActivateInputField();
+            inputField.text = null;
+        }
+    }
+
     void AcceptStringInput(string userInput)
     {
         if (inputField.text == string.Empty)

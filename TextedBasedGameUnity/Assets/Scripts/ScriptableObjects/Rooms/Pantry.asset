@@ -11,10 +11,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
   m_Name: Pantry
   m_EditorClassIdentifier: 
-  description: 
+  description: 'Pantry
+
+'
   roomName: pantry
   exits:
   - keyString: south
-    exitDescription: 
+    exitDescription: An open archway to the south leads back into the kitchen.
     valueRoom: {fileID: 11400000, guid: 8aa74523ec95f794d8abdc5df368f557, type: 2}
+    requiredObjects: []
+  - keyString: west
+    exitDescription: There is a giant freezer door to the west.
+    valueRoom: {fileID: 11400000, guid: 8aa74523ec95f794d8abdc5df368f557, type: 2}
+    requiredObjects: []
   InteractableObjectsInRoom: []

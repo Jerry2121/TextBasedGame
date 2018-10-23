@@ -11,21 +11,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
   m_Name: SouthHall1C
   m_EditorClassIdentifier: 
-  description: 'South Hall 1C.
+  description: 'South Hall 1C
 
-    (Description)'
+'
   roomName: south hall 1c
   exits:
   - keyString: west
-    exitDescription: The hallway extends to the west.
+    exitDescription: The South Hallway extends to the east and west.
     valueRoom: {fileID: 11400000, guid: d9e63189acb46c64ba87f47d4c2cba90, type: 2}
     requiredObjects: []
   - keyString: east
-    exitDescription: The hallway extends to the east.
+    exitDescription: 
     valueRoom: {fileID: 11400000, guid: 9ceba0380be32f445817bcc9295b7ef6, type: 2}
     requiredObjects: []
   - keyString: south
-    exitDescription: There is a door to the south leading to the generator room.
+    exitDescription: A door to the south leads to the generator room.
     valueRoom: {fileID: 11400000, guid: 2ed3329c022d89e4f9c50d7b5829b4ef, type: 2}
     requiredObjects: []
   InteractableObjectsInRoom: []

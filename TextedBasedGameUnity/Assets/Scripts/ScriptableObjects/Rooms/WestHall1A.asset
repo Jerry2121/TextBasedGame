@@ -11,18 +11,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
   m_Name: WestHall1A
   m_EditorClassIdentifier: 
-  description: 'West Hall 1A.
+  description: 'West Hall 1A
 
-    There is a blast door blocking the way to the east hall, separating the next damaged
-    section of the hall from this one.'
+    There is a blast door blocking the way to the North Hall, as the next section
+    appears to be compromised. '
   roomName: west hall 1a
   exits:
   - keyString: south
-    exitDescription: The hallway extends to the south.
+    exitDescription: The West Hallway extends to the south.
     valueRoom: {fileID: 11400000, guid: 30eda47e351f4e24db829592823f4d78, type: 2}
     requiredObjects: []
   - keyString: west
-    exitDescription: There's a door to the west leading into the living quarters.
+    exitDescription: A door to the west leads into the living quarters.
     valueRoom: {fileID: 11400000, guid: 52cc5296ca5862346b1334a8305d88e5, type: 2}
     requiredObjects: []
   - keyString: east

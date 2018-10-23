@@ -11,13 +11,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
   m_Name: Kitchen
   m_EditorClassIdentifier: 
-  description: 
+  description: 'Kitchen
+
+    There are several large counters placed about the room, with knives and other
+    utensils hung up and placed in other spaces. There a number of sinks placed in
+    pairs at various parts of the room. Large ovens occupy one corner of the room.'
   roomName: kitchen
   exits:
   - keyString: west
-    exitDescription: 
+    exitDescription: A set of large double doors to the west lead back into the cafeteria.
     valueRoom: {fileID: 11400000, guid: 13b14ba273adb544289958c884922422, type: 2}
+    requiredObjects: []
   - keyString: north
-    exitDescription: 
+    exitDescription: A larch archway leads into the pantry.
     valueRoom: {fileID: 11400000, guid: 0d5f0bd194034274d82ff848f67dbf79, type: 2}
+    requiredObjects: []
   InteractableObjectsInRoom: []

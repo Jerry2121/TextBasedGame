@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: 'Generator Room
 
-    (description)'
+    Large machines with blinking lights line the walls. '
   roomName: generator room
   exits:
   - keyString: north

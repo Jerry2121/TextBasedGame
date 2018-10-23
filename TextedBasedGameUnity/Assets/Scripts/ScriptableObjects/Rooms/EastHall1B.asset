@@ -11,19 +11,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
   m_Name: EastHall1B
   m_EditorClassIdentifier: 
-  description: 'East Hall 1B.
+  description: 'East Hall 1B
 
-    (Description)'
+    A pane of glass allows you to see out into the endless void of space.'
   roomName: east hall 1b
   exits:
   - keyString: south
-    exitDescription: To the south, East Hallway stops and there is a door on the west-side
-      wall.
+    exitDescription: The East Hallway extends to the north and south.
     valueRoom: {fileID: 11400000, guid: ba97db2eff93f4f46baec32b01a4ca98, type: 2}
     requiredObjects: []
   - keyString: north
-    exitDescription: East Hallway extends to the north. You can't see an end to the
-      hallway in this direction.
+    exitDescription: 
     valueRoom: {fileID: 11400000, guid: 534d3cede56864041b6babf61f52377e, type: 2}
     requiredObjects: []
   InteractableObjectsInRoom:

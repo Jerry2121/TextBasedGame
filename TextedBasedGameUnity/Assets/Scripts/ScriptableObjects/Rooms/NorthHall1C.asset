@@ -11,21 +11,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
   m_Name: NorthHall1C
   m_EditorClassIdentifier: 
-  description: 'North Hall 1C.
+  description: 'North Hall 1C
 
-    (Description)'
+'
   roomName: north hall 1c
   exits:
   - keyString: east
-    exitDescription: The hallway extends to the east.
+    exitDescription: The North Hallway extends to the east and west
     valueRoom: {fileID: 11400000, guid: 6843f0d6091b7fe44b38adc6f7b3cc47, type: 2}
     requiredObjects: []
   - keyString: north
-    exitDescription: There is a door to the north leading into the captain's bay.
+    exitDescription: A door to the north leads into the captain's bay.
     valueRoom: {fileID: 11400000, guid: 8b582125cc216874c8a07912722dd3f5, type: 2}
     requiredObjects: []
   - keyString: west
-    exitDescription: The hallway extends to the west.
+    exitDescription: 
     valueRoom: {fileID: 11400000, guid: e89845826d01d6c4c909a6724a420f1e, type: 2}
     requiredObjects: []
   InteractableObjectsInRoom: []

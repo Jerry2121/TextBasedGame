@@ -11,8 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
   m_Name: LivingQuartersRoomA
   m_EditorClassIdentifier: 
-  description: You find yourself in a neatly organized room. There are a couple of
-    small bookcases against the wall opposite the door.
+  description: 'Living Quarters - Room A
+
+    The room is neatly organize with a couple of small bookcases against the wall
+    opposite the door.'
   roomName: living quarters room a
   exits:
   - keyString: east

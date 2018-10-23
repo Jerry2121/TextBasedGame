@@ -11,15 +11,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
   m_Name: Cafeteria
   m_EditorClassIdentifier: 
-  description: Cafeteria
+  description: 'Cafeteria
+
+    There are tables and chairs spread about the room.'
   roomName: cafeteria
   exits:
   - keyString: south
-    exitDescription: There's a door to the south.
+    exitDescription: A door to the south leads back into the hallway.
     valueRoom: {fileID: 11400000, guid: d9e63189acb46c64ba87f47d4c2cba90, type: 2}
     requiredObjects: []
   - keyString: east
-    exitDescription: There's a door to the east.
+    exitDescription: A large set of double doors lead into the kitchen.
     valueRoom: {fileID: 11400000, guid: 8aa74523ec95f794d8abdc5df368f557, type: 2}
     requiredObjects: []
   InteractableObjectsInRoom: []

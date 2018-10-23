@@ -9,21 +9,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
-  m_Name: WestHall1E
+  m_Name: Hangar
   m_EditorClassIdentifier: 
-  description: West Hall 1E
-  roomName: west hall 1e
+  description: 'Hangar
+
+    Apart from the small ship you arrived in, the hangar is empty.'
+  roomName: hangar
   exits:
   - keyString: north
-    exitDescription: The West Hallway extends to the north.
-    valueRoom: {fileID: 11400000, guid: 30268b0cdad5735479139f2487a22cf5, type: 2}
-    requiredObjects: []
-  - keyString: east
-    exitDescription: The West Hallway extends to the east into the South Hallway.
+    exitDescription: To the north there is a large door that will lead into the space
+      station.
     valueRoom: {fileID: 11400000, guid: 58fb1959576210f4aa10065e22a5da97, type: 2}
     requiredObjects: []
-  - keyString: west
-    exitDescription: A door to the west leadis into the medbay.
-    valueRoom: {fileID: 11400000, guid: ad724add48453064cad0ff53f7b4eed7, type: 2}
+  - keyString: south
+    exitDescription: However, you can hop back in your spaceship and head south back
+      out into space.
+    valueRoom: {fileID: 11400000, guid: e3aa64b92c087f8498da4ef761284f30, type: 2}
     requiredObjects: []
   InteractableObjectsInRoom: []

@@ -509,7 +509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e3494b5e8f96d448cedc8384b328f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentRoom: {fileID: 11400000, guid: 58fb1959576210f4aa10065e22a5da97, type: 2}
+  currentRoom: {fileID: 11400000, guid: b083284b4c199d842bd631a54e2d6b8b, type: 2}
 --- !u!114 &836781643
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -11,7 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
   m_Name: Medbay
   m_EditorClassIdentifier: 
-  description: You find yourself in the Medical Bay of the station.
+  description: 'Medbay
+
+    You find yourself in the Medical Bay of the station.'
   roomName: medbay
   exits:
   - keyString: east

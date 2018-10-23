@@ -24,4 +24,5 @@ MonoBehaviour:
     exitDescription: There is a giant freezer door to the west.
     valueRoom: {fileID: 11400000, guid: 8aa74523ec95f794d8abdc5df368f557, type: 2}
     requiredObjects: []
-  InteractableObjectsInRoom: []
+  InteractableObjectsInRoom:
+  - {fileID: 11400000, guid: a67ad61e5a65d074e833ec33b21d3d43, type: 2}

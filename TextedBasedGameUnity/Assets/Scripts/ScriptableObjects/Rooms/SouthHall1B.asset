@@ -17,11 +17,11 @@ MonoBehaviour:
   roomName: south hall 1b
   exits:
   - keyString: west
-    exitDescription: The South Hallway extends to the west.
+    exitDescription: The South Hallway extends to the east and west.
     valueRoom: {fileID: 11400000, guid: 58fb1959576210f4aa10065e22a5da97, type: 2}
     requiredObjects: []
   - keyString: east
-    exitDescription: The South Hallway extends to the east.
+    exitDescription: 
     valueRoom: {fileID: 11400000, guid: 538b3692c91984041b133f2689e0dd19, type: 2}
     requiredObjects: []
   - keyString: north

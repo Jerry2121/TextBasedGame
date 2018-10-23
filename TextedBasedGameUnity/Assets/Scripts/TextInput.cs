@@ -33,9 +33,11 @@ public class TextInput : MonoBehaviour
 
         userInput = userInput.ToLower();
         controller.LogStringWithReturn(userInput);
+        controller.lastInput = userInput;
 
         char[] delimiterCharacters = { ' ' };
         string[] separatedInputWords = userInput.Split(delimiterCharacters);
+
         bool matchingInputAction = false;
 
         for (int i = 0; i < controller.inputActions.Length; i++)

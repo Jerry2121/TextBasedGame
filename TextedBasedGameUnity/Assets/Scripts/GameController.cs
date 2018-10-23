@@ -21,6 +21,8 @@ public class GameController : MonoBehaviour {
 
     List<string> actionLog = new List<string>();
 
+    public string lastInput;
+
     int score = 0;
     int moves = 0;
 

@@ -522,6 +522,7 @@ MonoBehaviour:
   interactionsDescriptionsInRoom: []
   interactableItems: {fileID: 0}
   saveLoadGame: {fileID: 0}
+  lastInput: 
 --- !u!4 &668047749
 Transform:
   m_ObjectHideFlags: 0

@@ -15,8 +15,8 @@ public class InteractableItems : MonoBehaviour {
 
     private Dictionary<string, ActionResponse> useDictionary = new Dictionary<string, ActionResponse>();
     private GameController controller;
-    private List<string> nounsInInventory = new List<string>();
-    private List<string> nounsInEquipment = new List<string>();
+    public List<string> nounsInInventory = new List<string>();
+    public List<string> nounsInEquipment = new List<string>();
 
     private void Awake()
     {

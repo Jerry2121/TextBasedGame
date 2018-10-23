@@ -16,6 +16,7 @@ public class GameController : MonoBehaviour {
     [HideInInspector] public RoomNavigation roomNavigation;
     [HideInInspector] public List<string> interactionsDescriptionsInRoom = new List<string>();
     [HideInInspector] public InteractableItems interactableItems;
+    [HideInInspector] public SaveLoadGame saveLoadGame;
 
     List<string> actionLog = new List<string>();
 
@@ -27,6 +28,7 @@ public class GameController : MonoBehaviour {
     {
         roomNavigation = GetComponent<RoomNavigation>();
         interactableItems = GetComponent<InteractableItems>();
+        saveLoadGame = GetComponent<SaveLoadGame>();
 	}
 
     void Start()
@@ -140,17 +142,6 @@ public class GameController : MonoBehaviour {
         moves ++;
         moveText.text = "Moves: " + moves.ToString();
     }
-
-    public void SaveGame()
-    {
-        throw new NotImplementedException();
-    }
 }
 
-public class SaveStateClass
-{
-    public string gameText;
-    public Room room;
-    public List<string> inventory;
-}
 

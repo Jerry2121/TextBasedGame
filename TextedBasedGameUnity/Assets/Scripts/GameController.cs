@@ -151,6 +151,7 @@ public class GameController : MonoBehaviour {
 
     public void ClearScreen()
     {
+        actionLog.Clear();
         displayText.text = " ";
     }
 

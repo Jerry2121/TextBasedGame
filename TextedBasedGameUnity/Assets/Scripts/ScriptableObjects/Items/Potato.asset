@@ -9,16 +9,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a94cc17591f050e4badcbf86daf732e2, type: 3}
-  m_Name: SpaceSuit
+  m_Name: Potato
   m_EditorClassIdentifier: 
-  noun: spacesuit
-  description: There seems to be a big space suit laying on the floor. It looks undamaged.
+  noun: potato
+  description: 
   interactions:
-  - inputAction: {fileID: 11400000, guid: c398d039e762a814899c09278b0bc234, type: 2}
-    textResponse: Good for not dying in space!
+  - inputAction: {fileID: 11400000, guid: 6bd6102636b5266429debda9b8560cad, type: 2}
+    textResponse: You take the potato.
     scoreGiven: 0
     actionResponse: {fileID: 0}
-  - inputAction: {fileID: 11400000, guid: 15d947e6c7cf2914b88a56d571ed23f3, type: 2}
-    textResponse: You equip the space suit!
+  - inputAction: {fileID: 11400000, guid: c398d039e762a814899c09278b0bc234, type: 2}
+    textResponse: Just a potato. Nothing special here.
     scoreGiven: 0
     actionResponse: {fileID: 0}

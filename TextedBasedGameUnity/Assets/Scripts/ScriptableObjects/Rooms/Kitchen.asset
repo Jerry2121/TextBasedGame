@@ -23,7 +23,7 @@ MonoBehaviour:
     valueRoom: {fileID: 11400000, guid: 13b14ba273adb544289958c884922422, type: 2}
     requiredObjects: []
   - keyString: north
-    exitDescription: A larch archway leads into the pantry.
+    exitDescription: A large archway to the north leads into the pantry.
     valueRoom: {fileID: 11400000, guid: 0d5f0bd194034274d82ff848f67dbf79, type: 2}
     requiredObjects: []
   InteractableObjectsInRoom: []

@@ -565,6 +565,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 709b38a8a7968cc47aa0e1719e5981e7, type: 2}
   - {fileID: 11400000, guid: 9b5b31c715b6c7840825103a9fa4fbc5, type: 2}
   - {fileID: 11400000, guid: 1bc2d6233342a4642be8b6d2a4231eec, type: 2}
+  - {fileID: 11400000, guid: c7904e7f7fd4b894cb846616865e33c6, type: 2}
+  - {fileID: 11400000, guid: d9924675d36e567499053306617f4e80, type: 2}
+  - {fileID: 11400000, guid: 7ea445a1e4de49b4fa40059a603ae49d, type: 2}
+  - {fileID: 11400000, guid: a5a1ec9b20521434790fd9dda88ee53f, type: 2}
+  - {fileID: 11400000, guid: 3f005b1499872254cacd8481b6e59de7, type: 2}
+  - {fileID: 11400000, guid: 52b9c1669f5b08d42816517dbbe2c1ac, type: 2}
   nounsInRoom: []
   nounsInInventory: []
   nounsInEquipment: []

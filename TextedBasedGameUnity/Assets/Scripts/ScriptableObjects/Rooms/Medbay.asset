@@ -11,13 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
   m_Name: Medbay
   m_EditorClassIdentifier: 
-  description: 'Medbay
-
-    You find yourself in the Medical Bay of the station.'
+  description: Medbay
   roomName: medbay
   exits:
   - keyString: east
-    exitDescription: To the east is an exit back into the East Hall
+    exitDescription: To the east is an exit back into the West Hallway.
     valueRoom: {fileID: 11400000, guid: 00b272b7e4146df4990800fbb2f6162a, type: 2}
     requiredObjects: []
   - keyString: south

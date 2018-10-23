@@ -11,8 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
   m_Name: OperatingRoom
   m_EditorClassIdentifier: 
-  description: It appears to be an operating room, with complicated looking devices
-    surrounding a bed in the middle of the room.
+  description: 'Operating Room
+
+    Complicated looking devices surround a bed in the middle of the room.'
   roomName: operating room
   exits:
   - keyString: east

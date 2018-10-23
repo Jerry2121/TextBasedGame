@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: 'Pantry
 
-'
+    Large shelves with boxes of food on them line the walls. '
   roomName: pantry
   exits:
   - keyString: south

@@ -142,6 +142,12 @@ public class GameController : MonoBehaviour {
         moves ++;
         moveText.text = "Moves: " + moves.ToString();
     }
+
+    public void ClearScreen()
+    {
+        displayText.text = " ";
+    }
+
 }
 
 

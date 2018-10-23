@@ -9,7 +9,7 @@ public class SaveLoadGame : MonoBehaviour {
     GameController controller;
 
     string gameText;
-    Room room;
+    string roomName;
     List<string> inventory;
     List<string> equipment;
 
@@ -21,18 +21,18 @@ public class SaveLoadGame : MonoBehaviour {
     public void SaveGame(string fileName)
     {
         gameText = controller.displayText.text; //may not save spacing use log as example to fix
-        room = controller.roomNavigation.currentRoom;
+        roomName = controller.roomNavigation.currentRoom.roomName;
         inventory = controller.interactableItems.nounsInInventory;
         equipment = controller.interactableItems.nounsInEquipment;
 
         BinaryFormatter bf = new BinaryFormatter();
 
-        FileStream file = File.Open(Application.persistentDataPath + "/GameState" + fileName + ".tbg", FileMode.OpenOrCreate);
+        FileStream file = File.Open(Application.persistentDataPath + "/" + fileName + ".tbg", FileMode.OpenOrCreate);
         GameStateInfo myInfo = new GameStateInfo();
 
         //put what ever you're saving as myInfo.whatever
         myInfo.gameText = gameText;
-        myInfo.room = room;
+        myInfo.roomName = roomName;
         myInfo.inventory = inventory;
         myInfo.equipment = equipment;
         bf.Serialize(file, myInfo);
@@ -42,13 +42,15 @@ public class SaveLoadGame : MonoBehaviour {
 
     public void LoadGame(string fileName)
     {
-        if (File.Exists(Application.persistentDataPath + "/GameState" + fileName + ".tbg"))
+        Debug.Log("LoadGame");
+        if (File.Exists(Application.persistentDataPath + "/" + fileName + ".tbg"))
         {
+            Debug.Log("LoadGame -- past if");
             BinaryFormatter bf = new BinaryFormatter();
-            FileStream file = File.Open(Application.persistentDataPath + "/GameState" + fileName + ".tbg", FileMode.Open);
+            FileStream file = File.Open(Application.persistentDataPath + "/" + fileName + ".tbg", FileMode.Open);
             GameStateInfo myLoadedInfo = (GameStateInfo)bf.Deserialize(file);
             gameText = myLoadedInfo.gameText;
-            room = myLoadedInfo.room;
+            roomName = myLoadedInfo.roomName;
             inventory = myLoadedInfo.inventory;
             equipment = myLoadedInfo.equipment;
 
@@ -62,10 +64,42 @@ public class SaveLoadGame : MonoBehaviour {
 
     void SetUpGame()
     {
+        controller.ClearScreen();
+
+        Debug.Log("SetUpGame");
         controller.displayText.text = gameText;
-        controller.roomNavigation.currentRoom = room;
         controller.interactableItems.nounsInInventory = inventory;
         controller.interactableItems.nounsInEquipment = equipment;
+
+        for (int i = 0; i < controller.roomNavigation.allRooms.Length; i++)
+        {
+            if(controller.roomNavigation.allRooms[i].roomName == roomName)
+            {
+                controller.roomNavigation.currentRoom = controller.roomNavigation.allRooms[i];
+                break;
+            }
+        }
+        controller.DisplayRoomText();
+    }
+
+    public void GetSavedGames()
+    {
+        controller.LogStringWithReturn("Saved Games:");
+
+        DirectoryInfo dir = new DirectoryInfo(Application.persistentDataPath);
+        FileInfo[] info = dir.GetFiles("*.*");
+
+        string tempString = "";
+        string[] tempStringSplit;
+
+        foreach (FileInfo f in info)
+        {
+            tempString = f.ToString();
+            tempStringSplit = tempString.Split('\\');
+            tempStringSplit = tempStringSplit[tempStringSplit.Length - 1].Split('.');
+            Debug.Log(tempStringSplit[0].ToString());
+            controller.LogStringWithReturn("- " + tempStringSplit[0].ToString());
+        }
     }
 
 }
@@ -74,7 +108,7 @@ public class SaveLoadGame : MonoBehaviour {
 public class GameStateInfo
 {
     public string gameText;
-    public Room room;
+    public string roomName;
     public List<string> inventory;
     public List<string> equipment;
 }

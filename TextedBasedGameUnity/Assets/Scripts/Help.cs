@@ -12,7 +12,7 @@ public class Help : InputAction {
         for (int i = 0; i < controller.inputActions.Length; i++)
         {
             if(controller.inputActions[i].keyWord != "help")
-                controller.LogStringWithReturn(controller.inputActions[i].keyWord + " " + controller.inputActions[i].description);
+                controller.LogStringWithReturn("- " + controller.inputActions[i].keyWord + " " + controller.inputActions[i].description);
         }
 
         /*for (int i = 0; i < controller.inputActions.Length; i++)

@@ -9,11 +9,11 @@ public class Load : InputAction{
     {
         if (separatedInputWords.Length > 1)
         {
-
+            controller.saveLoadGame.LoadGame(separatedInputWords[1]);
         }
         else
         {
-            //display saves
+            controller.saveLoadGame.GetSavedGames();
         }
 
     }

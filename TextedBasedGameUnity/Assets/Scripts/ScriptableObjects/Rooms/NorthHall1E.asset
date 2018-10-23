@@ -14,7 +14,7 @@ MonoBehaviour:
   description: 'North Hall 1E.
 
     There is a blast door blocking the way to the west hall, separating the damaged
-    section of the next section of the hall from this one.'
+    next section of the hall from this one.'
   roomName: north hall 1e
   exits:
   - keyString: east
@@ -22,7 +22,7 @@ MonoBehaviour:
     valueRoom: {fileID: 11400000, guid: e89845826d01d6c4c909a6724a420f1e, type: 2}
     requiredObjects: []
   - keyString: west
-    exitDescription: A spacesuit would allow you to continue west.
+    exitDescription: A spacesuit would allow you to continue west into the West Hallway.
     valueRoom: {fileID: 11400000, guid: 85dc00037a00b0841b3cd0b6ba27e720, type: 2}
     requiredObjects:
     - {fileID: 11400000, guid: 8b04f00a44dac9a4c8787fe674613a57, type: 2}

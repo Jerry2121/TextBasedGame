@@ -509,7 +509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e3494b5e8f96d448cedc8384b328f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentRoom: {fileID: 11400000, guid: 85dc00037a00b0841b3cd0b6ba27e720, type: 2}
+  currentRoom: {fileID: 11400000, guid: 58fb1959576210f4aa10065e22a5da97, type: 2}
 --- !u!114 &836781643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -533,6 +533,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 00a36e6f398d036418b536da40fe4c11, type: 2}
   - {fileID: 11400000, guid: 6d07743e2bc012b4781f55c768b65e38, type: 2}
   - {fileID: 11400000, guid: e3a7de2b6207fee44b67aedfb62ee22f, type: 2}
+  - {fileID: 11400000, guid: 15d947e6c7cf2914b88a56d571ed23f3, type: 2}
   roomNavigation: {fileID: 0}
   interactionsDescriptionsInRoom: []
   interactableItems: {fileID: 0}

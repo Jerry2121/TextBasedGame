@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Name: LivingQuartersRoomA
   m_EditorClassIdentifier: 
   description: You find yourself in a neatly organized room. There are a couple of
-    small bookcases against the wall opposite the door. There is a keycard on the
-    nightstand.
+    small bookcases against the wall opposite the door.
   roomName: living quarters room a
   exits:
   - keyString: east
     exitDescription: To the east there is a door leading back to the hallway.
-    valueRoom: {fileID: 11400000, guid: 30eda47e351f4e24db829592823f4d78, type: 2}
+    valueRoom: {fileID: 11400000, guid: 85dc00037a00b0841b3cd0b6ba27e720, type: 2}
+    requiredObjects: []
   InteractableObjectsInRoom:
   - {fileID: 11400000, guid: 709b38a8a7968cc47aa0e1719e5981e7, type: 2}

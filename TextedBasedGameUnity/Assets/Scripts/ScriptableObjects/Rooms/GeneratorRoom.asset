@@ -11,7 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
   m_Name: GeneratorRoom
   m_EditorClassIdentifier: 
-  description: 
+  description: 'Generator Room
+
+    (description)'
   roomName: generator room
-  exits: []
+  exits:
+  - keyString: north
+    exitDescription: There is a door to the north leading back to the hallway.
+    valueRoom: {fileID: 11400000, guid: 538b3692c91984041b133f2689e0dd19, type: 2}
+    requiredObjects: []
   InteractableObjectsInRoom: []

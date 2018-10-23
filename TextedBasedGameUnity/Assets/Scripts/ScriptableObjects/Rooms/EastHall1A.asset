@@ -17,12 +17,11 @@ MonoBehaviour:
   roomName: east hall 1a
   exits:
   - keyString: west
-    exitDescription: The hallway extends to the west.
-    valueRoom: {fileID: 11400000, guid: 1f9a12555c07234408264f565c0277ac, type: 2}
+    exitDescription: The hallway extends to the west into the South Hallway.
+    valueRoom: {fileID: 11400000, guid: 4bf9086facb45ca41a1b43775dc628c7, type: 2}
     requiredObjects: []
   - keyString: north
-    exitDescription: East Hallway extends to the north. You can't see an end to the
-      hallway in this direction.
+    exitDescription: The hallway extends to the north.
     valueRoom: {fileID: 11400000, guid: ff8b8845b4c10b343b7213c9d634c6ce, type: 2}
     requiredObjects: []
   InteractableObjectsInRoom: []

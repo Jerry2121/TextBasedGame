@@ -19,10 +19,13 @@ MonoBehaviour:
   - keyString: north
     exitDescription: The hallway extends to the north.
     valueRoom: {fileID: 11400000, guid: 30268b0cdad5735479139f2487a22cf5, type: 2}
+    requiredObjects: []
   - keyString: east
-    exitDescription: There's a door to the east.
+    exitDescription: The hallway extends to the east into the South Hallway.
     valueRoom: {fileID: 11400000, guid: 58fb1959576210f4aa10065e22a5da97, type: 2}
+    requiredObjects: []
   - keyString: west
-    exitDescription: There's a door to the west.
+    exitDescription: There's a door to the west leading into the medbay.
     valueRoom: {fileID: 11400000, guid: ad724add48453064cad0ff53f7b4eed7, type: 2}
+    requiredObjects: []
   InteractableObjectsInRoom: []

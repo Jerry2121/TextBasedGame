@@ -27,8 +27,10 @@ MonoBehaviour:
   exits:
   - keyString: hangar
     exitDescription: type "go hangar" to head to the Space Station Hangar.
-    valueRoom: {fileID: 11400000, guid: 5be09444995efef4fac3f5564108be1c, type: 2}
+    valueRoom: {fileID: 11400000, guid: b083284b4c199d842bd631a54e2d6b8b, type: 2}
+    requiredObjects: []
   - keyString: space
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: e3aa64b92c087f8498da4ef761284f30, type: 2}
+    requiredObjects: []
   InteractableObjectsInRoom: []

@@ -502,6 +502,7 @@ MonoBehaviour:
   displayText: {fileID: 473952483}
   scoreText: {fileID: 971444943}
   moveText: {fileID: 99943467}
+  startingRoom: {fileID: 0}
   inputActions:
   - {fileID: 11400000, guid: 9c88617bcbe128347bbcab68edc88c28, type: 2}
   - {fileID: 11400000, guid: c398d039e762a814899c09278b0bc234, type: 2}
@@ -515,6 +516,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 257fa3afe915f4640bd7769ea10b3721, type: 2}
   - {fileID: 11400000, guid: 8216b06cb10f14d449acf7df076bd6ad, type: 2}
   - {fileID: 11400000, guid: ea160090fdac43346b305838863ea016, type: 2}
+  - {fileID: 11400000, guid: dd38ba5daa20a2d469143a392785bc5c, type: 2}
+  - {fileID: 11400000, guid: 038af48fce34a8547bcbf6611a1a2e33, type: 2}
   roomNavigation: {fileID: 0}
   interactionsDescriptionsInRoom: []
   interactableItems: {fileID: 0}

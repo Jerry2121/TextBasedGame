@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13c7890b824f4c94aaa307f5b3460ae2, type: 3}
   m_Name: Quit
   m_EditorClassIdentifier: 
-  keyWord: 
-  description: 
+  keyWord: quit
+  description: '- closes the game'

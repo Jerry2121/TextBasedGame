@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0943c50f37f90a94581efa047050a9e6, type: 3}
   m_Name: Restart
   m_EditorClassIdentifier: 
-  keyWord: 
-  description: 
+  keyWord: restart
+  description: '- restarts the game'

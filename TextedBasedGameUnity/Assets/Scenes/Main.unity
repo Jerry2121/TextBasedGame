@@ -502,7 +502,7 @@ MonoBehaviour:
   displayText: {fileID: 473952483}
   scoreText: {fileID: 971444943}
   moveText: {fileID: 99943467}
-  startingRoom: {fileID: 0}
+  startingRoom: {fileID: 11400000, guid: 7586ed9f39e0e6d48b0fe970c895fbed, type: 2}
   inputActions:
   - {fileID: 11400000, guid: 9c88617bcbe128347bbcab68edc88c28, type: 2}
   - {fileID: 11400000, guid: c398d039e762a814899c09278b0bc234, type: 2}

@@ -20,5 +20,5 @@ MonoBehaviour:
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 15d947e6c7cf2914b88a56d571ed23f3, type: 2}
     textResponse: You equip the space suit!
-    scoreGiven: 0
+    scoreGiven: 10
     actionResponse: {fileID: 0}

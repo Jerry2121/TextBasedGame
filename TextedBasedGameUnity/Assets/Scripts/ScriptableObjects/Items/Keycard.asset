@@ -16,7 +16,7 @@ MonoBehaviour:
   interactions:
   - inputAction: {fileID: 11400000, guid: 6bd6102636b5266429debda9b8560cad, type: 2}
     textResponse: You obtain Keycard.
-    scoreGiven: 0
+    scoreGiven: 5
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: c398d039e762a814899c09278b0bc234, type: 2}
     textResponse: It's a keycard.

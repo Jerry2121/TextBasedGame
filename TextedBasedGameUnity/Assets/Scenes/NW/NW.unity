@@ -613,6 +613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputField: {fileID: 1191472927}
+  inputToAdd: 
 --- !u!114 &1189424934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -692,6 +693,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ea160090fdac43346b305838863ea016, type: 2}
   - {fileID: 11400000, guid: dd38ba5daa20a2d469143a392785bc5c, type: 2}
   - {fileID: 11400000, guid: 038af48fce34a8547bcbf6611a1a2e33, type: 2}
+  - {fileID: 11400000, guid: bba8d6bbe69064442bf4e5b83f6b90f6, type: 2}
   roomNavigation: {fileID: 0}
   interactionsDescriptionsInRoom: []
   interactableItems: {fileID: 0}

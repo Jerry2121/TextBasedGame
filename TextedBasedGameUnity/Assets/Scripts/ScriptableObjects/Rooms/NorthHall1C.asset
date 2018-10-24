@@ -23,7 +23,8 @@ MonoBehaviour:
   - keyString: north
     exitDescription: A door to the north leads into the captain's bay.
     valueRoom: {fileID: 11400000, guid: 8b582125cc216874c8a07912722dd3f5, type: 2}
-    requiredObjects: []
+    requiredObjects:
+    - {fileID: 11400000, guid: 73c4e9208236e6c4eba74c0359455694, type: 2}
   - keyString: west
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: e89845826d01d6c4c909a6724a420f1e, type: 2}

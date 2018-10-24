@@ -11,7 +11,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
   m_Name: SecurityRoom
   m_EditorClassIdentifier: 
-  description: 
-  roomName: 
-  exits: []
-  InteractableObjectsInRoom: []
+  description: 'Security Room
+
+    Screens for surveillance are spread across one wall. Behind a chain-link fence
+    there are a variety of (weapons?).'
+  roomName: security room
+  exits:
+  - keyString: south
+    exitDescription: A door to the south leads back into the hallway.
+    valueRoom: {fileID: 11400000, guid: 098a7f818b1620d44a570e9cf933cd0b, type: 2}
+    requiredObjects: []
+  InteractableObjectsInRoom:
+  - {fileID: 11400000, guid: 73c4e9208236e6c4eba74c0359455694, type: 2}

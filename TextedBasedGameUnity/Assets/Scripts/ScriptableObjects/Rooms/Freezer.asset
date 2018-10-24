@@ -13,12 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: 'Freezer
 
-    It''s rather cold in here. A variety of frozen foods and substances are spread
-    across the room.'
+    According to temperature gauge it appears to be -250C in here. You can''t see
+    anything that would typically be in a freezer, and there''s a frozen body laying
+    in the corner.'
   roomName: freezer
   exits:
   - keyString: east
     exitDescription: A large door leads back into the pantry.
     valueRoom: {fileID: 11400000, guid: 0d5f0bd194034274d82ff848f67dbf79, type: 2}
     requiredObjects: []
-  InteractableObjectsInRoom: []
+  InteractableObjectsInRoom:
+  - {fileID: 11400000, guid: c76230143093a154a85b443b24a46746, type: 2}

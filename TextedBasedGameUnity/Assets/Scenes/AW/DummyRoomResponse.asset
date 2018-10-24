@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3214494f631572448cc1861b094d9e3, type: 3}
+  m_Name: DummyRoomResponse
+  m_EditorClassIdentifier: 
+  requiredString: dummy room
+  exitToChangeTo: {fileID: 11400000, guid: 111dbb16640d57a478da77c74e1c2191, type: 2}
+  exitChangedName: cafeteria

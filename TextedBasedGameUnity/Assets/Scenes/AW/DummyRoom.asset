@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
+  m_Name: DummyRoom
+  m_EditorClassIdentifier: 
+  description: Dummy Room
+  roomName: dummy room
+  exits:
+  - keyString: caf
+    exitDescription: caf
+    valueRoom: {fileID: 11400000, guid: 111dbb16640d57a478da77c74e1c2191, type: 2}
+    requiredObjects: []
+  - keyString: eha
+    exitDescription: eha
+    valueRoom: {fileID: 11400000, guid: ba97db2eff93f4f46baec32b01a4ca98, type: 2}
+    requiredObjects: []
+  InteractableObjectsInRoom:
+  - {fileID: 11400000, guid: 528ac73c2d4173a4898cb8bdd670991e, type: 2}

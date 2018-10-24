@@ -9,6 +9,8 @@ public class TextInput : MonoBehaviour
 
     GameController controller;
 
+    public string inputToAdd;
+
     void Awake()
     {
         controller = GetComponent<GameController>();
@@ -33,7 +35,7 @@ public class TextInput : MonoBehaviour
 
         userInput = userInput.ToLower();
         controller.LogStringWithReturn(userInput);
-        controller.lastInput = userInput;
+
 
         char[] delimiterCharacters = { ' ' };
         string[] separatedInputWords = userInput.Split(delimiterCharacters);
@@ -55,7 +57,14 @@ public class TextInput : MonoBehaviour
         }
 
         InputComplete();
-
+        if(inputToAdd != null)
+        {
+            inputField.text = inputToAdd;
+            controller.lastInput = inputToAdd;
+            inputToAdd = null;
+        }
+        else
+            controller.lastInput = userInput;
     }
 
     void InputComplete()

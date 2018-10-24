@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Linq;
 
 public class SaveLoadGame : MonoBehaviour {
 
     GameController controller;
 
     string gameText;
+    List<string> actionLog;
     string roomName;
     List<string> inventory;
     List<string> equipment;
+    int score;
+    int moves;
 
     void Start()
     {
@@ -21,9 +25,12 @@ public class SaveLoadGame : MonoBehaviour {
     public void SaveGame(string fileName)
     {
         gameText = controller.displayText.text; //may not save spacing use log as example to fix
+        actionLog = controller.actionLog;
         roomName = controller.roomNavigation.currentRoom.roomName;
         inventory = controller.interactableItems.nounsInInventory;
         equipment = controller.interactableItems.nounsInEquipment;
+        score = controller.score;
+        moves = controller.moves;
 
         BinaryFormatter bf = new BinaryFormatter();
 
@@ -31,10 +38,13 @@ public class SaveLoadGame : MonoBehaviour {
         GameStateInfo myInfo = new GameStateInfo();
 
         //put what ever you're saving as myInfo.whatever
-        myInfo.gameText = gameText;
+        //myInfo.gameText = gameText;
+        myInfo.actionLog = actionLog;
         myInfo.roomName = roomName;
         myInfo.inventory = inventory;
         myInfo.equipment = equipment;
+        myInfo.score = score;
+        myInfo.moves = moves;
         bf.Serialize(file, myInfo);
         file.Close();
         controller.LogStringWithReturn("Game saved as " + fileName);
@@ -47,12 +57,15 @@ public class SaveLoadGame : MonoBehaviour {
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Open(Application.persistentDataPath + "/" + fileName + ".tbg", FileMode.Open);
             GameStateInfo myLoadedInfo = (GameStateInfo)bf.Deserialize(file);
-            gameText = myLoadedInfo.gameText;
+            //gameText = myLoadedInfo.gameText;
+            actionLog = myLoadedInfo.actionLog;
             roomName = myLoadedInfo.roomName;
             inventory = myLoadedInfo.inventory;
             equipment = myLoadedInfo.equipment;
+            score = myLoadedInfo.score;
+            moves = myLoadedInfo.moves;
 
-            SetUpGame();
+            SetUpGame(fileName);
         }
         else
         {
@@ -60,13 +73,23 @@ public class SaveLoadGame : MonoBehaviour {
         }
     }
 
-    void SetUpGame()
+    void SetUpGame(string fileName)
     {
+        controller.ResetScoreAndMoves();
         controller.ClearScreen();
-        
-        controller.displayText.text = gameText;
+
+        controller.IncreaseScore(score);
+        controller.IncreaseMoves(moves);
+        //controller.displayText.text = gameText;
         controller.interactableItems.nounsInInventory = inventory;
         controller.interactableItems.nounsInEquipment = equipment;
+
+        actionLog.Reverse<string>();
+
+        foreach(string s in actionLog)
+        {
+            controller.LogStringWithReturn(s);
+        }
 
         for (int i = 0; i < controller.roomNavigation.allRooms.Length; i++)
         {
@@ -76,6 +99,7 @@ public class SaveLoadGame : MonoBehaviour {
                 break;
             }
         }
+        controller.LogStringWithReturn("Game " + fileName + " loaded");
         controller.DisplayRoomText();
     }
 
@@ -104,8 +128,11 @@ public class SaveLoadGame : MonoBehaviour {
 [System.Serializable]
 public class GameStateInfo
 {
-    public string gameText;
+    //public string gameText;
+    public List<string> actionLog;
     public string roomName;
     public List<string> inventory;
     public List<string> equipment;
+    public int score;
+    public int moves;
 }

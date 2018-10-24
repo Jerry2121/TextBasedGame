@@ -19,12 +19,12 @@ public class GameController : MonoBehaviour {
     [HideInInspector] public InteractableItems interactableItems;
     [HideInInspector] public SaveLoadGame saveLoadGame;
 
-    List<string> actionLog = new List<string>();
+    [HideInInspector]public List<string> actionLog = new List<string>();
 
     public string lastInput;
 
-    int score = 0;
-    int moves = 0;
+    public int score { get; protected set; }
+    public int moves { get; protected set; }
 
 	// Use this for initialization
 	void Awake ()
@@ -33,6 +33,7 @@ public class GameController : MonoBehaviour {
         interactableItems = GetComponent<InteractableItems>();
         saveLoadGame = GetComponent<SaveLoadGame>();
         Cursor.lockState = CursorLockMode.Locked;
+        score = moves = 0;
 	}
 
     void Start()
@@ -142,6 +143,12 @@ public class GameController : MonoBehaviour {
 
     public void IncreaseScore(int num)
     {
+        if (num < 0)
+        {
+            Debug.LogError("You should not be reducing the score value");
+            return;
+        }
+
         score += num;
         scoreText.text = "Score: " + score.ToString();
     }
@@ -157,15 +164,32 @@ public class GameController : MonoBehaviour {
         displayText.text = " ";
     }
 
+    public void ResetScoreAndMoves()
+    {
+        score = moves = 0;
+        moveText.text = "Moves: 000";
+        scoreText.text = "Score: 000000";
+    }
+
     public void Restart()
     {
         roomNavigation.currentRoom = startingRoom;
         interactableItems.nounsInInventory.Clear();
         interactableItems.nounsInEquipment.Clear();
+        ResetScoreAndMoves();
         ClearScreen();
         DisplayRoomText();
     }
-
+    public void IncreaseMoves(int num)
+    {
+        if (num < 0)
+        {
+            Debug.LogError("You should not be reducing the move value");
+            return;
+        }
+        moves += num;
+        moveText.text = "Moves: " + moves.ToString();
+    }
 }
 
 

@@ -66,6 +66,7 @@ public class GameController : MonoBehaviour {
     {
         roomNavigation.UnpackExitsInRoom();
         PrepareObjectsToTakeOrExamine(roomNavigation.currentRoom);
+        interactableItems.AddActionResponsesToUsableInRoomDictionary();
     }
 
     void PrepareObjectsToTakeOrExamine(Room currentRoom)

@@ -8,7 +8,7 @@ public class InteractableItems : MonoBehaviour {
     public Dictionary<string, string> examineDictionary = new Dictionary<string, string>();
     public Dictionary<string, string> takeDictionary = new Dictionary<string, string>();
     public Dictionary<string, string> equipDictionary = new Dictionary<string, string>();
-
+    public Dictionary<string, ActionResponse> usableInRoomDictionary = new Dictionary<string, ActionResponse>();
 
     [HideInInspector]
     public List<string> nounsInRoom = new List<string>();
@@ -75,6 +75,32 @@ public class InteractableItems : MonoBehaviour {
         }
     }
 
+    public void AddActionResponsesToUsableInRoomDictionary()
+    {
+        for (int i = 0; i < nounsInRoom.Count; i++)
+        {
+            string noun = nounsInRoom[i];
+
+            InteractableObject interactableObjectInRoom = GetInteractableObjectFromUsableList(noun);
+
+            if (interactableObjectInRoom == null)
+                continue;
+
+            for (int j = 0; j < interactableObjectInRoom.interactions.Length; j++)
+            {
+                Interaction interaction = interactableObjectInRoom.interactions[j];
+
+                if (interaction.actionResponse == null || interaction.inputAction.keyWord != "use")
+                    continue;
+
+                if (usableInRoomDictionary.ContainsKey(noun) == false)
+                {
+                    usableInRoomDictionary.Add(noun, interaction.actionResponse);
+                }
+            }
+        }
+    }
+
     private InteractableObject GetInteractableObjectFromUsableList(string noun)
     {
         for (int i = 0; i < usableItemList.Count; i++)
@@ -128,6 +154,7 @@ public class InteractableItems : MonoBehaviour {
     {
         equipDictionary.Clear();
         takeDictionary.Clear();
+        usableInRoomDictionary.Clear();
         examineDictionary.Clear();
         nounsInRoom.Clear();
     }

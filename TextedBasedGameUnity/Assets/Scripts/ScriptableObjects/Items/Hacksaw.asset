@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a94cc17591f050e4badcbf86daf732e2, type: 3}
   m_Name: Hacksaw
   m_EditorClassIdentifier: 
-  noun: hacksaw
+  noun: saw
   description: Laying on the table it appears to be some kind of saw?
   interactions:
   - inputAction: {fileID: 11400000, guid: c398d039e762a814899c09278b0bc234, type: 2}

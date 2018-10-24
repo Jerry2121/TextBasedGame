@@ -23,7 +23,7 @@ MonoBehaviour:
     valueRoom: {fileID: 11400000, guid: 538b3692c91984041b133f2689e0dd19, type: 2}
     requiredObjects: []
   - keyString: east
-    exitDescription: You could continue east if you had a saw or something you
+    exitDescription: You could continue east if you had a saw or something.
     valueRoom: {fileID: 11400000, guid: 4bf9086facb45ca41a1b43775dc628c7, type: 2}
     requiredObjects:
     - {fileID: 11400000, guid: 9b5b31c715b6c7840825103a9fa4fbc5, type: 2}

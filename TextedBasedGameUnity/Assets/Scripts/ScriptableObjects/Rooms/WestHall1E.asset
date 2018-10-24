@@ -23,7 +23,7 @@ MonoBehaviour:
     valueRoom: {fileID: 11400000, guid: 58fb1959576210f4aa10065e22a5da97, type: 2}
     requiredObjects: []
   - keyString: west
-    exitDescription: A door to the west leadis into the medbay.
+    exitDescription: A door to the west leads into the medbay.
     valueRoom: {fileID: 11400000, guid: ad724add48453064cad0ff53f7b4eed7, type: 2}
     requiredObjects: []
   InteractableObjectsInRoom: []

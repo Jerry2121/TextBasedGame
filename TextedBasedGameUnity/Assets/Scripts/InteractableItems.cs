@@ -258,9 +258,9 @@ public class InteractableItems : MonoBehaviour {
         {
             string nounToUse = separatedInputWords[1];
 
-            if (nounsInInventory.Contains(nounToUse))
+            if (useDictionary.ContainsKey(nounToUse))
             {
-                if (useDictionary.ContainsKey(nounToUse))
+                if (nounsInInventory.Contains(nounToUse) || nounsInRoom.Contains(nounToUse))
                 {
                     bool actionResult = useDictionary[nounToUse].DoActionResponse(controller);
 
@@ -278,7 +278,6 @@ public class InteractableItems : MonoBehaviour {
 
                             if (itemInteractions[i].inputAction.keyWord == "use")
                             {
-
                                 controller.IncreaseScore(itemInteractions[i].scoreGiven);
                             }
                         }
@@ -286,12 +285,12 @@ public class InteractableItems : MonoBehaviour {
                 }
                 else
                 {
-                    controller.LogStringWithReturn("You can't use the " + nounToUse);
+                    controller.LogStringWithReturn("There is no " + nounToUse);                    
                 }
             }
             else
             {
-                controller.LogStringWithReturn("There is no " + nounToUse + " in your inventory");
+                controller.LogStringWithReturn("You can't use the " + nounToUse);
             }
         }
         else

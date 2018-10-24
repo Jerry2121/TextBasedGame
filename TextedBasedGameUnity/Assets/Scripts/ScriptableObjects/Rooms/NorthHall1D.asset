@@ -24,4 +24,8 @@ MonoBehaviour:
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: 17b81a85673fe4e4a8f009385aedc2f1, type: 2}
     requiredObjects: []
+  - keyString: south
+    exitDescription: A door to the south leads into the chemical lab.
+    valueRoom: {fileID: 11400000, guid: 43f47515370e07e41a34168bbcbcc19b, type: 2}
+    requiredObjects: []
   InteractableObjectsInRoom: []

@@ -597,6 +597,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3f005b1499872254cacd8481b6e59de7, type: 2}
   - {fileID: 11400000, guid: 52b9c1669f5b08d42816517dbbe2c1ac, type: 2}
   - {fileID: 11400000, guid: a67ad61e5a65d074e833ec33b21d3d43, type: 2}
+  - {fileID: 11400000, guid: 913ec19b259a0cd478c5f1a509d22904, type: 2}
   nounsInRoom: []
   nounsInInventory: []
   nounsInEquipment: []
@@ -695,6 +696,7 @@ MonoBehaviour:
   interactionsDescriptionsInRoom: []
   interactableItems: {fileID: 0}
   saveLoadGame: {fileID: 0}
+  actionLog: []
   lastInput: 
 --- !u!4 &1189424936
 Transform:

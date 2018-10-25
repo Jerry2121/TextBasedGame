@@ -15,6 +15,7 @@ public class Sing : InputAction {
             if (separatedInputWords[1] == "to" && separatedInputWords[2] == "the" && separatedInputWords[3] == "birds")
             {
                 controller.LogStringWithReturn("You sing to the birds. Why?");
+                controller.IncreaseMoves();
             }
             else
             {
@@ -32,7 +33,11 @@ public class Sing : InputAction {
                     case 4:
                         controller.LogStringWithReturn("Survival first, singing later");
                         break;
+                    case 5:
+                        controller.LogStringWithReturn("Does thet make you feel better?");
+                        break;
                 }
+                controller.IncreaseMoves();
             }
         }
         else
@@ -52,6 +57,7 @@ public class Sing : InputAction {
                     controller.LogStringWithReturn("Survival first, singing later");
                     break;
             }
+            controller.IncreaseMoves();
         }
     }
 

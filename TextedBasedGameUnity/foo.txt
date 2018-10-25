@@ -1,0 +1,112 @@
+       ,,.  .*,.                                 
+.,..,,,*. *   . *. *   *,* . *                   
+          . .   ** ..( ..   ..                   
+         *.*. ,. *,. .   ., *  *                 
+       / * ,/ . , .,.*  *   .....                
+         /  * ,.  , * / . .   **  ./* ..         
+          *../   */  ,   ,*  .    ,    .* ,      
+         , , . , * *,    . ,/    .     ./ ,.     
+              ,/  * * /*  **,*,...     .   *     
+        . .   . ,* . . .*   . (    *  ,     .    
+        *      .  .*..  .  ( * .        ,     *, 
+      /     .. ,., ,, .      ,*,*         ,    ,.
+     ,      ,/* .     ,,                    .   .
+       ,. ,  .,,,.                             . 
+    .      /,                                   
+
+Your ship is almost out of fuel and oxygen, but you've found and old space station you may be able to find supplies in
+
+type "go hangar" to head to the Space Station Hangar.
+
+
+go hangar
+
+You head off to the hangar
+
+Hangar
+Apart from the small ship you arrived in, the hangar is empty.
+To the north there is a large door that will lead into the space station.
+However, you can hop back in your spaceship and head south back out into space.
+
+go north
+
+You head off to the north
+
+South Hall 1A
+
+Going west would put you in the West Hallway.
+The South Hallway extends to the east.
+A door to the south leads to the hangar.
+
+go west
+
+You head off to the west
+
+West Hall 1E
+The West Hallway extends to the north.
+The West Hallway extends to the east into the South Hallway.
+A door to the west leads into the medbay.
+
+go north
+
+You head off to the north
+
+West Hall 1D
+A pane of glass allows you to see out into the endless void of space.
+The West Hallway extends to the north and south.
+
+
+go north
+
+You head off to the north
+
+West Hall 1C
+The West Hallway extends to the north and south.
+
+
+go north
+
+You head off to the north
+
+West Hall 1B
+A pane of glass allows you to see out into the endless void of space.
+The West Hallway extends to the north and south.
+
+
+go north
+
+You head off to the north
+
+West Hall 1A
+There is a blast door blocking the way to the North Hall, as the next section appears to be compromised. 
+The West Hallway extends to the south.
+A door to the west leads into the living quarters.
+A spacesuit would allow you to continue east into the North Hallway.
+
+go waest
+
+There is no path to the waest
+
+go west
+
+You head off to the west
+
+Living Quarters - Room A
+The room is neatly organize with a couple of small bookcases against the wall opposite the door.
+To the east there is a door leading back to the hallway.
+There is a security card on the nightstand.
+
+take securitycard
+
+There is no securitycard here to take.
+
+take securitycards
+
+There is no securitycards here to take.
+
+log foo
+
+Score:0
+
+Movees:8
+

@@ -41,7 +41,7 @@ public class RoomNavigation : MonoBehaviour {
                 for (int i = 0; i < attemptedExit.requiredObjects.Length; i++)
                 {
                     
-                    if (!controller.interactableItems.CheckInventoryOrEquiptment(attemptedExit.requiredObjects[i].noun))
+                    if (!controller.interactableItems.CheckInventoryOrEquipment(attemptedExit.requiredObjects[i].noun))
                     {
                         controller.LogStringWithReturn("You missing some items or equipment you need to use that exit");
                         return;

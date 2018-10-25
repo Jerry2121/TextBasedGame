@@ -25,4 +25,4 @@ MonoBehaviour:
   - inputAction: {fileID: 11400000, guid: 9b52a0409cda0f6438edffd6974d5db3, type: 2}
     textResponse: You used the skull
     scoreGiven: 5
-    actionResponse: {fileID: 11400000, guid: 981ca96da9aac2149a21e35372cea71b, type: 2}
+    actionResponse: {fileID: 11400000, guid: 2701b50508c8d1148a39d6becb525d93, type: 2}

@@ -11,19 +11,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a94cc17591f050e4badcbf86daf732e2, type: 3}
   m_Name: BoltCutters
   m_EditorClassIdentifier: 
-  noun: bolt cutters
-  description: A large pair of some type of cutters. I wonder if I could use this
-    later.
+  noun: bolt-cutters
+  description: A large pair of bolt-cutters are leaning up against one of the walls.
   interactions:
   - inputAction: {fileID: 11400000, guid: c398d039e762a814899c09278b0bc234, type: 2}
     textResponse: A pair of strong bolt cutters.
     scoreGiven: 0
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 6bd6102636b5266429debda9b8560cad, type: 2}
-    textResponse: You take the bolt cutters.
+    textResponse: You take the bolt-cutters.
     scoreGiven: 5
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 9b52a0409cda0f6438edffd6974d5db3, type: 2}
-    textResponse: You use the bolt cutters to cut the links.
+    textResponse: 
     scoreGiven: 0
     actionResponse: {fileID: 0}

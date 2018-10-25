@@ -5,22 +5,36 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "TextAdventure/ActionResponses/ItemResponse")]
 public class ItemResponse : ActionResponse {
 
+    public InteractableObject[] otherItemsRequired;
+    public InteractableObject[] itemsToBeRemovedFromInventory;
     public InteractableObject itemToGive;
     [TextArea]
     public string successTextResponse;
-    [TextArea]
     public string failureTextResponse;
 
     public override bool DoActionResponse(GameController controller)
     {
-        if (!controller.interactableItems.nounsInInventory.Contains(itemToGive.noun))
+        if (otherItemsRequired.Length > 0)
+        {
+            for (int i = 0; i < otherItemsRequired.Length; i++)
+            {
+                if (!controller.interactableItems.nounsInInventory.Contains(otherItemsRequired[i].noun))
+                {
+                    controller.LogStringWithReturn("You don't have the items necessary to do that!");
+                    return false;
+                }
+            }
+        }
+
+        if (itemToGive != null && !controller.interactableItems.nounsInInventory.Contains(itemToGive.noun))
         {
             controller.interactableItems.nounsInInventory.Add(itemToGive.noun);
             controller.LogStringWithReturn(successTextResponse);
         }
-        else
+
+        for (int i = 0; i < itemsToBeRemovedFromInventory.Length; i++)
         {
-            controller.LogStringWithReturn(failureTextResponse);
+            controller.interactableItems.nounsInInventory.Remove(itemsToBeRemovedFromInventory[i].noun);
         }
 
         return true;

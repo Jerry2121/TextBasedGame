@@ -80,7 +80,7 @@ public class InteractableItems : MonoBehaviour {
         for (int i = 0; i < nounsInRoom.Count; i++)
         {
             string noun = nounsInRoom[i];
-
+            Debug.Log(noun);
             InteractableObject interactableObjectInRoom = GetInteractableObjectFromUsableList(noun);
 
             if (interactableObjectInRoom == null)
@@ -93,8 +93,11 @@ public class InteractableItems : MonoBehaviour {
                 if (interaction.actionResponse == null || interaction.inputAction.keyWord != "use")
                     continue;
 
+                Debug.Log("Got here");
+
                 if (usableInRoomDictionary.ContainsKey(noun) == false)
                 {
+                    Debug.Log("Added key " + noun + " to dictionary");
                     usableInRoomDictionary.Add(noun, interaction.actionResponse);
                 }
             }
@@ -284,8 +287,8 @@ public class InteractableItems : MonoBehaviour {
         if (separatedInputWords.Length > 1)
         {
             string nounToUse = separatedInputWords[1];
-
-            if (useDictionary.ContainsKey(nounToUse))
+            Debug.Log("Checking key " + nounToUse + " in dictionary");
+            if (useDictionary.ContainsKey(nounToUse) || usableInRoomDictionary.ContainsKey(nounToUse))
             {
                 if (nounsInInventory.Contains(nounToUse) || nounsInRoom.Contains(nounToUse))
                 {

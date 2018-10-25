@@ -292,7 +292,11 @@ public class InteractableItems : MonoBehaviour {
             {
                 if (nounsInInventory.Contains(nounToUse) || nounsInRoom.Contains(nounToUse))
                 {
-                    bool actionResult = useDictionary[nounToUse].DoActionResponse(controller);
+                    bool actionResult;
+                    if (useDictionary.ContainsKey(nounToUse))
+                        actionResult = useDictionary[nounToUse].DoActionResponse(controller);
+                    else
+                        actionResult = usableInRoomDictionary[nounToUse].DoActionResponse(controller);
 
                     if (actionResult == false)
                     {

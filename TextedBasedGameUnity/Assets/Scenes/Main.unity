@@ -450,7 +450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e3494b5e8f96d448cedc8384b328f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentRoom: {fileID: 11400000, guid: 7586ed9f39e0e6d48b0fe970c895fbed, type: 2}
+  currentRoom: {fileID: 11400000, guid: 8b582125cc216874c8a07912722dd3f5, type: 2}
   allRooms:
   - {fileID: 11400000, guid: 13b14ba273adb544289958c884922422, type: 2}
   - {fileID: 11400000, guid: 8b582125cc216874c8a07912722dd3f5, type: 2}
@@ -575,6 +575,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a5a1ec9b20521434790fd9dda88ee53f, type: 2}
   - {fileID: 11400000, guid: 3f005b1499872254cacd8481b6e59de7, type: 2}
   - {fileID: 11400000, guid: 52b9c1669f5b08d42816517dbbe2c1ac, type: 2}
+  - {fileID: 11400000, guid: a67ad61e5a65d074e833ec33b21d3d43, type: 2}
+  - {fileID: 11400000, guid: 913ec19b259a0cd478c5f1a509d22904, type: 2}
   nounsInRoom: []
   nounsInInventory: []
   nounsInEquipment: []

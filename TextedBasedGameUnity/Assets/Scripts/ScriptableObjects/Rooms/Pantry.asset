@@ -21,8 +21,10 @@ MonoBehaviour:
     valueRoom: {fileID: 11400000, guid: 8aa74523ec95f794d8abdc5df368f557, type: 2}
     requiredObjects: []
   - keyString: west
-    exitDescription: There is a giant freezer door to the west.
+    exitDescription: There is a giant freezer door to the west. You should cut the
+      power to the room before you try to explore it.
     valueRoom: {fileID: 11400000, guid: 8aa74523ec95f794d8abdc5df368f557, type: 2}
-    requiredObjects: []
+    requiredObjects:
+    - {fileID: 11400000, guid: 65c53a395b727684c8e879441f5dfc59, type: 2}
   InteractableObjectsInRoom:
   - {fileID: 11400000, guid: a67ad61e5a65d074e833ec33b21d3d43, type: 2}

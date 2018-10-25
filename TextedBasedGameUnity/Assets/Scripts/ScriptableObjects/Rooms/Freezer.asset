@@ -14,8 +14,8 @@ MonoBehaviour:
   description: 'Freezer
 
     According to temperature gauge it appears to be -250C in here. You can''t see
-    anything that would typically be in a freezer, and there''s a frozen body laying
-    in the corner.'
+    anything that would typically be in a freezer, like food, however there''s a frozen
+    body laying in the corner.'
   roomName: freezer
   exits:
   - keyString: east

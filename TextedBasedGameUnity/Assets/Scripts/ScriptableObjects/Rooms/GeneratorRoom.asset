@@ -13,11 +13,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: 'Generator Room
 
-    Large machines with blinking lights line the walls. '
+    Large machines with blinking lights line the walls. Each one has some mess of
+    wires hanging out. '
   roomName: generator room
   exits:
   - keyString: north
     exitDescription: There is a door to the north leading back to the hallway.
     valueRoom: {fileID: 11400000, guid: 538b3692c91984041b133f2689e0dd19, type: 2}
     requiredObjects: []
-  InteractableObjectsInRoom: []
+  InteractableObjectsInRoom:
+  - {fileID: 11400000, guid: f77325dbf7b139943b44927f302244fd, type: 2}

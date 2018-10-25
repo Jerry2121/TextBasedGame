@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73bc717e3cfc28b4aac6bbb0d6646023, type: 3}
   m_Name: Sing
   m_EditorClassIdentifier: 
-  keyWord: 
-  description: 
+  keyWord: sing
+  description: '- sing to the birds'

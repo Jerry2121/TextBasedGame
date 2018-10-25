@@ -9,6 +9,7 @@ public class InteractableItems : MonoBehaviour {
     public Dictionary<string, string> takeDictionary = new Dictionary<string, string>();
     public Dictionary<string, string> equipDictionary = new Dictionary<string, string>();
     public Dictionary<string, ActionResponse> usableInRoomDictionary = new Dictionary<string, ActionResponse>();
+    public Dictionary<string, string> pickNounToRealNounDictionary = new Dictionary<string, string>();
 
     [HideInInspector]
     public List<string> nounsInRoom = new List<string>();
@@ -16,6 +17,7 @@ public class InteractableItems : MonoBehaviour {
     private Dictionary<string, ActionResponse> useDictionary = new Dictionary<string, ActionResponse>();
     private GameController controller;
     public List<string> nounsInInventory = new List<string>();
+    public List<string> nounsInInventoryHistory = new List<string>();
     public List<string> nounsInEquipment = new List<string>();
 
     private void Awake()
@@ -27,9 +29,10 @@ public class InteractableItems : MonoBehaviour {
     {
         InteractableObject interactableInRoom = currentRoom.InteractableObjectsInRoom[i];
 
-        if (nounsInInventory.Contains(interactableInRoom.noun) == false)
+        if (nounsInInventoryHistory.Contains(interactableInRoom.noun) == false)
         {
-            nounsInRoom.Add(interactableInRoom.noun);
+            pickNounToRealNounDictionary.Add(interactableInRoom.pickupNoun, interactableInRoom.noun);
+            nounsInRoom.Add(interactableInRoom.pickupNoun);
             return interactableInRoom.description;
         }
 
@@ -42,7 +45,7 @@ public class InteractableItems : MonoBehaviour {
 
         if (nounsInEquipment.Contains(interactableInRoom.noun) == false)
         {
-            nounsInRoom.Add(interactableInRoom.noun);
+            nounsInRoom.Add(interactableInRoom.pickupNoun);
             return interactableInRoom.description;
         }
 
@@ -156,6 +159,7 @@ public class InteractableItems : MonoBehaviour {
         usableInRoomDictionary.Clear();
         examineDictionary.Clear();
         nounsInRoom.Clear();
+        pickNounToRealNounDictionary.Clear();
     }
 
     public Dictionary<string, string> Take (string[] separatedInputWords)
@@ -169,14 +173,15 @@ public class InteractableItems : MonoBehaviour {
                 /*nounsInInventory.Add(noun);
                 nounsInRoom.Remove(noun);
                 AddActionResponsesToUseDictionary();*/
-
-                Interaction[] itemInteractions = GetInteractableObjectFromUsableList(noun).interactions;
+                string realNoun = pickNounToRealNounDictionary[noun];
+                Interaction[] itemInteractions = GetInteractableObjectFromUsableList(realNoun).interactions;
                 for (int i = 0; i < itemInteractions.Length; i++)
                 {
 
                     if (itemInteractions[i].inputAction.keyWord == "take")
                     {
-                        nounsInInventory.Add(noun);
+                        nounsInInventory.Add(realNoun);
+                        nounsInInventoryHistory.Add(realNoun);
                         nounsInRoom.Remove(noun);
                         AddActionResponsesToUseDictionary();
 

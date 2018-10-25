@@ -90,7 +90,7 @@ public class GameController : MonoBehaviour {
                 }
                 if (interaction.inputAction.keyWord == "take")
                 {
-                    interactableItems.takeDictionary.Add(interactableInRoom.noun, interaction.textResponse);
+                    interactableItems.takeDictionary.Add(interactableInRoom.pickupNoun, interaction.textResponse);
                 }
                 if (interaction.inputAction.keyWord == "equip")
                 {
@@ -133,9 +133,14 @@ public class GameController : MonoBehaviour {
     {
         string path = separatedInputWords[1]+ ".txt";
 
-        string[] actionLogArray = actionLog.ToArray();
+        List<string> loggedText = actionLog;
 
-        string[] createText = (actionLogArray);
+        loggedText.Add("Score:" + score + "\n");
+        loggedText.Add("Moves:" + moves + "\n");
+
+        string[] loggedTextArray = loggedText.ToArray();
+
+        string[] createText = (loggedTextArray);
         File.WriteAllLines(path, createText);
 
         LogStringWithReturn("Game history logged to " + path);

@@ -331,7 +331,7 @@ public class InteractableItems : MonoBehaviour {
             controller.LogStringWithReturn("use what?");
     }
 
-    public bool CheckInventoryOrEquiptment(string nounToCheck)
+    public bool CheckInventoryOrEquipment(string nounToCheck)
     {
         if (nounsInInventory.Contains(nounToCheck) || nounsInEquipment.Contains(nounToCheck))
             return true;

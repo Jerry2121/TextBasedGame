@@ -13,5 +13,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupNoun: solution
   noun: mineral-solution
-  description: There's a vial on one of the tables labeled "mineral solution."
-  interactions: []
+  description: 
+  interactions:
+  - inputAction: {fileID: 11400000, guid: c398d039e762a814899c09278b0bc234, type: 2}
+    textResponse: A solution made from fertilizer and water. Good for plant growth.
+    scoreGiven: 0
+    actionResponse: {fileID: 0}

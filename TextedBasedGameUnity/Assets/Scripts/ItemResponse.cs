@@ -10,7 +10,6 @@ public class ItemResponse : ActionResponse {
     public InteractableObject itemToGive;
     [TextArea]
     public string successTextResponse;
-    public string failureTextResponse;
 
     public override bool DoActionResponse(GameController controller)
     {

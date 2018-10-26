@@ -13,5 +13,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupNoun: cutters
   noun: garden-cutters
-  description: 'A pair of garden-cutters '
-  interactions: []
+  description: 
+  interactions:
+  - inputAction: {fileID: 11400000, guid: c398d039e762a814899c09278b0bc234, type: 2}
+    textResponse: A pair of garden-cutters.
+    scoreGiven: 0
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9b52a0409cda0f6438edffd6974d5db3, type: 2}
+    textResponse: 
+    scoreGiven: 0
+    actionResponse: {fileID: 11400000, guid: 15bd342d5008b924aba2f8b1eda07c39, type: 2}

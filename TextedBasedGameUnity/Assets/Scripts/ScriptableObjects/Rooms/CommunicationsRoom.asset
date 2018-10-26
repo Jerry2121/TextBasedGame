@@ -11,13 +11,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
   m_Name: CommunicationsRoom
   m_EditorClassIdentifier: 
-  description: 'Communications Room
-
-    Several communications terminals are spread about the room.'
+  description: Communications Room
   roomName: communications room
   exits:
   - keyString: north
     exitDescription: A door to the north leads back to the hallway.
     valueRoom: {fileID: 11400000, guid: 6843f0d6091b7fe44b38adc6f7b3cc47, type: 2}
     requiredObjects: []
-  InteractableObjectsInRoom: []
+  InteractableObjectsInRoom:
+  - {fileID: 11400000, guid: 913ec19b259a0cd478c5f1a509d22904, type: 2}

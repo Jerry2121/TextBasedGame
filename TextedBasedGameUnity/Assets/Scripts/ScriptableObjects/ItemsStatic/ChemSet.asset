@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a94cc17591f050e4badcbf86daf732e2, type: 3}
   m_Name: ChemSet
   m_EditorClassIdentifier: 
+  pickupNoun: chemset
   noun: chemset
   description: There's a table in the center of the room with a chemset on it you
     could use.

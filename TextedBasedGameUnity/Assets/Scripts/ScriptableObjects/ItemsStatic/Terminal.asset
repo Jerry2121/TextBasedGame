@@ -11,8 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a94cc17591f050e4badcbf86daf732e2, type: 3}
   m_Name: Terminal
   m_EditorClassIdentifier: 
+  pickupNoun: terminal
   noun: terminal
-  description: There is an active terminal in the corner of the room.
+  description: There's a large communications terminal.
   interactions:
   - inputAction: {fileID: 11400000, guid: 9b52a0409cda0f6438edffd6974d5db3, type: 2}
     textResponse: The terminal beeps back at you.

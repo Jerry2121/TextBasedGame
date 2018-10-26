@@ -5,8 +5,18 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "TextAdventure/ActionResponses/SignalResponse")]
 public class SignalReponse : ActionResponse {
 
+    public InteractableObject[] otherItemsRequired;
+
     public override bool DoActionResponse(GameController controller)
     {
+        for (int i = 0; i < otherItemsRequired.Length; i++)
+        {
+            if (!controller.interactableItems.nounsInInventory.Contains(otherItemsRequired[i].noun))
+            {
+                controller.LogStringWithReturn("The terminal is dead. Maybe you could jumpstart it somehow.");
+                return false;
+            }
+        }
 
         int chanceForEnemies = 99;
 

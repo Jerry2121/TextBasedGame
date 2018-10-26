@@ -9,9 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 421354adc7bcc9248b84db19e6b941c7, type: 3}
-  m_Name: WirecuttersInGeneratorRoom
+  m_Name: CuttersInGeneratorRoom
   m_EditorClassIdentifier: 
   requiredString: generator room
   otherItemsRequired: []
+  itemsToBeRemovedFromInventory: []
   itemToGive: {fileID: 11400000, guid: 65c53a395b727684c8e879441f5dfc59, type: 2}
   successTextResponse: You cut the wires to one of the generators.

@@ -12,3 +12,6 @@ MonoBehaviour:
   m_Name: Signal
   m_EditorClassIdentifier: 
   requiredString: 
+  otherItemsRequired:
+  - {fileID: 11400000, guid: 65c53a395b727684c8e879441f5dfc59, type: 2}
+  - {fileID: 0}

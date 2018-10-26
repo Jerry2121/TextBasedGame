@@ -11,8 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421354adc7bcc9248b84db19e6b941c7, type: 3}
   m_Name: BoltCuttersInSecurityRoom
   m_EditorClassIdentifier: 
-  requiredString: 
+  requiredString: security room
   otherItemsRequired: []
   itemsToBeRemovedFromInventory: []
-  itemToGive: {fileID: 0}
-  successTextResponse: 
+  itemToGive: {fileID: 11400000, guid: d6a26dcdd022e3d4895f1136500f76e0, type: 2}
+  successTextResponse: You cut the wire fence with the bolt cutters and take one of
+    the tasers.

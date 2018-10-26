@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
+  m_Name: UtilityCloset
+  m_EditorClassIdentifier: 
+  description: 'Utility Closet
+
+    A couple of workbenches and various lockers that presumably have tools in them
+    are positioned throughout the room.'
+  roomName: utility closet
+  exits:
+  - keyString: east
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: dc78e6f7e65d332479fd0b1ec43e0ca0, type: 2}
+    requiredObjects: []
+  InteractableObjectsInRoom:
+  - {fileID: 11400000, guid: a5a1ec9b20521434790fd9dda88ee53f, type: 2}

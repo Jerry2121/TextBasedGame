@@ -9,9 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
-  m_Name: GameEnd
+  m_Name: GameWin
   m_EditorClassIdentifier: 
-  description: 
+  description: 'You win!
+
+    Type "restart" to play again!'
   roomName: 
-  exits: []
+  exits:
+  - keyString: restart
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: 7586ed9f39e0e6d48b0fe970c895fbed, type: 2}
+    requiredObjects: []
   InteractableObjectsInRoom: []

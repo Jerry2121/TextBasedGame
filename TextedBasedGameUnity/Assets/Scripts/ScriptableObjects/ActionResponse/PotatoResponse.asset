@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: PotatoResponse
   m_EditorClassIdentifier: 
   requiredString: 
-  textResponse: 
+  textResponse: What do you intend to use it for? It's just a potato.

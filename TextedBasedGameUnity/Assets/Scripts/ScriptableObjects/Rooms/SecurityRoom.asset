@@ -14,7 +14,7 @@ MonoBehaviour:
   description: 'Security Room
 
     Screens for surveillance are spread across one wall. Behind a chain-link fence
-    there are a variety of (weapons?).'
+    there is a collection of taser guns that could be useful.'
   roomName: security room
   exits:
   - keyString: south

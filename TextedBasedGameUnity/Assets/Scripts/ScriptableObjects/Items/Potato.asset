@@ -23,3 +23,7 @@ MonoBehaviour:
     textResponse: Just a potato. Nothing special here.
     scoreGiven: 0
     actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9b52a0409cda0f6438edffd6974d5db3, type: 2}
+    textResponse: 
+    scoreGiven: 0
+    actionResponse: {fileID: 11400000, guid: 81b71ab7ac21385429d735d50cac3be9, type: 2}

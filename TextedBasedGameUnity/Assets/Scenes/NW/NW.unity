@@ -818,8 +818,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5f79825253fda6e449c8269fd5a876fa, type: 2}
   - {fileID: 11400000, guid: 913ec19b259a0cd478c5f1a509d22904, type: 2}
   nounsInRoom: []
-  nounsInInventory: []
-  nounsInInventoryHistory: []
+  nounsInInventory:
+  - taser
+  - generator-wires
+  nounsInInventoryHistory:
+  - taser
+  - generator-wires
   nounsInEquipment: []
 --- !u!114 &1506066186
 MonoBehaviour:

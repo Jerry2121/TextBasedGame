@@ -13,7 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupNoun: bolt-cutters
   noun: bolt-cutters
-  description: A large pair of bolt-cutters are leaning up against one of the walls.
+  description: A large pair of bolt-cutters are leaning up against one of the walls
+    next to a workbench.
   interactions:
   - inputAction: {fileID: 11400000, guid: c398d039e762a814899c09278b0bc234, type: 2}
     textResponse: A pair of strong bolt cutters.
@@ -23,3 +24,11 @@ MonoBehaviour:
     textResponse: You take the bolt-cutters.
     scoreGiven: 5
     actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9b52a0409cda0f6438edffd6974d5db3, type: 2}
+    textResponse: 
+    scoreGiven: 0
+    actionResponse: {fileID: 11400000, guid: 9caa10c4bc667bd45a251bc4be386aaa, type: 2}
+  - inputAction: {fileID: 11400000, guid: 9b52a0409cda0f6438edffd6974d5db3, type: 2}
+    textResponse: 
+    scoreGiven: 0
+    actionResponse: {fileID: 11400000, guid: 9caa10c4bc667bd45a251bc4be386aaa, type: 2}

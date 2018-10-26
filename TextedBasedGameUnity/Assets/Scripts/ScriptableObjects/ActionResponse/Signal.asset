@@ -14,4 +14,10 @@ MonoBehaviour:
   requiredString: 
   otherItemsRequired:
   - {fileID: 11400000, guid: 65c53a395b727684c8e879441f5dfc59, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: d6a26dcdd022e3d4895f1136500f76e0, type: 2}
+  winText: You signal a passing convoy and they rescue you from the space station,
+    taking you to a safe colony.
+  loseText: 'You accidentally signal a band of pirates. They quickly find your location
+    in the station and take you captive. '
+  winRoom: {fileID: 11400000, guid: 096d3304dde1923428837f1a42f3f25a, type: 2}
+  loseRoom: {fileID: 11400000, guid: 296a6e4438a35464f9e682b3b723259c, type: 2}

@@ -40,12 +40,16 @@ public class SignalReponse : ActionResponse {
     {
         controller.LogStringWithReturn(loseText);
         controller.roomNavigation.currentRoom = loseRoom;
+        controller.LogStringWithReturn("\n score: " + controller.score);
+        controller.LogStringWithReturn("\n moves: " + controller.moves);
         controller.DisplayRoomText();
     }
     void FriendlyFindsYou(GameController controller)
     {
         controller.LogStringWithReturn(winText);
         controller.roomNavigation.currentRoom = winRoom;
+        controller.LogStringWithReturn("\n score: " + controller.score);
+        controller.LogStringWithReturn("\n moves: " + controller.moves);
         controller.DisplayRoomText();
     }
 }

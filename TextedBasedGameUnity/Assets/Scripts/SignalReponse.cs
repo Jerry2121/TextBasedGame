@@ -6,6 +6,13 @@ using UnityEngine;
 public class SignalReponse : ActionResponse {
 
     public InteractableObject[] otherItemsRequired;
+    [TextArea]
+    public string winText;
+    [TextArea]
+    public string loseText;
+
+    public Room winRoom;
+    public Room loseRoom;
 
     public override bool DoActionResponse(GameController controller)
     {
@@ -19,21 +26,26 @@ public class SignalReponse : ActionResponse {
         }
 
         int chanceForEnemies = 99;
+        // Check for items in inventory, decrease chanceForEnemies accordingly
 
         if (Random.Range(1,101) <= chanceForEnemies)
-            EnemyFindsYou();
+            EnemyFindsYou(controller);
         else
-            FriendlyFindsYou();
+            FriendlyFindsYou(controller);
 
         return true;
     }
 
-    void EnemyFindsYou()
+    void EnemyFindsYou(GameController controller)
     {
-        throw new System.NotImplementedException();
+        controller.LogStringWithReturn(loseText);
+        controller.roomNavigation.currentRoom = loseRoom;
+        controller.DisplayRoomText();
     }
-    void FriendlyFindsYou()
+    void FriendlyFindsYou(GameController controller)
     {
-        throw new System.NotImplementedException();
+        controller.LogStringWithReturn(winText);
+        controller.roomNavigation.currentRoom = winRoom;
+        controller.DisplayRoomText();
     }
 }

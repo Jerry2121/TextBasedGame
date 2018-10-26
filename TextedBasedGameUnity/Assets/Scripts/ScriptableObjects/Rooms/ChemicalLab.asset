@@ -18,4 +18,5 @@ MonoBehaviour:
     exitDescription: A door to the north leads back into the hallway.
     valueRoom: {fileID: 11400000, guid: e89845826d01d6c4c909a6724a420f1e, type: 2}
     requiredObjects: []
-  InteractableObjectsInRoom: []
+  InteractableObjectsInRoom:
+  - {fileID: 11400000, guid: 839a4f412c05c3a4f92a3a888b6b0e06, type: 2}

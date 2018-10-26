@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a94cc17591f050e4badcbf86daf732e2, type: 3}
   m_Name: Gardencutters
   m_EditorClassIdentifier: 
+  pickupNoun: cutters
   noun: garden-cutters
   description: 'A pair of garden-cutters '
   interactions: []

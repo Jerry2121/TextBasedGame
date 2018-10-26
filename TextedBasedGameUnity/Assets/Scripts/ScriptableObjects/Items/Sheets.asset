@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a94cc17591f050e4badcbf86daf732e2, type: 3}
   m_Name: Sheets
   m_EditorClassIdentifier: 
+  pickupNoun: sheets
   noun: sheets
   description: There are some bed sheets laying down on top of one of the beds.
   interactions:

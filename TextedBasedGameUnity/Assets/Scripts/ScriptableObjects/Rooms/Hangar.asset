@@ -26,7 +26,4 @@ MonoBehaviour:
       out into space.
     valueRoom: {fileID: 11400000, guid: e3aa64b92c087f8498da4ef761284f30, type: 2}
     requiredObjects: []
-  InteractableObjectsInRoom:
-  - {fileID: 11400000, guid: 1bc2d6233342a4642be8b6d2a4231eec, type: 2}
-  - {fileID: 11400000, guid: 27d05747b827d4e4a88478356442bb59, type: 2}
-  - {fileID: 11400000, guid: 7e77e06ae5c288d4cb6da996fccae0cb, type: 2}
+  InteractableObjectsInRoom: []

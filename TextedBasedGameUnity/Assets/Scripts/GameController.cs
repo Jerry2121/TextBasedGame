@@ -112,7 +112,10 @@ public class GameController : MonoBehaviour {
                     for (int n = 0; n < interactableItems.usableItemList[j].interactions.Length; n++)
                     {
                         if (interactableItems.usableItemList[j].interactions[n].inputAction.keyWord == "examine")
-                            interactableItems.examineDictionary.Add(interactableItems.nounsInInventory[i], interactableItems.usableItemList[j].interactions[n].textResponse);
+                        {
+                            if(interactableItems.examineDictionary.ContainsKey(interactableItems.nounsInInventory[i]) == false)
+                                interactableItems.examineDictionary.Add(interactableItems.nounsInInventory[i], interactableItems.usableItemList[j].interactions[n].textResponse);
+                        }
                     }
                     
                 }

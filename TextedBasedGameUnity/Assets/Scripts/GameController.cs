@@ -67,6 +67,7 @@ public class GameController : MonoBehaviour {
         roomNavigation.UnpackExitsInRoom();
         PrepareObjectsToTakeOrExamine(roomNavigation.currentRoom);
         interactableItems.AddActionResponsesToUsableInRoomDictionary();
+        AddInventoryItemsToExamineDictionary();
     }
 
     void PrepareObjectsToTakeOrExamine(Room currentRoom)
@@ -100,6 +101,27 @@ public class GameController : MonoBehaviour {
         }
     }
 
+    public void AddInventoryItemsToExamineDictionary()
+    {
+        for (int i = 0; i < interactableItems.nounsInInventory.Count; i++)
+        {
+            for (int j = 0; j < interactableItems.usableItemList.Count; j++)
+            {
+                if(interactableItems.usableItemList[j].noun == interactableItems.nounsInInventory[i])
+                {
+                    for (int n = 0; n < interactableItems.usableItemList[j].interactions.Length; n++)
+                    {
+                        if (interactableItems.usableItemList[j].interactions[n].inputAction.keyWord == "examine")
+                            interactableItems.examineDictionary.Add(interactableItems.nounsInInventory[i], interactableItems.usableItemList[j].interactions[n].textResponse);
+                    }
+                    
+                }
+
+
+            }
+        }
+    }
+
     public string TestVerbDictionaryWithNoun(Dictionary<string,string> verbDictionary, string verb, string noun)
     {
         if (verbDictionary.ContainsKey(noun))
@@ -122,12 +144,6 @@ public class GameController : MonoBehaviour {
     {
         actionLog.Add(stringToAdd + "\n");
     }
-
-
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     public void LogToTextFile(string[] separatedInputWords)
     {

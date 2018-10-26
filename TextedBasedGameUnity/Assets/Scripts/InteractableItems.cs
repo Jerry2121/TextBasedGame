@@ -189,6 +189,7 @@ public class InteractableItems : MonoBehaviour {
                     }
                 }
                 controller.IncreaseMoves();
+                controller.AddInventoryItemsToExamineDictionary();
 
                 return takeDictionary;
             }

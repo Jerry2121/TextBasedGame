@@ -9,17 +9,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a94cc17591f050e4badcbf86daf732e2, type: 3}
-  m_Name: FireAxe
+  m_Name: Knife
   m_EditorClassIdentifier: 
-  pickupNoun: axe
-  noun: axe
-  description: There is an axe leaning against the wall.
+  pickupNoun: knife
+  noun: knife
+  description: There is a knife on one of the counters.
   interactions:
   - inputAction: {fileID: 11400000, guid: c398d039e762a814899c09278b0bc234, type: 2}
-    textResponse: A fire axe. Good for smashing things!
+    textResponse: A kitchen knife, big and sharp.
     scoreGiven: 0
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 6bd6102636b5266429debda9b8560cad, type: 2}
-    textResponse: You pick up the fire axe. It's pretty heavy.
-    scoreGiven: 5
+    textResponse: You take the kitchen knife.
+    scoreGiven: 0
     actionResponse: {fileID: 0}

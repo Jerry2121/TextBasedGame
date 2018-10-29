@@ -24,4 +24,8 @@ MonoBehaviour:
     exitDescription: It also extends to the south.
     valueRoom: {fileID: 11400000, guid: b17e25544ad5f3c43a14004ab30c0c95, type: 2}
     requiredObjects: []
+  - keyString: east
+    exitDescription: A door to the east leads into the gym.
+    valueRoom: {fileID: 11400000, guid: ed87b35be6c2c0c43b8f7eb443a3e5c5, type: 2}
+    requiredObjects: []
   InteractableObjectsInRoom: []

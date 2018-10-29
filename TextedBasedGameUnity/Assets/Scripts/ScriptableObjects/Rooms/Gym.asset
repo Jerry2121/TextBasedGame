@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: 'Gym
 
-'
+    There are various exercise machines positioned throughout the room. '
   roomName: gym
   exits:
   - keyString: west

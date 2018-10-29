@@ -9,14 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1619c521a15cd324a98b655adbc674d8, type: 3}
-  m_Name: CryochamberInteractionA
+  m_Name: Cryopod
   m_EditorClassIdentifier: 
   requiredString: 
-  otherItemsRequired:
-  - {fileID: 11400000, guid: a22724c5d6e404748be3add828afc590, type: 2}
-  winText: You input a duration of time to sleep that will allow the potatoes you
-    planted time to grow, then you hop in the pod and doze off.
-  loseText: 
+  itemsRequired: []
+  noteAText: You planted potatoes, now seems like a good time to go to sleep and wait
+    for them to be ready to eat.
+  noteBText: I dunno.
   failedInteractionText: 
   winRoom: {fileID: 11400000, guid: 096d3304dde1923428837f1a42f3f25a, type: 2}
   loseRoom: {fileID: 11400000, guid: 296a6e4438a35464f9e682b3b723259c, type: 2}

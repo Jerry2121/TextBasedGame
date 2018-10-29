@@ -9,13 +9,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a94cc17591f050e4badcbf86daf732e2, type: 3}
-  m_Name: Terminal
+  m_Name: Cryopod
   m_EditorClassIdentifier: 
-  pickupNoun: terminal
-  noun: terminal
-  description: There's a large communications terminal at the far end of the room.
+  pickupNoun: cryopod
+  noun: cryopod
+  description: There's a cryopod in the back corner that looks usable.
   interactions:
+  - inputAction: {fileID: 11400000, guid: c398d039e762a814899c09278b0bc234, type: 2}
+    textResponse: A cryopod for incredibly long periods of sleep without harmful effects
+      on the body.
+    scoreGiven: 0
+    actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 9b52a0409cda0f6438edffd6974d5db3, type: 2}
     textResponse: 
     scoreGiven: 0
-    actionResponse: {fileID: 11400000, guid: 48ba6af5312a1f343827734060b08ce8, type: 2}
+    actionResponse: {fileID: 0}

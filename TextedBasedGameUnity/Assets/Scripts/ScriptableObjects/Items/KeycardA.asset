@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: KeycardA
   m_EditorClassIdentifier: 
   pickupNoun: keycard
-  noun: Keycard A
+  noun: keycard-a
   description: A keycard can be seen on one of the desks.
   interactions:
   - inputAction: {fileID: 11400000, guid: 6bd6102636b5266429debda9b8560cad, type: 2}

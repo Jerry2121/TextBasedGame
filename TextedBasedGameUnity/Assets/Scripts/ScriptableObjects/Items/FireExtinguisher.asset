@@ -11,7 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a94cc17591f050e4badcbf86daf732e2, type: 3}
   m_Name: FireExtinguisher
   m_EditorClassIdentifier: 
-  noun: fireextinguisher
+  pickupNoun: fire-extinguisher
+  noun: fire-extinguisher
   description: There is a fire extinguisher on the wall
   interactions:
   - inputAction: {fileID: 11400000, guid: c398d039e762a814899c09278b0bc234, type: 2}

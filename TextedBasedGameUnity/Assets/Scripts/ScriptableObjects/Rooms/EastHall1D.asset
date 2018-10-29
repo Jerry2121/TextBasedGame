@@ -26,6 +26,6 @@ MonoBehaviour:
     requiredObjects: []
   - keyString: west
     exitDescription: A door to the west leads into the utility closet.
-    valueRoom: {fileID: 11400000, guid: 1f9a12555c07234408264f565c0277ac, type: 2}
+    valueRoom: {fileID: 11400000, guid: 3de38bcb4509d66458f7e671367f5797, type: 2}
     requiredObjects: []
   InteractableObjectsInRoom: []

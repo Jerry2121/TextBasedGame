@@ -8,8 +8,7 @@ using System.Linq;
 public class SaveLoadGame : MonoBehaviour {
 
     GameController controller;
-
-    string gameText;
+    
     List<string> actionLog;
     string roomName;
     List<string> inventory;
@@ -24,7 +23,6 @@ public class SaveLoadGame : MonoBehaviour {
 
     public void SaveGame(string fileName)
     {
-        gameText = controller.displayText.text; //may not save spacing use log as example to fix
         actionLog = controller.actionLog;
         roomName = controller.roomNavigation.currentRoom.roomName;
         inventory = controller.interactableItems.nounsInInventory;

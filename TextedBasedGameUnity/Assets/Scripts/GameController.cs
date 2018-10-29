@@ -44,7 +44,15 @@ public class GameController : MonoBehaviour {
 
     public void DisplayLoggedText()
     {
-        string logAsText = string.Join("\n", actionLog.ToArray());
+        List<string> logAsTextList = actionLog;
+
+        int num = logAsTextList.Count;
+        for (int i = 0; i < num - 24; i++)
+        {
+            logAsTextList.Remove(logAsTextList[i]);
+        }
+
+        string logAsText = string.Join("\n", logAsTextList.ToArray());
 
         displayText.text = logAsText;
     }

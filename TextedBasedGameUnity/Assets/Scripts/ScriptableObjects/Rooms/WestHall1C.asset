@@ -22,4 +22,8 @@ MonoBehaviour:
     exitDescription: It also extends to the south.
     valueRoom: {fileID: 11400000, guid: 30268b0cdad5735479139f2487a22cf5, type: 2}
     requiredObjects: []
+  - keyString: west
+    exitDescription: To the west there is a door leading into the cryochamber.
+    valueRoom: {fileID: 11400000, guid: 111dbb16640d57a478da77c74e1c2191, type: 2}
+    requiredObjects: []
   InteractableObjectsInRoom: []

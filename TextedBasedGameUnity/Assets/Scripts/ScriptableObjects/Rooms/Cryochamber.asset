@@ -19,6 +19,6 @@ MonoBehaviour:
   - keyString: east
     exitDescription: There is a door to the east, with the words "East Hall A" above
       it.
-    valueRoom: {fileID: 11400000, guid: 85dc00037a00b0841b3cd0b6ba27e720, type: 2}
+    valueRoom: {fileID: 11400000, guid: b17e25544ad5f3c43a14004ab30c0c95, type: 2}
     requiredObjects: []
   InteractableObjectsInRoom: []

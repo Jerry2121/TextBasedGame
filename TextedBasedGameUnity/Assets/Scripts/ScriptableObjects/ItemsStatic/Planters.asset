@@ -13,10 +13,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupNoun: planters
   noun: planters
-  description: There are planters in rowes all over the room. You could start a garden
+  description: There are planters in rows all over the room. You could start a garden
     in here, if you had vegetables to plant.
   interactions:
   - inputAction: {fileID: 11400000, guid: 9b52a0409cda0f6438edffd6974d5db3, type: 2}
     textResponse: 
     scoreGiven: 0
-    actionResponse: {fileID: 0}
+    actionResponse: {fileID: 11400000, guid: f4b2413d0b97345478a1dc548aa2f579, type: 2}

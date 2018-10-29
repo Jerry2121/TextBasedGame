@@ -18,7 +18,7 @@ MonoBehaviour:
   roomName: utility closet
   exits:
   - keyString: east
-    exitDescription: 
+    exitDescription: A door to the east leads back into the hallway.
     valueRoom: {fileID: 11400000, guid: dc78e6f7e65d332479fd0b1ec43e0ca0, type: 2}
     requiredObjects: []
   InteractableObjectsInRoom:

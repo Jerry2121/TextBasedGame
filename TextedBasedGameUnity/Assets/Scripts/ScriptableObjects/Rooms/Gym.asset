@@ -17,11 +17,11 @@ MonoBehaviour:
   roomName: gym
   exits:
   - keyString: west
-    exitDescription: 
+    exitDescription: A door to the west leads back into the hallway.
     valueRoom: {fileID: 11400000, guid: 30eda47e351f4e24db829592823f4d78, type: 2}
     requiredObjects: []
   - keyString: south
-    exitDescription: 
+    exitDescription: An archway to the south leads to the shower room.
     valueRoom: {fileID: 11400000, guid: 046fab0b37fe68641bafb511be1901ef, type: 2}
     requiredObjects: []
   InteractableObjectsInRoom:

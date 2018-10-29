@@ -16,13 +16,13 @@ MonoBehaviour:
     A pane of glass allows you to see out into the endless void of space.'
   roomName: south hall 1b
   exits:
-  - keyString: west
-    exitDescription: The South Hallway extends to the east and west.
-    valueRoom: {fileID: 11400000, guid: 58fb1959576210f4aa10065e22a5da97, type: 2}
-    requiredObjects: []
   - keyString: east
-    exitDescription: 
+    exitDescription: The South Hallway extends to the east.
     valueRoom: {fileID: 11400000, guid: 538b3692c91984041b133f2689e0dd19, type: 2}
+    requiredObjects: []
+  - keyString: west
+    exitDescription: It also extends to the west.
+    valueRoom: {fileID: 11400000, guid: 58fb1959576210f4aa10065e22a5da97, type: 2}
     requiredObjects: []
   - keyString: north
     exitDescription: A door to the north leads into the cafeteria.

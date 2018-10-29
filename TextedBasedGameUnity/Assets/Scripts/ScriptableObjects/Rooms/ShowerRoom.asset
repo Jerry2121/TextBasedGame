@@ -15,7 +15,7 @@ MonoBehaviour:
   roomName: shower room
   exits:
   - keyString: north
-    exitDescription: 
+    exitDescription: An archway to the north leads back into the gym.
     valueRoom: {fileID: 11400000, guid: ed87b35be6c2c0c43b8f7eb443a3e5c5, type: 2}
     requiredObjects: []
   InteractableObjectsInRoom: []

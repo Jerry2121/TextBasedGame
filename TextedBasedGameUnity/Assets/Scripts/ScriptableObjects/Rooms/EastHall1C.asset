@@ -11,21 +11,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
   m_Name: EastHall1C
   m_EditorClassIdentifier: 
-  description: 'East Hall 1C
-
-'
+  description: East Hall 1C
   roomName: east hall 1c
   exits:
+  - keyString: north
+    exitDescription: The East Hallway extends to the north.
+    valueRoom: {fileID: 11400000, guid: dc78e6f7e65d332479fd0b1ec43e0ca0, type: 2}
+    requiredObjects: []
   - keyString: south
-    exitDescription: The East Hallway extends to the north and south.
+    exitDescription: It also extends to the south.
     valueRoom: {fileID: 11400000, guid: ff8b8845b4c10b343b7213c9d634c6ce, type: 2}
     requiredObjects: []
-  - keyString: north
-    exitDescription: 
-    valueRoom: {fileID: 11400000, guid: dc78e6f7e65d332479fd0b1ec43e0ca0, type: 2}
-    requiredObjects: []
   - keyString: east
-    exitDescription: 
-    valueRoom: {fileID: 11400000, guid: dc78e6f7e65d332479fd0b1ec43e0ca0, type: 2}
+    exitDescription: A door to the east leads to a room for hydroponics.
+    valueRoom: {fileID: 11400000, guid: 78f342d2a9644254595644ad0da560e2, type: 2}
     requiredObjects: []
   InteractableObjectsInRoom: []

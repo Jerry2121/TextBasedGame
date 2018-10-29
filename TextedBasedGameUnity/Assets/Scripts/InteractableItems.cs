@@ -132,7 +132,11 @@ public class InteractableItems : MonoBehaviour {
                     string foo = "";
                     for (int j = 0; j < nounsPerLine; j++)
                     {
-                        foo += nounsInInventory[i + j] + ", ";
+                        if ((nounsInInventory.Count - 1) >= (i + j))
+                        {
+                            Debug.Log(i + j);
+                            foo += nounsInInventory[i + j] + ", ";
+                        }
                     }
                     i++;
                     controller.LogStringWithReturn(foo += "\n");

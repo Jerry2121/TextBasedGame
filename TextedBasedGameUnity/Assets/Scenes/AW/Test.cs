@@ -6,12 +6,13 @@ public class Test : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        Debug.Log(1 % 5);
-        Debug.Log(2 % 5);
-        Debug.Log(3 % 5);
-        Debug.Log(4 % 5);
-        Debug.Log(5 % 5);
-        Debug.Log(6 % 5);
+        Debug.Log(6 / 5);
+        Debug.Log(7 / 5);
+        Debug.Log(8 / 5);
+        Debug.Log(9 / 5);
+        Debug.Log(10 / 5);
+        Debug.Log(11 / 5);
+        Debug.Log(12 / 5);
 
     }
 }

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
+  m_Name: EscapePodBay
+  m_EditorClassIdentifier: 
+  description: 'Escape Pod Bay
+
+    A large bay for escape pods in case of emergency. A majority of the pods are absent,
+    but a few remain.'
+  roomName: escape pod bay
+  exits:
+  - keyString: south
+    exitDescription: A door to the south leads back into the hallway.
+    valueRoom: {fileID: 11400000, guid: 17b81a85673fe4e4a8f009385aedc2f1, type: 2}
+    requiredObjects: []
+  InteractableObjectsInRoom:
+  - {fileID: 0}

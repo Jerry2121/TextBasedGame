@@ -8,9 +8,9 @@ public class CryochamberResponse : ActionResponse
 
     public InteractableObject[] itemsRequired;
     [TextArea]
-    public string noteAText;
+    public string outcomeAText;
     [TextArea]
-    public string noteBText;
+    public string outcomeBText;
     [TextArea]
     public string failedInteractionText;
 
@@ -28,31 +28,31 @@ public class CryochamberResponse : ActionResponse
             }
         }
 
-        if (controller.interactableItems.nounsInInventory.Contains("note-a"))
+        if (controller.interactableItems.nounsInInventory.Contains("vitamins"))
         {
-            NoteAEnd(controller);
+            OutcomeA(controller);
         }
 
-        if (controller.interactableItems.nounsInInventory.Contains("note-b"))
+        else
         {
-            NoteBEnd(controller);
+            OutcomeB(controller);
         }
 
         return true;
     }
 
-    void NoteAEnd(GameController controller)
+    void OutcomeA(GameController controller)
     {
-        controller.LogStringWithReturn(noteAText);
+        controller.LogStringWithReturn(outcomeAText);
         controller.roomNavigation.currentRoom = winRoom;
         controller.LogStringWithReturn("\n score: " + controller.score);
         controller.LogStringWithReturn("\n moves: " + controller.moves);
         controller.DisplayRoomText();
     }
 
-    void NoteBEnd(GameController controller)
+    void OutcomeB(GameController controller)
     {
-        controller.LogStringWithReturn(noteBText);
+        controller.LogStringWithReturn(outcomeBText);
         controller.roomNavigation.currentRoom = loseRoom;
         controller.LogStringWithReturn("\n score: " + controller.score);
         controller.LogStringWithReturn("\n moves: " + controller.moves);

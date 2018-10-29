@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2ea29669976c304b828cea465dff382, type: 3}
+  m_Name: EscapePod
+  m_EditorClassIdentifier: 
+  requiredString: 
+  outcomeAText: 'You enter the escape pod and throw yourself out into space.
+
+
+    You find yourself drifting for a long time. You never land anywhere. No one ever
+    finds you. You die alone in space.'
+  outcomeBText: 
+  winRoom: {fileID: 11400000, guid: 096d3304dde1923428837f1a42f3f25a, type: 2}
+  loseRoom: {fileID: 11400000, guid: 296a6e4438a35464f9e682b3b723259c, type: 2}

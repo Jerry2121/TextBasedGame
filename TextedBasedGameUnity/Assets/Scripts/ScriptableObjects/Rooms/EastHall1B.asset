@@ -24,5 +24,9 @@ MonoBehaviour:
     exitDescription: It also extends to the south.
     valueRoom: {fileID: 11400000, guid: ba97db2eff93f4f46baec32b01a4ca98, type: 2}
     requiredObjects: []
+  - keyString: west
+    exitDescription: A door to the west leads into the library.
+    valueRoom: {fileID: 11400000, guid: 3758011d03ad15141a372e7bcabc42f1, type: 2}
+    requiredObjects: []
   InteractableObjectsInRoom:
   - {fileID: 11400000, guid: 1bc2d6233342a4642be8b6d2a4231eec, type: 2}

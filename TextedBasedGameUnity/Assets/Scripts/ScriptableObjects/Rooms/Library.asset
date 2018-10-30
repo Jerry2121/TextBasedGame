@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
+  m_Name: Library
+  m_EditorClassIdentifier: 
+  description: 'Library
+
+    There are a large number of computers in this room. In today''s age, literature
+    and history tend to be stored digitally. There are, however, still a good number
+    of bookshelves too, with good, ol'' dead tree editions of the world''s most classic
+    pieces of writing.'
+  roomName: 
+  exits:
+  - keyString: east
+    exitDescription: A door to the east leads back into the hallway.
+    valueRoom: {fileID: 11400000, guid: ff8b8845b4c10b343b7213c9d634c6ce, type: 2}
+    requiredObjects: []
+  InteractableObjectsInRoom:
+  - {fileID: 11400000, guid: 532554cfefef074449dc4616e8365c50, type: 2}

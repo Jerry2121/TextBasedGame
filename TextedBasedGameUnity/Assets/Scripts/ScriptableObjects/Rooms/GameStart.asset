@@ -30,7 +30,7 @@ MonoBehaviour:
     valueRoom: {fileID: 11400000, guid: b083284b4c199d842bd631a54e2d6b8b, type: 2}
     requiredObjects: []
   - keyString: space
-    exitDescription: 
+    exitDescription: type "help" for a list of commands
     valueRoom: {fileID: 11400000, guid: e3aa64b92c087f8498da4ef761284f30, type: 2}
     requiredObjects: []
   InteractableObjectsInRoom: []

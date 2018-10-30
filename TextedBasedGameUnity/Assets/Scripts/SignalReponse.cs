@@ -9,10 +9,13 @@ public class SignalReponse : ActionResponse {
     [TextArea]
     public string winText;
     [TextArea]
+    public string winTextWithTrophy;
+    [TextArea]
     public string loseText;
 
     public Room winRoom;
     public int winScoreGiven;
+    public int winWithTrophyScoreGiven;
     public Room loseRoom;
     public int loseScoreGiven;
 
@@ -40,12 +43,25 @@ public class SignalReponse : ActionResponse {
 
     void EnemyFindsYou(GameController controller)
     {
-        controller.LogStringWithReturn(loseText);
-        controller.roomNavigation.currentRoom = loseRoom;
-        controller.LogStringWithReturn("\n score: " + controller.score);
-        controller.LogStringWithReturn("\n moves: " + controller.moves);
-        controller.DisplayRoomText();
-        controller.IncreaseScore(loseScoreGiven);
+        if (controller.interactableItems.nounsInInventory.Contains("athletics-trophy"))
+        {
+            controller.LogStringWithReturn(winTextWithTrophy);
+            controller.roomNavigation.currentRoom = winRoom;
+            controller.LogStringWithReturn("\n score: " + controller.score);
+            controller.LogStringWithReturn("\n moves: " + controller.moves);
+            controller.DisplayRoomText();
+            controller.IncreaseScore(winScoreGiven);
+        }
+
+        else
+        {
+            controller.LogStringWithReturn(loseText);
+            controller.roomNavigation.currentRoom = loseRoom;
+            controller.LogStringWithReturn("\n score: " + controller.score);
+            controller.LogStringWithReturn("\n moves: " + controller.moves);
+            controller.DisplayRoomText();
+            controller.IncreaseScore(loseScoreGiven);
+        }
     }
     void FriendlyFindsYou(GameController controller)
     {

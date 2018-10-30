@@ -9,15 +9,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a94cc17591f050e4badcbf86daf732e2, type: 3}
-  m_Name: LazyTrophy
+  m_Name: SleepTrophy
   m_EditorClassIdentifier: 
   pickupNoun: trophy
-  noun: lazy-trophy
-  description: There's a trophy sitting between two of the cryopods.
+  noun: sleep-trophy
+  description: There's a trophy covered slightly by the sheets of one of the beds.
   interactions:
   - inputAction: {fileID: 11400000, guid: c398d039e762a814899c09278b0bc234, type: 2}
-    textResponse: 'A trophy for a feat in laziness, apparently. Awarded to: Jeremiah
-      Templeton
+    textResponse: 'A trophy for a feat in sleep. Awarded to: Jeremiah Templeton
 
       The words "take nap" are scribbled on the bottom.'
     scoreGiven: 0
@@ -25,5 +24,5 @@ MonoBehaviour:
   - inputAction: {fileID: 11400000, guid: 6bd6102636b5266429debda9b8560cad, type: 2}
     textResponse: You take the trophy. You suddenly feel sleepy and want to take a
       nap.
-    scoreGiven: 10
+    scoreGiven: 15
     actionResponse: {fileID: 0}

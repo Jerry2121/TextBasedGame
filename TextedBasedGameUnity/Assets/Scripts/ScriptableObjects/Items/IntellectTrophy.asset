@@ -23,5 +23,5 @@ MonoBehaviour:
   - inputAction: {fileID: 11400000, guid: 6bd6102636b5266429debda9b8560cad, type: 2}
     textResponse: You take the trophy. Aaron must have forgotten it here. Just like
       he forgot to save his changes before pushing.
-    scoreGiven: 25
+    scoreGiven: 15
     actionResponse: {fileID: 0}

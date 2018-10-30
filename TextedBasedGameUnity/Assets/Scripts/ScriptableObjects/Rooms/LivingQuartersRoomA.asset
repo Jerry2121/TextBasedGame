@@ -23,3 +23,4 @@ MonoBehaviour:
     requiredObjects: []
   InteractableObjectsInRoom:
   - {fileID: 11400000, guid: 709b38a8a7968cc47aa0e1719e5981e7, type: 2}
+  - {fileID: 11400000, guid: 32d82ca20dde5de4fb165c10cb5c2bde, type: 2}

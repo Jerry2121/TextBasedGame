@@ -9,15 +9,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
-  m_Name: CommunicationsRoom
+  m_Name: FlowerGarden
   m_EditorClassIdentifier: 
-  description: Communications Room
-  roomName: communications room
+  description: 'Flower Garden
+
+    Pathways wind through various plots of bright flowers. Nobody would have expected
+    the flowers to have grown so well in this environment.'
+  roomName: 
   exits:
-  - keyString: north
-    exitDescription: A door to the north leads back to the hallway.
-    valueRoom: {fileID: 11400000, guid: 6843f0d6091b7fe44b38adc6f7b3cc47, type: 2}
+  - keyString: south
+    exitDescription: A door to the south leads back into the hydroponics room.
+    valueRoom: {fileID: 11400000, guid: 78f342d2a9644254595644ad0da560e2, type: 2}
     requiredObjects: []
   InteractableObjectsInRoom:
-  - {fileID: 11400000, guid: 913ec19b259a0cd478c5f1a509d22904, type: 2}
   - {fileID: 11400000, guid: 3b12c4740f8842a44882cfd61691e4d7, type: 2}

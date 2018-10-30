@@ -15,5 +15,6 @@ MonoBehaviour:
   otherItemsRequired: []
   itemsToBeRemovedFromInventory: []
   itemToGive: {fileID: 11400000, guid: 65c53a395b727684c8e879441f5dfc59, type: 2}
-  successTextResponse: You cut the wires to one of the generators.
+  successTextResponse: You cut the wires to the generator that controls the culinary
+    section of the station. You also take the wires, they could wind up being useful.
   scoreGiven: 5

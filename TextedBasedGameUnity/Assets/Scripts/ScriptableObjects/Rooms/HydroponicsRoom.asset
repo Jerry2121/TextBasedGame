@@ -22,7 +22,7 @@ MonoBehaviour:
     requiredObjects: []
   - keyString: north
     exitDescription: A door to the north leads into the flower garden.
-    valueRoom: {fileID: 11400000, guid: 534d3cede56864041b6babf61f52377e, type: 2}
+    valueRoom: {fileID: 11400000, guid: d67b4eebcd2f92f45b2bac1a8843b197, type: 2}
     requiredObjects: []
   InteractableObjectsInRoom:
   - {fileID: 11400000, guid: a224571726eba5b41be3bf7c4032e623, type: 2}

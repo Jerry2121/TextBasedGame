@@ -11,7 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
   m_Name: CaptainsBay
   m_EditorClassIdentifier: 
-  description: Captain's Bay
+  description: 'Captain''s Bay
+
+    This is where the captain is usually found. Telling the crew what to do, making
+    important decisions, all that boring stuff.'
   roomName: captains bay
   exits:
   - keyString: south

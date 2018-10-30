@@ -13,10 +13,10 @@ public class EscapePodResponse : ActionResponse
     public Room winRoom;
     public Room loseRoom;
 
+    public int scoreGivenA;
+
     public override bool DoActionResponse(GameController controller)
     {
-        
-
         return true;
     }
 
@@ -27,5 +27,6 @@ public class EscapePodResponse : ActionResponse
         controller.LogStringWithReturn("\n score: " + controller.score);
         controller.LogStringWithReturn("\n moves: " + controller.moves);
         controller.DisplayRoomText();
+        controller.IncreaseScore(scoreGivenA);
     }
 }

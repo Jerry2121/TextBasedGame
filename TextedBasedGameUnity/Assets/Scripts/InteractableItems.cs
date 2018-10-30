@@ -138,7 +138,7 @@ public class InteractableItems : MonoBehaviour {
                             foo += nounsInInventory[i + j] + ", ";
                         }
                     }
-                    i++;
+                    i += (nounsPerLine - 1);
                     controller.LogStringWithReturn(foo += "\n");
                 }
             }

@@ -23,7 +23,7 @@ MonoBehaviour:
     requiredObjects: []
   - keyString: south
     exitDescription: However, you can hop back in your spaceship and head south back
-      out into space.
+      out into space. Without fuel, though, you probably won't go far.
     valueRoom: {fileID: 11400000, guid: e3aa64b92c087f8498da4ef761284f30, type: 2}
     requiredObjects: []
   InteractableObjectsInRoom: []

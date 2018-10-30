@@ -21,4 +21,5 @@ MonoBehaviour:
       it.
     valueRoom: {fileID: 11400000, guid: b17e25544ad5f3c43a14004ab30c0c95, type: 2}
     requiredObjects: []
-  InteractableObjectsInRoom: []
+  InteractableObjectsInRoom:
+  - {fileID: 11400000, guid: 8c133b2fe127c984e854a31f7cda684a, type: 2}

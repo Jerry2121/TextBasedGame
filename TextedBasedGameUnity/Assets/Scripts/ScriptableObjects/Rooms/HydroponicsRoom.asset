@@ -20,4 +20,6 @@ MonoBehaviour:
     exitDescription: A door to the west leads back into the hallway.
     valueRoom: {fileID: 11400000, guid: 534d3cede56864041b6babf61f52377e, type: 2}
     requiredObjects: []
-  InteractableObjectsInRoom: []
+  InteractableObjectsInRoom:
+  - {fileID: 11400000, guid: a224571726eba5b41be3bf7c4032e623, type: 2}
+  - {fileID: 11400000, guid: c58ed8640bebbf945a31bf5c036d1a8f, type: 2}

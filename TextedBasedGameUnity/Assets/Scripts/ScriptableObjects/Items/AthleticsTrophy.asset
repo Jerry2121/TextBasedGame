@@ -16,6 +16,6 @@ MonoBehaviour:
   description: 
   interactions:
   - inputAction: {fileID: 11400000, guid: c398d039e762a814899c09278b0bc234, type: 2}
-    textResponse: 'A trophy for a feat in athletics. Awarded to: -----'
+    textResponse: 'A trophy for a feat in athletics. Awarded to: Adam Smith.'
     scoreGiven: 0
     actionResponse: {fileID: 0}

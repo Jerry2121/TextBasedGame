@@ -23,4 +23,4 @@ MonoBehaviour:
   - inputAction: {fileID: 11400000, guid: 9b52a0409cda0f6438edffd6974d5db3, type: 2}
     textResponse: 
     scoreGiven: 0
-    actionResponse: {fileID: 0}
+    actionResponse: {fileID: 11400000, guid: 8f987670db67d094391ae15873f54815, type: 2}

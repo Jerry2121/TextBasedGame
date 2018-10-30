@@ -11,7 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a94cc17591f050e4badcbf86daf732e2, type: 3}
   m_Name: TrophyCase
   m_EditorClassIdentifier: 
-  pickupNoun: pickupNoun
-  noun: name
-  description: description in room
-  interactions: []
+  pickupNoun: case
+  noun: case
+  description: There's a case for trophies against one of the walls away from the
+    exercise machines. It's pretty scarce of trophies, however, with only one it it.
+  interactions:
+  - inputAction: {fileID: 11400000, guid: c398d039e762a814899c09278b0bc234, type: 2}
+    textResponse: Maybe you could smash the glass to get to the trophy. It could be
+      worth something, after all.
+    scoreGiven: 0
+    actionResponse: {fileID: 0}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: 'Gym
 
-    There are various exercise machines positioned throughout the room. '
+    There are various exercise machines positioned throughout the room.'
   roomName: gym
   exits:
   - keyString: west
@@ -26,3 +26,4 @@ MonoBehaviour:
     requiredObjects: []
   InteractableObjectsInRoom:
   - {fileID: 11400000, guid: 839a4f412c05c3a4f92a3a888b6b0e06, type: 2}
+  - {fileID: 11400000, guid: 44abab6c1a447d44ebb2f18dd4858fb5, type: 2}

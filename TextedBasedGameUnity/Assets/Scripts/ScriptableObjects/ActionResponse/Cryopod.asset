@@ -29,8 +29,8 @@ MonoBehaviour:
     You wake up and find a bounty of potatoes. This is good.
 
 
-    However, potatoes don''t have all the nutrients you need, and you find yourself
-    dying all the same.'
+    However, potatoes don''t have all the nutrients you need, and you eventually find
+    yourself dying all the same.'
   failedInteractionText: 
   scoreGivenA: 25
   scoreGivenB: 15

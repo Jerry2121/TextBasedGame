@@ -19,7 +19,7 @@ MonoBehaviour:
   roomName: freezer
   exits:
   - keyString: east
-    exitDescription: A large door leads back into the pantry.
+    exitDescription: A large door to the east leads back into the pantry.
     valueRoom: {fileID: 11400000, guid: 0d5f0bd194034274d82ff848f67dbf79, type: 2}
     requiredObjects: []
   InteractableObjectsInRoom:

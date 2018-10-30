@@ -17,9 +17,25 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d6a26dcdd022e3d4895f1136500f76e0, type: 2}
   winText: You signal a passing convoy and they rescue you from the space station,
     taking you to a safe colony.
-  loseText: 'You accidentally signal a band of pirates. They quickly find your location
-    in the station and take you captive. '
+  winTextWithTrophy: 'You accidentally signal a ship full of criminals, led by the
+    infamous Jane Smith. They quickly find your location in the station and take you
+    captive.
+
+
+    Upon finding the trophy you snatched in your bag, the captain endulges you with
+    the information that it was her great-grandfathers, and that she had been looking
+    for this station for a long time, with no success.
+
+
+    She and her crew acknowledge your plundering abilities and decide to take you
+    along to assist them in their misdeeds.'
+  loseText: 'You accidentally signal a ship full of criminals, led by the infamous
+    Jane Smith. They quickly find your location in the station and take you captive.
+
+
+    You get sold on the next planet to do who knows what.'
   winRoom: {fileID: 11400000, guid: 096d3304dde1923428837f1a42f3f25a, type: 2}
   winScoreGiven: 25
+  winWithTrophyScoreGiven: 50
   loseRoom: {fileID: 11400000, guid: 296a6e4438a35464f9e682b3b723259c, type: 2}
   loseScoreGiven: 5

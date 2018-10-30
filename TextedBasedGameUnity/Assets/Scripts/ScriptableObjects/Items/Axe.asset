@@ -23,3 +23,7 @@ MonoBehaviour:
     textResponse: You pick up the fire axe. It's pretty heavy.
     scoreGiven: 5
     actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9b52a0409cda0f6438edffd6974d5db3, type: 2}
+    textResponse: 
+    scoreGiven: 0
+    actionResponse: {fileID: 11400000, guid: 83a45a6d1543ccf40aa0a0eba9d68b8d, type: 2}

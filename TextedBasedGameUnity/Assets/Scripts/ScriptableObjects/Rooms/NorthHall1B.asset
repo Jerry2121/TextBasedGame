@@ -24,4 +24,8 @@ MonoBehaviour:
     exitDescription: It also extends to the west.
     valueRoom: {fileID: 11400000, guid: 7c70f510b4266ea45bb39597b78102ff, type: 2}
     requiredObjects: []
+  - keyString: south
+    exitDescription: A door to the south leads into the comms room.
+    valueRoom: {fileID: 11400000, guid: bd3216cff21fa6c4d8a1c12055dc26e8, type: 2}
+    requiredObjects: []
   InteractableObjectsInRoom: []

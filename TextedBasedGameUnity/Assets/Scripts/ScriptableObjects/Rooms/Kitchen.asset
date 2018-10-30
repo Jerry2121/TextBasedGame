@@ -26,4 +26,5 @@ MonoBehaviour:
     exitDescription: A large archway to the north leads into the pantry.
     valueRoom: {fileID: 11400000, guid: 0d5f0bd194034274d82ff848f67dbf79, type: 2}
     requiredObjects: []
-  InteractableObjectsInRoom: []
+  InteractableObjectsInRoom:
+  - {fileID: 11400000, guid: cbe54e07df628fb4da49f7fa8de998b2, type: 2}

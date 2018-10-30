@@ -13,7 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupNoun: spacesuit
   noun: spacesuit
-  description: There seems to be a big space suit laying on the floor. It looks undamaged.
+  description: There seems to be a big spacesuit laying on the floor. It looks undamaged,
+    maybe you could equip it?
   interactions:
   - inputAction: {fileID: 11400000, guid: c398d039e762a814899c09278b0bc234, type: 2}
     textResponse: Good for not dying in space!

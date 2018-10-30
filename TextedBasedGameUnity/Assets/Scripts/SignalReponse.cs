@@ -12,7 +12,9 @@ public class SignalReponse : ActionResponse {
     public string loseText;
 
     public Room winRoom;
+    public int winScoreGiven;
     public Room loseRoom;
+    public int loseScoreGiven;
 
     public override bool DoActionResponse(GameController controller)
     {
@@ -43,6 +45,7 @@ public class SignalReponse : ActionResponse {
         controller.LogStringWithReturn("\n score: " + controller.score);
         controller.LogStringWithReturn("\n moves: " + controller.moves);
         controller.DisplayRoomText();
+        controller.IncreaseScore(loseScoreGiven);
     }
     void FriendlyFindsYou(GameController controller)
     {
@@ -51,5 +54,6 @@ public class SignalReponse : ActionResponse {
         controller.LogStringWithReturn("\n score: " + controller.score);
         controller.LogStringWithReturn("\n moves: " + controller.moves);
         controller.DisplayRoomText();
+        controller.IncreaseScore(winScoreGiven);
     }
 }

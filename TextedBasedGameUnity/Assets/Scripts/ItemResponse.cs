@@ -10,6 +10,7 @@ public class ItemResponse : ActionResponse {
     public InteractableObject itemToGive;
     [TextArea]
     public string successTextResponse;
+    public int scoreGiven;
 
     public override bool DoActionResponse(GameController controller)
     {
@@ -35,6 +36,8 @@ public class ItemResponse : ActionResponse {
         {
             controller.interactableItems.nounsInInventory.Remove(itemsToBeRemovedFromInventory[i].noun);
         }
+
+        controller.IncreaseScore(scoreGiven);
 
         return true;
     }

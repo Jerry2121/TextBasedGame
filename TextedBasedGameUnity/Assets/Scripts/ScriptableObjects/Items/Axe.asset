@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a94cc17591f050e4badcbf86daf732e2, type: 3}
-  m_Name: FireAxe
+  m_Name: Axe
   m_EditorClassIdentifier: 
   pickupNoun: axe
   noun: axe

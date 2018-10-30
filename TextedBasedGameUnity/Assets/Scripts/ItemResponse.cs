@@ -30,14 +30,13 @@ public class ItemResponse : ActionResponse {
         {
             controller.interactableItems.nounsInInventory.Add(itemToGive.noun);
             controller.LogStringWithReturn(successTextResponse);
+            controller.IncreaseScore(scoreGiven);
         }
 
         for (int i = 0; i < itemsToBeRemovedFromInventory.Length; i++)
         {
             controller.interactableItems.nounsInInventory.Remove(itemsToBeRemovedFromInventory[i].noun);
         }
-
-        controller.IncreaseScore(scoreGiven);
 
         return true;
     }

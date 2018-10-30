@@ -14,6 +14,9 @@ public class CryochamberResponse : ActionResponse
     [TextArea]
     public string failedInteractionText;
 
+    public int scoreGivenA;
+    public int scoreGivenB;
+
     public Room winRoom;
     public Room loseRoom;
 
@@ -48,6 +51,7 @@ public class CryochamberResponse : ActionResponse
         controller.LogStringWithReturn("\n score: " + controller.score);
         controller.LogStringWithReturn("\n moves: " + controller.moves);
         controller.DisplayRoomText();
+        controller.IncreaseScore(scoreGivenA);
     }
 
     void OutcomeB(GameController controller)
@@ -57,5 +61,6 @@ public class CryochamberResponse : ActionResponse
         controller.LogStringWithReturn("\n score: " + controller.score);
         controller.LogStringWithReturn("\n moves: " + controller.moves);
         controller.DisplayRoomText();
+        controller.IncreaseScore(scoreGivenB);
     }
 }

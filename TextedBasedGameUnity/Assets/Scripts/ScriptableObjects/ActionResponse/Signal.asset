@@ -20,4 +20,6 @@ MonoBehaviour:
   loseText: 'You accidentally signal a band of pirates. They quickly find your location
     in the station and take you captive. '
   winRoom: {fileID: 11400000, guid: 096d3304dde1923428837f1a42f3f25a, type: 2}
+  winScoreGiven: 25
   loseRoom: {fileID: 11400000, guid: 296a6e4438a35464f9e682b3b723259c, type: 2}
+  loseScoreGiven: 5

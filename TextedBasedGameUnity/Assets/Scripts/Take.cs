@@ -17,7 +17,7 @@ public class Take : InputAction {
             }
         }
         else
-            controller.LogStringWithReturn("You take a quick nap! \n ... \n Oh, still in space.");
+            controller.LogStringWithReturn("You take a quick nap!\n...\nOh, still in space.");
     }
 
 }

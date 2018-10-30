@@ -12,6 +12,7 @@ public class SaveLoadGame : MonoBehaviour {
     List<string> actionLog;
     string roomName;
     List<string> inventory;
+    List<string> inventoryHistory;
     List<string> equipment;
     int score;
     int moves;
@@ -26,6 +27,7 @@ public class SaveLoadGame : MonoBehaviour {
         actionLog = controller.actionLog;
         roomName = controller.roomNavigation.currentRoom.roomName;
         inventory = controller.interactableItems.nounsInInventory;
+        inventoryHistory = controller.interactableItems.nounsInInventoryHistory;
         equipment = controller.interactableItems.nounsInEquipment;
         score = controller.score;
         moves = controller.moves;
@@ -40,6 +42,7 @@ public class SaveLoadGame : MonoBehaviour {
         myInfo.actionLog = actionLog;
         myInfo.roomName = roomName;
         myInfo.inventory = inventory;
+        myInfo.inventoryHistory = inventoryHistory;
         myInfo.equipment = equipment;
         myInfo.score = score;
         myInfo.moves = moves;
@@ -59,6 +62,7 @@ public class SaveLoadGame : MonoBehaviour {
             actionLog = myLoadedInfo.actionLog;
             roomName = myLoadedInfo.roomName;
             inventory = myLoadedInfo.inventory;
+            inventoryHistory = myLoadedInfo.inventoryHistory;
             equipment = myLoadedInfo.equipment;
             score = myLoadedInfo.score;
             moves = myLoadedInfo.moves;
@@ -80,6 +84,7 @@ public class SaveLoadGame : MonoBehaviour {
         controller.IncreaseMoves(moves);
         //controller.displayText.text = gameText;
         controller.interactableItems.nounsInInventory = inventory;
+        controller.interactableItems.nounsInInventoryHistory = inventoryHistory;
         controller.interactableItems.nounsInEquipment = equipment;
 
         actionLog.Reverse<string>();
@@ -130,6 +135,7 @@ public class GameStateInfo
     public List<string> actionLog;
     public string roomName;
     public List<string> inventory;
+    public List<string> inventoryHistory;
     public List<string> equipment;
     public int score;
     public int moves;

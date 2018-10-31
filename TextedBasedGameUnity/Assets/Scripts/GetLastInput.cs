@@ -9,5 +9,4 @@ public class GetLastInput : InputAction {
     {
         controller.GetComponent<TextInput>().inputToAdd = controller.lastInput;
     }
-
 }

@@ -207,6 +207,7 @@ public class GameController : MonoBehaviour {
     {
         roomNavigation.currentRoom = startingRoom;
         interactableItems.nounsInInventory.Clear();
+        interactableItems.nounsInInventoryHistory.Clear();
         interactableItems.nounsInEquipment.Clear();
         ResetScoreAndMoves();
         ClearScreen();

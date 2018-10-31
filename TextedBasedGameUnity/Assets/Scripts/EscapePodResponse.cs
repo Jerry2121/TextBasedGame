@@ -17,6 +17,7 @@ public class EscapePodResponse : ActionResponse
 
     public override bool DoActionResponse(GameController controller)
     {
+        OutcomeA(controller);
         return true;
     }
 

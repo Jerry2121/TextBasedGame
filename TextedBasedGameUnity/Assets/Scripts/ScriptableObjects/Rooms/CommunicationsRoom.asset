@@ -11,7 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
   m_Name: CommunicationsRoom
   m_EditorClassIdentifier: 
-  description: Communications Room
+  description: 'Communications Room
+
+    This is where the station makes communications with other stations or planetary
+    bases.'
   roomName: communications room
   exits:
   - keyString: north

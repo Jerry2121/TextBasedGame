@@ -11,7 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250f0f967283cf4a988def9cec69e4a, type: 3}
   m_Name: ChemicalLab
   m_EditorClassIdentifier: 
-  description: Chemical Lab
+  description: 'Chemical Lab
+
+    There are several tables in the middle of the room. Counters with cabinets above
+    them line the walls of the room.'
   roomName: chemical lab
   exits:
   - keyString: north

@@ -17,6 +17,6 @@ MonoBehaviour:
   interactions:
   - inputAction: {fileID: 11400000, guid: c398d039e762a814899c09278b0bc234, type: 2}
     textResponse: There are some cabinets on one side of the room. They appear to
-      be locked with a strong key lock, no way to force your way in.
+      be locked with a key lock, no way to force your way in.
     scoreGiven: 0
     actionResponse: {fileID: 0}

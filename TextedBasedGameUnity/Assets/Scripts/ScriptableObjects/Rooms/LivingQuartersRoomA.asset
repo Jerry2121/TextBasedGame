@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: 'Living Quarters - Room A
 
-    The room is neatly organize with a couple of small bookcases against the wall
+    The room is neatly organized with a couple of small bookcases against the wall
     opposite the door.'
   roomName: living quarters room a
   exits:

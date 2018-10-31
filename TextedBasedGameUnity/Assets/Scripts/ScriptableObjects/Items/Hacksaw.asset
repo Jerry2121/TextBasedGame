@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Hacksaw
   m_EditorClassIdentifier: 
   pickupNoun: saw
-  noun: hackasaw
+  noun: hacksaw
   description: Laying on the table it appears to be some kind of saw?
   interactions:
   - inputAction: {fileID: 11400000, guid: c398d039e762a814899c09278b0bc234, type: 2}

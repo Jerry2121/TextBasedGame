@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupNoun: escape-pod
   noun: escape-pod
-  description: You find a pod that looks usable, however you can't see anywhere oout
-    in the void that you might escape to. There are probably better options around.
+  description: You find an escape-pod that looks usable, however you can't see anywhere
+    oout in the void that you might escape to. There are probably better options around.
   interactions:
   - inputAction: {fileID: 11400000, guid: c398d039e762a814899c09278b0bc234, type: 2}
     textResponse: 

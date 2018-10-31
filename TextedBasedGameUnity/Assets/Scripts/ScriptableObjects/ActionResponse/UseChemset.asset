@@ -19,5 +19,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 839a4f412c05c3a4f92a3a888b6b0e06, type: 2}
   - {fileID: 11400000, guid: c58ed8640bebbf945a31bf5c036d1a8f, type: 2}
   itemToGive: {fileID: 11400000, guid: 540e4d3530054cc45b853eefbbb5c818, type: 2}
-  successTextResponse: You did some chemistry and mixed up a jug of mineral solution!
+  successTextResponse: 'You did some chemistry and mixed up a jug of mineral solution!
+
+    Received Mineral-Solution!'
   scoreGiven: 15

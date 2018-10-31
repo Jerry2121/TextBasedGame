@@ -26,4 +26,8 @@ MonoBehaviour:
     valueRoom: {fileID: 11400000, guid: 85dc00037a00b0841b3cd0b6ba27e720, type: 2}
     requiredObjects:
     - {fileID: 11400000, guid: 8b04f00a44dac9a4c8787fe674613a57, type: 2}
+  - keyString: north
+    exitDescription: A door to the north leads into the escape pod bay.
+    valueRoom: {fileID: 11400000, guid: 85dc00037a00b0841b3cd0b6ba27e720, type: 2}
+    requiredObjects: []
   InteractableObjectsInRoom: []

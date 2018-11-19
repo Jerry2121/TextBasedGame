@@ -451,7 +451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e3494b5e8f96d448cedc8384b328f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentRoom: {fileID: 11400000, guid: 111dbb16640d57a478da77c74e1c2191, type: 2}
+  currentRoom: {fileID: 11400000, guid: ed87b35be6c2c0c43b8f7eb443a3e5c5, type: 2}
   allRooms:
   - {fileID: 11400000, guid: 13b14ba273adb544289958c884922422, type: 2}
   - {fileID: 11400000, guid: 8b582125cc216874c8a07912722dd3f5, type: 2}
@@ -533,6 +533,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 038af48fce34a8547bcbf6611a1a2e33, type: 2}
   - {fileID: 11400000, guid: bba8d6bbe69064442bf4e5b83f6b90f6, type: 2}
   - {fileID: 11400000, guid: 6c7bd0b7ceab14d459a37848b5b6effb, type: 2}
+  - {fileID: 11400000, guid: 2aaa1fafa24a6f6479e84bf736693857, type: 2}
   roomNavigation: {fileID: 0}
   interactionsDescriptionsInRoom: []
   interactableItems: {fileID: 0}

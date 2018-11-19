@@ -257,16 +257,18 @@ public class InteractableItems : MonoBehaviour {
 
             if (nounsInRoom.Contains(noun))
             {
-                nounsInEquipment.Add(noun);
-                nounsInRoom.Remove(noun);
                 //AddActionResponsesToUseDictionary();
 
-                Interaction[] itemInteractions = GetInteractableObjectFromUsableList(noun).interactions;
+                string realNoun = pickNounToRealNounDictionary[noun];
+                Interaction[] itemInteractions = GetInteractableObjectFromUsableList(realNoun).interactions;
                 for (int i = 0; i < itemInteractions.Length; i++)
                 {
 
                     if (itemInteractions[i].inputAction.keyWord == "equip")
                     {
+                        nounsInEquipment.Add(noun);
+                        nounsInRoom.Remove(noun);
+
                         controller.IncreaseScore(itemInteractions[i].scoreGiven);
                     }
                 }

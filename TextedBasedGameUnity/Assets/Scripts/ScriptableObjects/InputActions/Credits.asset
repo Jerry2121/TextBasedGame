@@ -8,8 +8,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac0f62f8efd60b64395fa040ced83d05, type: 3}
-  m_Name: Help
+  m_Script: {fileID: 11500000, guid: d4998f0697018e643888fab036222424, type: 3}
+  m_Name: Credits
   m_EditorClassIdentifier: 
-  keyWord: help
-  description: '- list of commands'
+  keyWord: credits
+  description: '- credits'

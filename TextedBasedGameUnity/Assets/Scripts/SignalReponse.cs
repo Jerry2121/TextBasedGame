@@ -47,8 +47,8 @@ public class SignalReponse : ActionResponse {
         {
             controller.LogStringWithReturn(winTextWithTrophy);
             controller.roomNavigation.currentRoom = winRoom;
-            controller.LogStringWithReturn("\n score: " + controller.score);
-            controller.LogStringWithReturn("\n moves: " + controller.moves);
+            controller.LogStringWithReturn("\n score: " + controller.Score);
+            controller.LogStringWithReturn("\n moves: " + controller.Moves);
             controller.DisplayRoomText();
             controller.IncreaseScore(winScoreGiven);
         }
@@ -57,8 +57,8 @@ public class SignalReponse : ActionResponse {
         {
             controller.LogStringWithReturn(loseText);
             controller.roomNavigation.currentRoom = loseRoom;
-            controller.LogStringWithReturn("\n score: " + controller.score);
-            controller.LogStringWithReturn("\n moves: " + controller.moves);
+            controller.LogStringWithReturn("\n score: " + controller.Score);
+            controller.LogStringWithReturn("\n moves: " + controller.Moves);
             controller.DisplayRoomText();
             controller.IncreaseScore(loseScoreGiven);
         }
@@ -67,8 +67,8 @@ public class SignalReponse : ActionResponse {
     {
         controller.LogStringWithReturn(winText);
         controller.roomNavigation.currentRoom = winRoom;
-        controller.LogStringWithReturn("\n score: " + controller.score);
-        controller.LogStringWithReturn("\n moves: " + controller.moves);
+        controller.LogStringWithReturn("\n score: " + controller.Score);
+        controller.LogStringWithReturn("\n moves: " + controller.Moves);
         controller.DisplayRoomText();
         controller.IncreaseScore(winScoreGiven);
     }

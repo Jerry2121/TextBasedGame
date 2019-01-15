@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,4 +9,4 @@ public class GetLastInput : InputAction {
     {
         controller.GetComponent<TextInput>().inputToAdd = controller.lastInput;
     }
-}
+}*/

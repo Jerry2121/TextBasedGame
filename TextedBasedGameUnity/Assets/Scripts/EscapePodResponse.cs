@@ -25,8 +25,8 @@ public class EscapePodResponse : ActionResponse
     {
         controller.LogStringWithReturn(outcomeAText);
         controller.roomNavigation.currentRoom = loseRoom;
-        controller.LogStringWithReturn("\n score: " + controller.score);
-        controller.LogStringWithReturn("\n moves: " + controller.moves);
+        controller.LogStringWithReturn("\n score: " + controller.Score);
+        controller.LogStringWithReturn("\n moves: " + controller.Moves);
         controller.DisplayRoomText();
         controller.IncreaseScore(scoreGivenA);
     }

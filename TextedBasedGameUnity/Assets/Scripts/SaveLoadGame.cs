@@ -29,8 +29,8 @@ public class SaveLoadGame : MonoBehaviour {
         inventory = controller.interactableItems.nounsInInventory;
         inventoryHistory = controller.interactableItems.nounsInInventoryHistory;
         equipment = controller.interactableItems.nounsInEquipment;
-        score = controller.score;
-        moves = controller.moves;
+        score = controller.Score;
+        moves = controller.Moves;
 
         BinaryFormatter bf = new BinaryFormatter();
 

@@ -48,8 +48,8 @@ public class CryochamberResponse : ActionResponse
     {
         controller.LogStringWithReturn(outcomeAText);
         controller.roomNavigation.currentRoom = winRoom;
-        controller.LogStringWithReturn("\n score: " + controller.score);
-        controller.LogStringWithReturn("\n moves: " + controller.moves);
+        controller.LogStringWithReturn("\n score: " + controller.Score);
+        controller.LogStringWithReturn("\n moves: " + controller.Moves);
         controller.DisplayRoomText();
         controller.IncreaseScore(scoreGivenA);
     }
@@ -58,8 +58,8 @@ public class CryochamberResponse : ActionResponse
     {
         controller.LogStringWithReturn(outcomeBText);
         controller.roomNavigation.currentRoom = loseRoom;
-        controller.LogStringWithReturn("\n score: " + controller.score);
-        controller.LogStringWithReturn("\n moves: " + controller.moves);
+        controller.LogStringWithReturn("\n score: " + controller.Score);
+        controller.LogStringWithReturn("\n moves: " + controller.Moves);
         controller.DisplayRoomText();
         controller.IncreaseScore(scoreGivenB);
     }

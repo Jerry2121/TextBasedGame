@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour {
     public Text displayText;
     public Text scoreText;
     public Text moveText;
+    public InputField inputField;
 
     public Room startingRoom;
     public InputAction[] inputActions;
@@ -21,10 +22,13 @@ public class GameController : MonoBehaviour {
 
     [HideInInspector]public List<string> actionLog = new List<string>();
 
-    public string lastInput;
+    //public string lastInput;
+    public List<string> inputHistory = new List<string>();
 
-    public int score { get; protected set; }
-    public int moves { get; protected set; }
+    int inputHistoryNum = 0;
+
+    public int Score { get; protected set; }
+    public int Moves { get; protected set; }
 
 	// Use this for initialization
 	void Awake ()
@@ -33,13 +37,35 @@ public class GameController : MonoBehaviour {
         interactableItems = GetComponent<InteractableItems>();
         saveLoadGame = GetComponent<SaveLoadGame>();
         Cursor.lockState = CursorLockMode.Locked;
-        score = moves = 0;
+        Score = Moves = 0;
 	}
 
     void Start()
     {
         DisplayRoomText();
         DisplayLoggedText();
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.UpArrow) && inputHistory.Count > 0)
+        {
+            inputHistoryNum++;
+            if (inputHistoryNum.CompareTo(inputHistory.Count + 1) == 0)
+                inputHistoryNum = 1;
+
+            inputField.text = inputHistory[inputHistory.Count - inputHistoryNum];
+            inputField.caretPosition = inputField.text.Length;
+        }
+        else if (Input.GetKeyDown(KeyCode.DownArrow) && inputHistory.Count > 0)
+        {
+            inputHistoryNum--;
+            if (inputHistoryNum == 0)
+                inputHistoryNum = inputHistory.Count;
+
+            inputField.text = inputHistory[inputHistory.Count - inputHistoryNum];
+            inputField.caretPosition = inputField.text.Length;
+        }
     }
 
     public void DisplayLoggedText()
@@ -162,8 +188,8 @@ public class GameController : MonoBehaviour {
 
         List<string> loggedText = actionLog;
 
-        loggedText.Add("Score:" + score + "\n");
-        loggedText.Add("Moves:" + moves + "\n");
+        loggedText.Add("Score:" + Score + "\n");
+        loggedText.Add("Moves:" + Moves + "\n");
 
         string[] loggedTextArray = loggedText.ToArray();
 
@@ -181,13 +207,13 @@ public class GameController : MonoBehaviour {
             return;
         }
 
-        score += num;
-        scoreText.text = "Score: " + score.ToString();
+        Score += num;
+        scoreText.text = "Score: " + Score.ToString();
     }
     public void IncreaseMoves()
     {
-        moves ++;
-        moveText.text = "Moves: " + moves.ToString();
+        Moves ++;
+        moveText.text = "Moves: " + Moves.ToString();
     }
 
     public void ClearScreen()
@@ -198,7 +224,7 @@ public class GameController : MonoBehaviour {
 
     public void ResetScoreAndMoves()
     {
-        score = moves = 0;
+        Score = Moves = 0;
         moveText.text = "Moves: 000";
         scoreText.text = "Score: 000000";
     }
@@ -220,8 +246,8 @@ public class GameController : MonoBehaviour {
             Debug.LogError("You should not be reducing the move value");
             return;
         }
-        moves += num;
-        moveText.text = "Moves: " + moves.ToString();
+        Moves += num;
+        moveText.text = "Moves: " + Moves.ToString();
     }
 }
 

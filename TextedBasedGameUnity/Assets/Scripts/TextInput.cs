@@ -9,7 +9,7 @@ public class TextInput : MonoBehaviour
 
     GameController controller;
 
-    public string inputToAdd;
+    //public string inputToAdd;
 
     void Awake()
     {
@@ -57,14 +57,17 @@ public class TextInput : MonoBehaviour
         }
 
         InputComplete();
-        if(inputToAdd != null)
+
+        controller.inputHistory.Add(userInput);
+
+        /*if (inputToAdd != null)
         {
             inputField.text = inputToAdd;
             controller.lastInput = inputToAdd;
             inputToAdd = null;
         }
         else
-            controller.lastInput = userInput;
+            controller.lastInput = userInput;*/
     }
 
     void InputComplete()
